@@ -1,0 +1,136 @@
+body {
+    background-image: url('../../assets/images/bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.bgTransparent{
+    background-color: #ffffffab;
+}
+
+.alignCenterOfScreen {
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-btnLeft, .arrow-btnRight {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+}
+
+.leftBtnCard, .rightBtnCard {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.leftBtnCard {
+    border-radius: 0 100px 100px 0;
+}
+
+.leftBtnCard:hover .arrow-btnLeft {
+    margin-left: 40px;
+    transition: padding 0.3s ease;
+}
+
+.rightBtnCard {
+    border-radius: 100px 0 0 100px;
+}
+
+.rightBtnCard:hover .arrow-btnRight {
+    margin-right: 40px;
+    transition: padding 0.3s ease;
+}
+
+.titulo {
+    font-size: 4rem;
+    color: #4682B4;
+    margin-top: 100px;
+}
+
+.describe{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.unidade {
+    background-color: #98d1c1;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.unidade-header {
+    background-color: #4f81bd;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+.unidade-conteudo {
+    list-style: none;
+    padding: 20px;
+}
+
+.unidade-conteudo li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2f4f4f;
+}
+
+.footerSlider {
+    background: #81adc3;
+    border-radius: 100px;
+    padding: 16px 30px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-wrapper {
+    background-color: white;
+    border-radius: 50px;
+    padding: 8px;
+    display: inline-block;
+    min-width: 15rem;
+}
+
+.btn-start {
+    background-color: #2e78a0;
+    color: white;
+    font-size: 24px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 15rem;
+}
+
+.btn-start:hover {
+    background-color: #1e5780;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.paginator{
+    text-decoration: none;
+    color: white;
+}

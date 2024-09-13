@@ -1,0 +1,370 @@
+body {
+    background-image: url('../../assets/images/bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0; /* Remove margens padrão */
+    height: 100vh; /* Garante que o corpo cubra toda a altura da tela */
+    overflow-x: hidden; /* Impede rolagem horizontal se houver */
+}
+
+.bgTransparent {
+    background-color: #ffffffab;
+}
+
+.header {
+    background-image: url('../../assets/images/bgheader.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 130px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Garante que a posição seja relativa para empilhamento */
+    z-index: 10; /* Garante que fique acima de outros elementos */
+}
+
+.header .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.ml15vw {
+    margin-left: 15vw
+}
+
+.collapse-content {
+    background-color: #f4e3df;
+    /* Tom alaranjado claro */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.unidade {
+    background-color: #98d1c1;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.unidade-header {
+    background-color: #4f81bd;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+.unidade-conteudo {
+    list-style: none;
+    padding: 20px;
+}
+
+.unidade-conteudo li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2f4f4f;
+}
+
+.close-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #4f81bd;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* Botão de Fechar */
+.close-btn {
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    /* Garantir que o "X" fique centralizado */
+}
+
+.close-btn:hover {
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ml15vw {
+        margin-left: 0
+    }
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.alignCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.alignEnd {
+    display: flex;
+    justify-content: end;
+}
+
+.alignCenterOfScreen {
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-btnLeft,
+.arrow-btnRight {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+}
+
+.leftBtnCard,
+.rightBtnCard {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.leftBtnCard {
+    border-radius: 0 100px 100px 0;
+}
+
+.leftBtnCard:hover .arrow-btnLeft {
+    margin-left: 40px;
+    transition: padding 0.3s ease;
+}
+
+.rightBtnCard {
+    border-radius: 100px 0 0 100px;
+}
+
+.rightBtnCard:hover .arrow-btnRight {
+    margin-right: 40px;
+    transition: padding 0.3s ease;
+}
+
+.navHeaderHeight {
+    height: 130px;
+}
+
+.title {
+    font-size: 1.6875rem;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color: #3D76A4;
+}
+
+.describe {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.tabDescription {
+    font-size: 1.0625rem;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.tabItemButtonDescription {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    text-transform: uppercase;
+    color: #444444;
+    padding: .5rem 0;
+    text-align: center;
+}
+
+.custom-button {
+    background-color: #5a92c6;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    width: 80%;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: #487aab;
+}
+
+.collapse-custom {
+    width: 100%;
+    text-align: center;
+    padding: 30px 30px;
+    margin-top: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #5a92c6;
+    color: white;
+}
+
+
+@media (max-width: 775px) {
+    .alignCenterOfScreen {
+        display: none;
+    }
+}
+
+.footerSlider {
+    background: #81adc3;
+    border-radius: 100px;
+    padding: 16px 30px 16px 20px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100px;
+    align-items: center;
+}
+
+.mini-slider {
+    color: #222222;
+    font-size: 22px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    background: #fff;
+    box-shadow: 6px 10px 20px rgba(41, 121, 255, 0.2);
+    border-radius: 100px;
+    padding: 6px;
+    min-width: 280px;
+    transition-duration: 0.5s;
+}
+
+.btn-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-circle:hover {
+    background-color: #0056b3;
+}
+
+.btn-left {
+    position: relative;
+}
+
+.btn-right {
+    position: relative;
+}
+
+.btn-circle i {
+    font-size: 24px;
+}
+
+.bgGreenWrapper {
+    position: relative;
+    width: 98.5vw;
+    /* Ocupa 100% da largura da viewport */
+    left: 50%;
+    margin-left: -50vw;
+    /* Ajusta para garantir que a largura total seja visível */
+}
+
+/* Estilo para a row com fundo verde */
+.bgGreen {
+    background-color: #83C9A5;
+    /* Altere para o tom de verde desejado */
+    color: white;
+    /* Para garantir que o texto tenha uma boa visibilidade */
+    padding: 20px;
+    /* Ajuste o padding conforme necessário */
+    display: flex;
+    /* Usa flexbox para centralizar o conteúdo */
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente */
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    min-height: 150px;
+    /* Define uma altura mínima para a linha, ajuste conforme necessário */
+    position: relative;
+    /* Necessário para o posicionamento absoluto da badge */
+    margin-top: 6rem;
+}
+
+/* Adiciona um estilo ao conteúdo para garantir que esteja centralizado corretamente */
+.content {
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
+}
+
+/* Estilo da badge */
+.badge-custom {
+    background-color: #5CAA82;
+    color: white;
+    padding: 15px 30px;
+    /* Aumenta o padding para tornar a badge maior */
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 20px;
+    /* Aumenta o tamanho da fonte para a badge maior */
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    position: absolute;
+    /* Posiciona a badge em relação ao contêiner pai */
+    top: -35px;
+    /* Ajusta a altura da badge em relação ao contêiner */
+    left: 30%;
+    /* Posiciona a badge a 30% do lado esquerdo do contêiner */
+    transform: translateX(-50%);
+    /* Centraliza horizontalmente */
+    z-index: 1;
+    /* Garante que a badge fique sobre os outros elementos */
+}
