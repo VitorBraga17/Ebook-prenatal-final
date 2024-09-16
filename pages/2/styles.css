@@ -5,12 +5,10 @@ body {
     background-repeat: no-repeat;
     margin: 0;
     overflow-x: hidden;
-    min-height: 90vh;
 }
 
 .bgTransparent {
     background-color: #ffffffab;
-    min-height: 90vh;
 }
 
 .header {
@@ -483,3 +481,8 @@ body {
     z-index: 1;
 }
 
+.cardAlert{
+    border: 2px solid red;
+    padding: 20px;
+    background-color: white;
+}

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../../icons/bootstrap-icons.css">
+</head>
+<body>  
+    <div class="container-fluid ">
+        <div class="row">
+            <header class="header">
+                <div class="ml15vw">
+                    <div class="subtitle">Cartilha interativa para o cuidado a Gestação, Pós-parto e Aleitamento Materno</div>
+                    <div class="title">2. CADERNETA DA GESTANTE</div>
+                </div>
+                <div class="sumario-container"  data-bs-toggle="collapse" data-bs-target="#collapseSumario" aria-expanded="false" aria-controls="collapseSumario">
+                    <span class="sumario-text">Sumário <span class="arrow">&#9660;</span></span>
+                    <span class="menu-icon">&#9776;</span>
+                </div>
+            </header>
+              
+              <div class="collapse collapse-content" id="collapseSumario">
+                 <div class="row alignCenter">
+                    <div class="col-lg-7 col-sm-12">
+                        <div class="unidade">
+                            <div class="unidade-header">UNIDADE 1 - INICIANDO A VISITA DOMICILIAR</div>
+                            <ul class="unidade-conteudo">
+                                <li>1.1 Cumprimentar educadamente</li>
+                                <li>1.2 Observar o ambiente</li>
+                                <li>1.3 “Você já iniciou o pré-natal?”</li>
+                            </ul>
+                        </div>
+                
+                        <div class="unidade">
+                            <div class="unidade-header">UNIDADE 2 - CADERNETA DA GESTANTE</div>
+                            <ul class="unidade-conteudo">
+                                <li>2.1 Solicitar a Caderneta da Gestante e observar se a gestante tem realizado os exames de rotina</li>
+                                <li>2.2 Observar na caderneta se está com esquema vacinal completo, caso contrário, orientar ir à Unidade de Saúde para atualizar</li>
+                                <li>2.3 Observar na Caderneta da Gestante se tem consulta pré-natal agendada e se ela está indo para o pré-natal regularmente.</li>
+                            </ul>
+                        </div>
+        
+                        <div class="unidade">
+                            <div class="unidade-header">Unidade 3 - SINAIS E SINTOMAS DE ALERTA</div>
+                            <ul class="unidade-conteudo">
+                                <li>3.1 “Você está sentindo alguma coisa atualmente?”</li>
+                                <li>3.2 “Você está tendo algum dos seguintes sintomas no momento?”</li>
+                            </ul>
+                        </div>
+        
+                        <div class="unidade">
+                            <div class="unidade-header">Unidade 4 - PERGUNTAS E ORIENTAÇÕES GERAIS</div>
+                            <ul class="unidade-conteudo">
+                                <li>4.1 “Como tem sido sua alimentação?”</li>
+                                <li>4.2 “Tem realizado exercícios físicos?”</li>
+                                <li>4.3 “Realizou alguma consulta com o dentista durante esta gravidez?”</li>
+                                <li>4.4 “Está fazendo uso de sulfato ferroso?”</li>
+                                <li>4.5	“Está fazendo uso de ácido fólico?” <b>(Fazer a pergunta apenas se a mulher tiver no máximo com 12 semanas de gestação)</b></li>
+                            </ul>
+                        </div>
+        
+                        <div class="unidade">
+                            <div class="unidade-header">Unidade 5 - ORIENTAÇÕES SOBRE SINTOMAS DA GRAVIDEZ</div>
+                        </div>
+        
+                        <div class="unidade">
+                            <div class="unidade-header">Unidade 6 - SINAIS E SINTOMAS DE TRABALHO DE PARTO</div>
+                        </div>
+
+                        <div class="close-btn-container">
+                            <button id="closeCollapseBtn" class="close-btn">X</button>
+                        </div>
+                    </div>
+                 </div>
+
+              </div>
+        </div>
+
+        <div class="row bgTransparent alignCenter">
+            <div class="col-lg-7 col-sm-12">
+                <div class="row mt-5">
+                    <h3 class="title">2.1 Solicitar a Caderneta da Gestante e observar as seguintes informações:</h3>
+                </div>
+                <div class="row mt-4">
+                    <span class="describe">Verificar se a gestante tem realizado os exames de rotina conforme os trimestres de gestação.<br>Caso NÃO tenha feito algum exame, pergunte qual seria a razão.</span>
+                </div>
+
+                <div class="row mt-4 table-responsive">
+                    <table class="table text-center">
+                        <thead>
+                          <tr>
+                            <th scope="col">Trimestre</th>
+                            <th scope="col">Semana</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1º trimestre</td>
+                            <td>Até 13 semanas e meia</td>
+                          </tr>
+                          <tr>
+                            <td>2º trimestre</td>
+                            <td>14 semanas até 27 semanas e meia</td>
+                          </tr>
+                          <tr>
+                            <td>3º trimestre</td>
+                            <td>28 semanas até o parto</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 mt-4 alignCenter flexColumn">
+                        <div class="button-container alignCenter mt-3">
+                            <a class="custom-button" data-bs-toggle="collapse" href="#collapseContent1" role="button" aria-expanded="false" aria-controls="collapseContent1">
+                                Exames
+                            </a>
+                        </div>
+                
+                        <div class="collapse mt-3 w-100 d-lg-none" id="collapseContent1">
+                            <div class="card card-body table-responsive">
+                                <table class="table text-center ">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">Exame</th>
+                                        <th scope="col">Período de realização</th>
+                                        <th scope="col">Indicação</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Hemoglobina e hematócrito</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Verificar Anemia.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Eletroforese de hemoglobina</td>
+                                            <td>1ª consulta</td>
+                                            <td>Verificar traço ou Doença Falciforme.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ABO – Rh</td>
+                                            <td>1ª consulta</td>
+                                            <td>Verificar Tipagem Sanguínea. Se mãe Rh- e pai Rh+ ou desconhecido, fazer Coombs indireto.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Coombs indireto (Faz quando mãe Rh- e pai Rh+ ou desconhecido)</td>
+                                            <td>A partir da 24ª semana</td>
+                                            <td>Coombs indireto positivo: referenciar para pré-natal de alto risco. Coombs indireto negativo: Repetir exame mensalmente até o parto.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Glicemia em jejum</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Verificar Diabetes Mellitus Gestacional ou Diabetes anterior à gestação. 2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Teste Oral de Tolerância à Glicose (TOTG) 75g</td>
+                                            <td>24ª - 28ª semanas</td>
+                                            <td>Verificar Diabetes Mellitus Gestacional ou Diabetes anterior à gestação.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Urina tipo I ou Sumário de Urina ou Elementos Anormais do Sedimento (EAS)</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Verificar Infecção do Trato Urinário e outras alterações.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Urocultura</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Verificar Infecção do Trato Urinário, mesmo quando o Sumário de Urina não identificar alterações.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Teste rápido para Sífilis</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Verificar Sífilis.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>VDRL</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Verificar Sífilis e acompanhar tratamento dos casos.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Teste rápido para HIV ou sorologia (anti HIV I e II)</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Verificar HIV.2,3</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Teste rápido para Hepatite B ou sorologia para Hepatite B (HBsAg))</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Verificar Hepatite B.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Teste rápido para Hepatite C</td>
+                                            <td>De acordo com histórico de risco para exposição ao vírus da Hepatite C</td>
+                                            <td>Verificar Hepatite C.3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>HTLV I e II</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Detecção de Infecção pelo Vírus T-Linfotrópico Humano (HTLV).4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Citomegalovírus (IgG e IgM)</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Detecção de infecção pelo Citomegalovírus.5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Toxoplasmose (IgG e IgM)</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Verificar Toxoplasmose.2,3</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-6 col-sm-12 mt-4 alignCenter flexColumn">
+                        <div class="button-container alignCenter mt-3">
+                            <a class="custom-button" data-bs-toggle="collapse" href="#collapseContent2" role="button" aria-expanded="false" aria-controls="collapseContent2">
+                                Ultrassonografia
+                            </a>
+                        </div>
+                
+                        <div class="collapse mt-3 w-100 d-lg-none" id="collapseContent2">
+                            <div class="card card-body table-responsive">
+                                <table class="table text-center">
+                                    <thead>
+                                        <tr><th colspan="2"><b>Ultrassonografia obstétrica</b></th></tr>
+                                        <tr>
+                                            <th scope="col">Período de realização</th>
+                                            <th scope="col">Indicação</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody >
+                                        <tr>
+                                            <td>1° e 3° trimestre</td>
+                                            <td>Diagnóstico de gemelaridade, datação específica da gravidez, verifica a viabilidade fetal, etc.2,3</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row d-none d-lg-block">
+                    <div class="col-12">
+                        <div class="collapse mt-3 w-100" id="collapseContent1">
+                            <div class="card card-body">
+                                <table class="table text-center">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">Exame</th>
+                                        <th scope="col">Período de realização</th>
+                                        <th scope="col">Indicação</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Hemoglobina e hematócrito</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Verificar Anemia.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Eletroforese de hemoglobina</td>
+                                            <td>1ª consulta</td>
+                                            <td>Verificar traço ou Doença Falciforme.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ABO – Rh</td>
+                                            <td>1ª consulta</td>
+                                            <td>Verificar Tipagem Sanguínea. Se mãe Rh- e pai Rh+ ou desconhecido, fazer Coombs indireto.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Coombs indireto (Faz quando mãe Rh- e pai Rh+ ou desconhecido)</td>
+                                            <td>A partir da 24ª semana</td>
+                                            <td>Coombs indireto positivo: referenciar para pré-natal de alto risco. Coombs indireto negativo: Repetir exame mensalmente até o parto.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Glicemia em jejum</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Verificar Diabetes Mellitus Gestacional ou Diabetes anterior à gestação. 2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Teste Oral de Tolerância à Glicose (TOTG) 75g</td>
+                                            <td>24ª - 28ª semanas</td>
+                                            <td>Verificar Diabetes Mellitus Gestacional ou Diabetes anterior à gestação.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Urina tipo I ou Sumário de Urina ou Elementos Anormais do Sedimento (EAS)</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Verificar Infecção do Trato Urinário e outras alterações.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Urocultura</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Verificar Infecção do Trato Urinário, mesmo quando o Sumário de Urina não identificar alterações.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Teste rápido para Sífilis</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Verificar Sífilis.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>VDRL</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Verificar Sífilis e acompanhar tratamento dos casos.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Teste rápido para HIV ou sorologia (anti HIV I e II)</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Verificar HIV.2,3</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Teste rápido para Hepatite B ou sorologia para Hepatite B (HBsAg))</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Verificar Hepatite B.2,3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Teste rápido para Hepatite C</td>
+                                            <td>De acordo com histórico de risco para exposição ao vírus da Hepatite C</td>
+                                            <td>Verificar Hepatite C.3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>HTLV I e II</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Detecção de Infecção pelo Vírus T-Linfotrópico Humano (HTLV).4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Citomegalovírus (IgG e IgM)</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Detecção de infecção pelo Citomegalovírus.5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Toxoplasmose (IgG e IgM)</td>
+                                            <td>1ª consulta e 3º trimestre</td>
+                                            <td>Verificar Toxoplasmose.2,3</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                
+                        <div class="collapse mt-3 w-100" id="collapseContent2">
+                            <div class="card card-body">
+                                <table class="table text-center">
+                                    <thead>
+                                        <tr><th colspan="2"><b>Ultrassonografia obstétrica</b></th></tr>
+                                        <tr>
+                                            <th scope="col">Período de realização</th>
+                                            <th scope="col">Indicação</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1° e 3° trimestre</td>
+                                            <td>Diagnóstico de gemelaridade, datação específica da gravidez, verifica a viabilidade fetal, etc.2,3</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <h3 class="title">2.2 Observar na caderneta se está com esquema vacinal completo, caso contrário, orientar ir à Unidade de Saúde para atualizar.</h3>
+                </div>
+                <div class="row mt-4">
+                    <span class="describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eius tempore soluta vero necessitatibus nostrum sint aspernatur quisquam deleniti recusandae iste, aut, quod deserunt vel doloribus quaerat neque fuga ab.</span>
+                </div>
+
+                
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12 mt-4 alignCenter flexColumn">
+                        <div class="button-container alignCenter mt-3">
+                            <a class="custom-button" data-bs-toggle="collapse" href="#collapseContent3" role="button" aria-expanded="false" aria-controls="collapseContent1">
+                                Vacina Antitetânica
+                            </a>
+                        </div>
+                
+                        <div class="collapse mt-3 w-100 d-lg-none" id="collapseContent3">
+                            <table class="table text-center">
+                                <thead>
+                                    <tr class=" text-center"><th colspan="2"><b>Vacinação antitetânica (dT/dTpa)</b></th></tr>
+                                    <tr>
+                                        <th scope="col">Histórico vacinal</th>
+                                        <th scope="col">Condução na gestação</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Vacinada com pelo menos 3 doses. <br> Vacinação incompleta tendo 2 doses de vacina.</td>
+                                        <td>1 dose de dTpa a partir da 20ª semana de gestação.</td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>Vacinação incompleta tendo apenas 1 dose de vacina.</td>
+                                        <td>1 dose de dT e 1 dose de dTpa (a partir da 20ª semana de gestação para a dTpa). Intervalo: 60 dias, mínimo de 30 dias entre elas.</td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>Não vacinadas e/ou histórico vacinal desconhecido.</td>
+                                        <td>2 doses de dT e 1 dose de dTpa (a partir da 20ª semana de gestação para a dTpa). Intervalo: 60 dias, mínimo de 30 dias entre elas.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-3 col-sm-12 mt-4 alignCenter flexColumn">
+                        <div class="button-container alignCenter mt-3">
+                            <a class="custom-button" data-bs-toggle="collapse" href="#collapseContent4" role="button" aria-expanded="false" aria-controls="collapseContent2">
+                                Hepatite B
+                            </a>
+                        </div>
+                
+                        <div class="collapse mt-3 w-100 d-lg-none" id="collapseContent4">
+                            <div class="card card-body">
+                                <table class="table text-center">
+                                    <thead>
+                                        <tr><th colspan="2">Hepatite B</th></tr>
+                                        <tr>
+                                            <th scope="col">Histórico vacinal</th>
+                                            <th scope="col">Condução na gestação</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Gestantes NÃO vacinadas anteriormente.</td>
+                                            <td>Três doses.<br>
+                                                Esquema: 0 - 1 - 6 meses.<br>
+                                                Intervalo de 30 dias entre a primeira e a segunda dose e de seis meses entre a primeira e a terceira doses.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gestante fez apenas 1 ou 2 doses durante a vida.</td>
+                                            <td>Completar esquema.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-12 mt-4 alignCenter flexColumn">
+                        <div class="button-container alignCenter mt-3">
+                            <a class="custom-button" data-bs-toggle="collapse" href="#collapseContent5" role="button" aria-expanded="false" aria-controls="collapseContent2">
+                                Influenza
+                            </a>
+                        </div>
+                
+                        <div class="collapse mt-3 w-100 d-lg-none" id="collapseContent5">
+                            <div class="card card-body">
+                                <table class="table text-center">
+                                    <thead>
+                                        <tr><th colspan="2">Influenza</th></tr>
+                                        <tr>
+                                            <th scope="col">Histórico vacinal</th>
+                                            <th scope="col">Condução na gestação</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Sempre vacinar durante a campanha, independente do período de gravidez.</td>
+                                            <td>Dose única anual.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-12 mt-4 alignCenter flexColumn">
+                        <div class="button-container alignCenter mt-3">
+                            <a class="custom-button" data-bs-toggle="collapse" href="#collapseContent6" role="button" aria-expanded="false" aria-controls="collapseContent2">
+                                Covid-19
+                            </a>
+                        </div>
+                
+                        <div class="collapse mt-3 w-100 d-lg-none" id="collapseContent6">
+                            <div class="card card-body">
+                                <table class="table text-center">
+                                    <thead>
+                                        <tr><th colspan="2">Covid-19</th></tr>
+                                        <tr>
+                                            <th scope="col">Histórico vacinal</th>
+                                            <th scope="col">Condução na gestação</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Devido às frequentes mudanças na vacinação contra a Covid-19, não foram adicionados detalhes sobre o esquema de vacinação. Para isso, sempre consulte o site da SBIM (https://sbim.org.br/).</td>
+                                            <td>Toda gestante deve ter imunização contra Covid-19 atualizada, devido ao elevado risco da doença para a gestante e o feto.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row d-none d-lg-block">
+                    <div class="col-12">
+                        <div class="collapse mt-3" id="collapseContent3">
+                            <div class="card card-body table-responsive">
+                                <table class="table text-center">
+                                    <thead>
+                                        <tr class=" text-center"><th colspan="2"><b>Vacinação antitetânica (dT/dTpa)</b></th></tr>
+                                        <tr>
+                                            <th scope="col">Histórico vacinal</th>
+                                            <th scope="col">Condução na gestação</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Vacinada com pelo menos 3 doses. <br> Vacinação incompleta tendo 2 doses de vacina.</td>
+                                            <td>1 dose de dTpa a partir da 20ª semana de gestação.</td>
+                                        </tr>
+                
+                                        <tr>
+                                            <td>Vacinação incompleta tendo apenas 1 dose de vacina.</td>
+                                            <td>1 dose de dT e 1 dose de dTpa (a partir da 20ª semana de gestação para a dTpa). Intervalo: 60 dias, mínimo de 30 dias entre elas.</td>
+                                        </tr>
+                
+                                        <tr>
+                                            <td>Não vacinadas e/ou histórico vacinal desconhecido.</td>
+                                            <td>2 doses de dT e 1 dose de dTpa (a partir da 20ª semana de gestação para a dTpa). Intervalo: 60 dias, mínimo de 30 dias entre elas.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                
+                        <div class="collapse mt-3" id="collapseContent4">
+                            <div class="card card-body table-responsive">
+                                <table class="table text-center">
+                                    <thead>
+                                        <tr><th colspan="2">Hepatite B</th></tr>
+                                        <tr>
+                                            <th scope="col">Histórico vacinal</th>
+                                            <th scope="col">Condução na gestação</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Gestantes NÃO vacinadas anteriormente.</td>
+                                            <td>Três doses.<br>
+                                                Esquema: 0 - 1 - 6 meses.<br>
+                                                Intervalo de 30 dias entre a primeira e a segunda dose e de seis meses entre a primeira e a terceira doses.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gestante fez apenas 1 ou 2 doses durante a vida.</td>
+                                            <td>Completar esquema.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="collapse mt-3" id="collapseContent5">
+                            <div class="card card-body table-responsive">
+                                <table class="table text-center">
+                                    <thead>
+                                        <tr><th colspan="2">Influenza</th></tr>
+                                        <tr>
+                                            <th scope="col">Histórico vacinal</th>
+                                            <th scope="col">Condução na gestação</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Sempre vacinar durante a campanha, independente do período de gravidez.</td>
+                                            <td>Dose única anual.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="collapse mt-3" id="collapseContent6">
+                            <div class="card card-body table-responsive">
+                                <table class="table text-center">
+                                    <thead>
+                                        <tr><th colspan="2">Covid-19</th></tr>
+                                        <tr>
+                                            <th scope="col">Histórico vacinal</th>
+                                            <th scope="col">Condução na gestação</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Devido às frequentes mudanças na vacinação contra a Covid-19, não foram adicionados detalhes sobre o esquema de vacinação. Para isso, sempre consulte o site da SBIM (https://sbim.org.br/).</td>
+                                            <td>Toda gestante deve ter imunização contra Covid-19 atualizada, devido ao elevado risco da doença para a gestante e o feto.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <h3 class="title">2.3 Observar na Caderneta da Gestante se tem consulta pré-natal agendada e se ela está indo para o pré-natal regularmente.</h3>
+                </div>
+                <div class="row mt-4">
+                    <span class="describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eius tempore soluta vero necessitatibus nostrum sint aspernatur quisquam deleniti recusandae iste, aut, quod deserunt vel doloribus quaerat neque fuga ab.</span>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="text-center describe flexColumn cardAlert">
+                        <span class="mt-1"><b>Observe se a mulher está realizando as consultas conforme recomendação:</b></span>
+                        <span class="mt-1"><b>Mensais até a 28ª semana de gestação;</b></span>
+                        <span class="mt-1"><b>Quinzenais da 28ª até a 36ª semana;</b></span>
+                        <span class="mt-1"><b>Semanais da 36ª semana até o parto.</b></span>
+                        <span class="mt-1"><b>Observe se as consultas estão ocorrendo de forma alternada entre consultas de enfermagem e consultas médicas.</b></span>
+                    </div>
+                </div>
+
+                <div class="row mt-5 alignCenter">
+                    <div class="col-lg-12 col-sm-8">
+                        <div class="footerSlider alignCenter">
+                            <div class="mini-slider mod-1">
+                                <a href="../1/index.html" class="btn-circle btn-left">
+                                    <img src="../../icons/arrow-left.svg" alt="" srcset="">
+                                </a>
+                                <span class="describe">Slide 
+                                    <span>2/32</span>
+                                </span>
+                                <a href="../3/index.html" class="btn-circle btn-right">
+                                    <img src="../../icons/arrow-right.svg" alt="" srcset="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alignCenterOfScreen">
+        <div class="leftBtnCard">
+            <button class="arrow-btnLeft">
+                <a class="paginator" href="../1/index.html">
+                    <img src="../../icons/arrow-left.svg" alt="" srcset="">
+                </a>
+            </button>
+        </div>
+        <div class="rightBtnCard">
+            <button class="arrow-btnRight">
+                <a class="paginator" href="../3/index.html">
+                    <img src="../../icons/arrow-right.svg" alt="" srcset="">
+                </a>
+            </button>
+        </div>
+    </div>
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var collapses = document.querySelectorAll('.collapse');
+            
+            collapses.forEach(function (collapse) {
+                collapse.addEventListener('show.bs.collapse', function () {
+                    collapses.forEach(function (otherCollapse) {
+                        if (otherCollapse !== collapse) {
+                            var bsCollapse = new bootstrap.Collapse(otherCollapse, {
+                                toggle: false
+                            });
+                            bsCollapse.hide();
+                        }
+                    });
+                });
+            });
+    
+            var closeCollapseBtn = document.getElementById('closeCollapseBtn');
+            if (closeCollapseBtn) {
+                closeCollapseBtn.addEventListener('click', function () {
+                    var collapse = document.getElementById('collapseSumario');
+                    if (collapse) {
+                        var bsCollapse = new bootstrap.Collapse(collapse, {
+                            toggle: false
+                        });
+                        bsCollapse.hide();
+                    }
+                });
+            }
+        });
+    </script>
+    
+    
+</body>
+</html>

@@ -9,6 +9,11 @@ body {
     background-color: #ffffffab;
 }
 
+.alignCenter{
+    display: flex;
+    justify-content: center;
+}
+
 .alignCenterOfScreen {
     position: fixed;
     width: 100%;
@@ -21,13 +26,25 @@ body {
 .arrow-btnLeft, .arrow-btnRight {
     width: 50px;
     height: 50px;
-    background-color: #007bff;
+    background-color: #377ab9; /* Azul mais claro */
     color: white;
     border: none;
     border-radius: 50%;
     font-size: 24px;
     cursor: pointer;
     outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 0;
+}
+
+.arrow-btnLeft img, .arrow-btnRight img {
+    width: 24px;
+    height: 24px;
+    fill: white;
 }
 
 .leftBtnCard, .rightBtnCard {
@@ -39,13 +56,18 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+.leftBtnCard:hover .arrow-btnLeft, .rightBtnCard:hover .arrow-btnRight {
+    background-color: #0056b3;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
 .leftBtnCard {
     border-radius: 0 100px 100px 0;
 }
 
 .leftBtnCard:hover .arrow-btnLeft {
     margin-left: 40px;
-    transition: padding 0.3s ease;
+    transition: margin-left 0.3s ease;
 }
 
 .rightBtnCard {
@@ -54,7 +76,19 @@ body {
 
 .rightBtnCard:hover .arrow-btnRight {
     margin-right: 40px;
-    transition: padding 0.3s ease;
+    transition: margin-right 0.3s ease;
+}
+
+.paginator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paginator img {
+    filter: brightness(0) invert(1);
+    width: 24px;
+    height: 24px;
 }
 
 .titulo {
@@ -66,6 +100,13 @@ body {
 .describe{
     font-size: 1.25rem;
     font-weight: 500;
+    word-break: break-all;
+
+}
+
+.describe a {
+    display: block;
+    word-wrap: break-word;
 }
 
 .unidade {
