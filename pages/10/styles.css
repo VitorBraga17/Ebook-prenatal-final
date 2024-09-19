@@ -4,13 +4,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
-    min-height: 100vh;
     overflow-x: hidden;
+    min-height: 90vh;
 }
 
 .bgTransparent {
     background-color: #ffffffab;
-    min-height: 75vh;
+    min-height: 90vh;
 }
 
 .header {
@@ -98,7 +98,7 @@ body {
     .subtitle{
         margin-left: 0;
     }
-    
+
     .sumario-container {
         border-radius: 50%;
         padding: 10px;
@@ -239,7 +239,7 @@ body {
 .arrow-btnLeft, .arrow-btnRight {
     width: 50px;
     height: 50px;
-    background-color: #377ab9;
+    background-color: #80365c;
     color: white;
     border: none;
     border-radius: 50%;
@@ -270,7 +270,7 @@ body {
 }
 
 .leftBtnCard:hover .arrow-btnLeft, .rightBtnCard:hover .arrow-btnRight {
-    background-color: #0056b3;
+    background-color: #80365c;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -312,7 +312,7 @@ body {
     font-size: 1.6875rem;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
-    color: #3D76A4;
+    color: #80365c;
 }
 
 .describe {
@@ -338,7 +338,7 @@ body {
 }
 
 .custom-button {
-    background-color: #5a92c6;
+    background-color: #80365c;
     color: white;
     padding: 10px 20px;
     border: 2px solid white;
@@ -354,7 +354,7 @@ body {
 }
 
 .custom-button:hover {
-    background-color: #487aab;
+    background-color: #80365c;
 }
 
 .collapse-custom {
@@ -364,7 +364,7 @@ body {
     margin-top: 10px;
     border-radius: 50px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #5a92c6;
+    background-color: #c27ba0;
     color: white;
 }
 
@@ -376,7 +376,7 @@ body {
 }
 
 .footerSlider {
-    background: #81adc3;
+    background: #c27ba0;
     border-radius: 100px;
     padding: 16px 30px 16px 20px;
     width: 100%;
@@ -409,7 +409,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #0056b3;
+    background-color: #80365c;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     color: white;
     text-decoration: none;
@@ -419,7 +419,7 @@ body {
 }
 
 .btn-circle:hover {
-    background-color: #0056b3;
+    background-color: #80365c;
 }
 
 .btn-circle img {
@@ -440,15 +440,15 @@ body {
     font-size: 24px;
 }
 
-.bgRedWrapper {
+.bgPurpleWrapper {
     position: relative;
     width: 98.5vw;
     left: 50%;
     margin-left: -50vw;
 }
 
-.bgRed {
-    background-color: #b40a0aab;
+.bgPurple {
+    background-color: #c27ba0;
     color: white;
     padding: 20px;
     display: flex;
@@ -483,6 +483,15 @@ body {
     z-index: 1;
 }
 
-.red{
-    color: red;
+.atention{
+    background-color: #b6d7a8;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.cardAlert{
+    border: 2px solid red;
+    padding: 20px;
+    background-color: white;
 }

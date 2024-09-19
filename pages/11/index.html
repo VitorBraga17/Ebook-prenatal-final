@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../../icons/bootstrap-icons.css">
+</head>
+<body>  
+    <div class="container-fluid ">
+        <div class="row">
+            <header class="header">
+                <div class="ml15vw">
+                    <div class="subtitle">Cartilha interativa para o cuidado a Gestação, Pós-parto e Aleitamento Materno</div>
+                    <div class="title">11 AMAMENTAÇÃO</div>
+                </div>
+                <div class="sumario-container"  data-bs-toggle="collapse" data-bs-target="#collapseSumario" aria-expanded="false" aria-controls="collapseSumario">
+                    <span class="sumario-text">Sumário <span class="arrow">&#9660;</span></span>
+                    <span class="menu-icon">&#9776;</span>
+                </div>
+            </header>
+              
+              <div class="collapse collapse-content" id="collapseSumario">
+                 <div class="row alignCenter">
+                    <div class="col-lg-7 col-sm-12">
+                        <div class="unidade">
+                            <div class="unidade-header">UNIDADE 1 - INICIANDO A VISITA DOMICILIAR</div>
+                            <ul class="unidade-conteudo">
+                                <li>1.1 Cumprimentar educadamente</li>
+                                <li>1.2 Observar o ambiente</li>
+                                <li>1.3 “Você já iniciou o pré-natal?”</li>
+                            </ul>
+                        </div>
+                
+                        <div class="unidade">
+                            <div class="unidade-header">UNIDADE 2 - CADERNETA DA GESTANTE</div>
+                            <ul class="unidade-conteudo">
+                                <li>2.1 Solicitar a Caderneta da Gestante e observar se a gestante tem realizado os exames de rotina</li>
+                                <li>2.2 Observar na caderneta se está com esquema vacinal completo, caso contrário, orientar ir à Unidade de Saúde para atualizar</li>
+                                <li>2.3 Observar na Caderneta da Gestante se tem consulta pré-natal agendada e se ela está indo para o pré-natal regularmente.</li>
+                            </ul>
+                        </div>
+        
+                        <div class="unidade">
+                            <div class="unidade-header">Unidade 3 - SINAIS E SINTOMAS DE ALERTA</div>
+                            <ul class="unidade-conteudo">
+                                <li>3.1 “Você está sentindo alguma coisa atualmente?”</li>
+                                <li>3.2 “Você está tendo algum dos seguintes sintomas no momento?”</li>
+                            </ul>
+                        </div>
+        
+                        <div class="unidade">
+                            <div class="unidade-header">Unidade 4 - PERGUNTAS E ORIENTAÇÕES GERAIS</div>
+                            <ul class="unidade-conteudo">
+                                <li>4.1 “Como tem sido sua alimentação?”</li>
+                                <li>4.2 “Tem realizado exercícios físicos?”</li>
+                                <li>4.3 “Realizou alguma consulta com o dentista durante esta gravidez?”</li>
+                                <li>4.4 “Está fazendo uso de sulfato ferroso?”</li>
+                                <li>4.5	“Está fazendo uso de ácido fólico?” <b>(Fazer a pergunta apenas se a mulher tiver no máximo com 12 semanas de gestação)</b></li>
+                            </ul>
+                        </div>
+        
+                        <div class="unidade">
+                            <div class="unidade-header">Unidade 5 - ORIENTAÇÕES SOBRE SINTOMAS DA GRAVIDEZ</div>
+                        </div>
+        
+                        <div class="unidade">
+                            <div class="unidade-header">Unidade 6 - SINAIS E SINTOMAS DE TRABALHO DE PARTO</div>
+                        </div>
+                        <div class="close-btn-container">
+                            <button id="closeCollapseBtn" class="close-btn">X</button>
+                        </div>
+                    </div>
+                 </div>
+
+              </div>
+        </div>
+
+        <div class="row bgTransparent alignCenter">
+            <div class="col-lg-7 col-sm-12">
+                <div class="row mt-5">
+                    <h3><b>O Agente Comunitário de Saúde é importante para o sucesso da amamentação, sendo fonte de informações e orientações. Por isso, através da visita, é crucial identificar as necessidades da mãe e do bebê. Pergunte:</b></h3>
+                </div>
+
+                <div class="row mt-5">
+                    <h3 class="title">11.1 “Como está sua experiência com a amamentação até agora, está enfrentando dificuldade?”</h3>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 mt-4 alignCenter flexColumn">                
+                        <div class="button-container alignCenter mt-3">
+                            <a class="custom-button" data-bs-toggle="collapse" href="#collapseContent1" role="button" aria-expanded="false" aria-controls="collapseContent1">
+                              Sim  
+                            </a>
+                        </div>
+                
+                        <div class="collapse mt-3 w-100 d-lg-none" id="collapseContent1">
+                            <div class="card card-body custom-button collapse-custom">
+                                <span class="describe">Questionar quais as dificuldades que ela está enfrentando e orientar a mulher a agendar uma consulta com a enfermeira ou médico da Unidade de Saúde.</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-6 col-sm-12 mt-4 alignCenter flexColumn">                
+                        <div class="button-container alignCenter mt-3">
+                            <a class="custom-button" data-bs-toggle="collapse" href="#collapseContent2" role="button" aria-expanded="false" aria-controls="collapseContent2">
+                                Não
+                            </a>
+                        </div>
+                
+                        <div class="collapse mt-3 w-100 d-lg-none" id="collapseContent2">
+                            <div class="card card-body custom-button collapse-custom">
+                                <span class="describe">Prosseguir com a conversa.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row d-none d-lg-block">
+                    <div class="col-12">
+                        <div class="collapse mt-3" id="collapseContent1">
+                            <div class="card card-body custom-button collapse-custom">
+                                <span class="describe">Questionar quais as dificuldades que ela está enfrentando e orientar a mulher a agendar uma consulta com a enfermeira ou médico da Unidade de Saúde.</span>
+                            </div>
+                        </div>
+                
+                        <div class="collapse mt-3" id="collapseContent2">
+                            <div class="card card-body custom-button collapse-custom">
+                                <span class="describe">
+                                    Prosseguir com a conversa.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <h3 class="title">11.2  “Foi feito o teste da linguinha no seu bebê na maternidade?”</h3>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 mt-4 alignCenter flexColumn">                
+                        <div class="button-container alignCenter mt-3">
+                            <a class="custom-button" data-bs-toggle="collapse" href="#collapseContent3" role="button" aria-expanded="false" aria-controls="collapseContent3">
+                              Sim  
+                            </a>
+                        </div>
+                
+                        <div class="collapse mt-3 w-100 d-lg-none" id="collapseContent3">
+                            <div class="card card-body custom-button collapse-custom">
+                                <span class="describe">Observe no relatório de alta se existe a informação sobre a realização do teste da linguinha. Esse exame é importante pois permite diagnosticar e indicar o tratamento precoce para limitações do movimento da língua, causados pela “língua presa”.</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-6 col-sm-12 mt-4 alignCenter flexColumn">                
+                        <div class="button-container alignCenter mt-3">
+                            <a class="custom-button" data-bs-toggle="collapse" href="#collapseContent4" role="button" aria-expanded="false" aria-controls="collapseContent4">
+                                Não
+                            </a>
+                        </div>
+                
+                        <div class="collapse mt-3 w-100 d-lg-none" id="collapseContent4">
+                            <div class="card card-body custom-button collapse-custom">
+                                <span class="describe">Encaminhar para a Unidade de Saúde para a realização do teste.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row d-none d-lg-block">
+                    <div class="col-12">
+                        <div class="collapse mt-3" id="collapseContent3">
+                            <div class="card card-body custom-button collapse-custom">
+                                <span class="describe">Observe no relatório de alta se existe a informação sobre a realização do teste da linguinha. Esse exame é importante pois permite diagnosticar e indicar o tratamento precoce para limitações do movimento da língua, causados pela “língua presa”.</span>
+                            </div>
+                        </div>
+                
+                        <div class="collapse mt-3" id="collapseContent4">
+                            <div class="card card-body custom-button collapse-custom">
+                                <span class="describe">
+                                    Encaminhar para a Unidade de Saúde para a realização do teste.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="bgBlueWrapper">
+                        <div class="row bgBlue">
+                            <div class="col-lg-8 col-sm-12 mx-auto">
+                                <div class="content">
+                                    <span class="text-dark"><b>Quando a língua está presa, importantes funções são comprometidas, como sugar, engolir, falar e mastigar. Isso compromete diretamente a amamentação e precisa ser corrigido.</b></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <h3 class="title">11.3  “Você está amamentando exclusivamente (apenas o leite materno)?”</h3>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 mt-4 alignCenter flexColumn">                
+                        <div class="button-container alignCenter mt-3">
+                            <a class="custom-button" data-bs-toggle="collapse" href="#collapseContent5" role="button" aria-expanded="false" aria-controls="collapseContent5">
+                              Sim  
+                            </a>
+                        </div>
+                
+                        <div class="collapse mt-3 w-100 d-lg-none" id="collapseContent5">
+                            <div class="card card-body custom-button collapse-custom">
+                                <span class="describe">Parabenizá-la e incentivar com palavras positivas. Orientá-la a continuar amamentando exclusivamente até os 6 meses de vida do bebê, e reforçar que o leite materno é um alimento completo, não sendo necessário oferecer ao bebê água, chás ou sucos.</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-6 col-sm-12 mt-4 alignCenter flexColumn">                
+                        <div class="button-container alignCenter mt-3">
+                            <a class="custom-button" data-bs-toggle="collapse" href="#collapseContent6" role="button" aria-expanded="false" aria-controls="collapseContent6">
+                                Não
+                            </a>
+                        </div>
+                
+                        <div class="collapse mt-3 w-100 d-lg-none" id="collapseContent6">
+                            <div class="card card-body custom-button collapse-custom">
+                                <span class="describe">Investigar, anotar o motivo e orientá-la sobre a importância da amamentação exclusiva  até os 6 meses de vida do bebê. Orientar a mulher a agendar uma consulta com a enfermeira ou médico da Unidade de Saúde.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row d-none d-lg-block">
+                    <div class="col-12">
+                        <div class="collapse mt-3" id="collapseContent5">
+                            <div class="card card-body custom-button collapse-custom">
+                                <span class="describe">Parabenizá-la e incentivar com palavras positivas. Orientá-la a continuar amamentando exclusivamente até os 6 meses de vida do bebê, e reforçar que o leite materno é um alimento completo, não sendo necessário oferecer ao bebê água, chás ou sucos.</span>
+                            </div>
+                        </div>
+                
+                        <div class="collapse mt-3" id="collapseContent6">
+                            <div class="card card-body custom-button collapse-custom">
+                                <span class="describe">
+                                    Investigar, anotar o motivo e orientá-la sobre a importância da amamentação exclusiva  até os 6 meses de vida do bebê. Orientar a mulher a agendar uma consulta com a enfermeira ou médico da Unidade de Saúde.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <h3 class="title">11.4 “Você tem conseguido encontrar uma posição confortável para amamentar?”</h3>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 mt-4 alignCenter flexColumn">                
+                        <div class="button-container alignCenter mt-3">
+                            <a class="custom-button" data-bs-toggle="collapse" href="#collapseContent7" role="button" aria-expanded="false" aria-controls="collapseContent7">
+                              Sim  
+                            </a>
+                        </div>
+                
+                        <div class="collapse mt-3 w-100 d-lg-none" id="collapseContent7">
+                            <div class="card card-body custom-button collapse-custom">
+                                <span class="describe">Parabenizá-la e incentivar com palavras positivas.</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-6 col-sm-12 mt-4 alignCenter flexColumn">                
+                        <div class="button-container alignCenter mt-3">
+                            <a class="custom-button" data-bs-toggle="collapse" href="#collapseContent8" role="button" aria-expanded="false" aria-controls="collapseContent8">
+                                Não
+                            </a>
+                        </div>
+                
+                        <div class="collapse mt-3 w-100 d-lg-none" id="collapseContent8">
+                            <div class="card card-body custom-button collapse-custom">
+                                <span class="describe">Orientar que escolha uma posição confortável com o corpo do bebê virado para o corpo da mãe, bem apoiado, com o rosto virado para a mama. A figura abaixo mostra diferentes possibilidades de posições.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row d-none d-lg-block">
+                    <div class="col-12">
+                        <div class="collapse mt-3" id="collapseContent7">
+                            <div class="card card-body custom-button collapse-custom">
+                                <span class="describe">Parabenizá-la e incentivar com palavras positivas.</span>
+                            </div>
+                        </div>
+                
+                        <div class="collapse mt-3" id="collapseContent8">
+                            <div class="card card-body custom-button collapse-custom">
+                                <span class="describe">
+                                    Orientar que escolha uma posição confortável com o corpo do bebê virado para o corpo da mãe, bem apoiado, com o rosto virado para a mama. A figura abaixo mostra diferentes possibilidades de posições.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <h3 class="title">11.5 Posições para amamentar. - FOTOS</h3>
+                </div>
+
+                <div class="row mt-5 alignCenter">
+                    <div class="col-lg-12 col-sm-8">
+                        <div class="footerSlider alignCenter">
+                            <div class="mini-slider mod-1">
+                                <a href="../10/index.html" class="btn-circle btn-left">
+                                    <img src="../../icons/arrow-left.svg" alt="" srcset="">
+                                </a>
+                                <span class="describe">Slide 
+                                    <span>11/12</span>
+                                </span>
+                                <a href="../12/index.html" class="btn-circle btn-right">
+                                    <img src="../../icons/arrow-right.svg" alt="" srcset="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alignCenterOfScreen">
+        <div class="leftBtnCard">
+            <button class="arrow-btnLeft">
+                <a class="paginator" href="../10/index.html">
+                    <img src="../../icons/arrow-left.svg" alt="" srcset="">
+                </a>
+            </button>
+        </div>
+        <div class="rightBtnCard">
+            <button class="arrow-btnRight">
+                <a class="paginator" href="../12/index.html">
+                    <img src="../../icons/arrow-right.svg" alt="" srcset="">
+                </a>
+            </button>
+        </div>
+    </div>
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var collapses = document.querySelectorAll('.collapse');
+            
+            collapses.forEach(function (collapse) {
+                collapse.addEventListener('show.bs.collapse', function () {
+                    collapses.forEach(function (otherCollapse) {
+                        if (otherCollapse !== collapse) {
+                            var bsCollapse = new bootstrap.Collapse(otherCollapse, {
+                                toggle: false
+                            });
+                            bsCollapse.hide();
+                        }
+                    });
+                });
+            });
+    
+            var closeCollapseBtn = document.getElementById('closeCollapseBtn');
+            if (closeCollapseBtn) {
+                closeCollapseBtn.addEventListener('click', function () {
+                    var collapse = document.getElementById('collapseSumario');
+                    if (collapse) {
+                        var bsCollapse = new bootstrap.Collapse(collapse, {
+                            toggle: false
+                        });
+                        bsCollapse.hide();
+                    }
+                });
+            }
+        });
+    </script>
+    
+    
+</body>
+</html>

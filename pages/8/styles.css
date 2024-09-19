@@ -312,7 +312,7 @@ body {
     font-size: 1.6875rem;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
-    color: #3D76A4;
+    color: #000000c0;
 }
 
 .describe {
@@ -448,7 +448,7 @@ body {
 }
 
 .bgRed {
-    background-color: #b40a0aab;
+    background-color: #ff0000;
     color: white;
     padding: 20px;
     display: flex;
@@ -457,6 +457,13 @@ body {
     min-height: 150px;
     position: relative;
     margin-top: 6rem;
+}
+
+.atention{
+    background-color: #ff0000;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
 }
 
 .content {
