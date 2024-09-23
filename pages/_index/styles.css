@@ -1,17 +1,29 @@
 body {
-    background-image: url('../../assets/images/CAPA_PROJETO_MAGNA.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     height: 100vh;
-    opacity: 0.5;
+    margin: 0;
 }
 
 .container-fluid {
+    position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.container-fluid::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/images/CAPA_PROJETO_MAGNA.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5; /* Opacidade aplicada apenas à imagem de fundo */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
 }
 
 .btn-wrapper {
@@ -19,6 +31,7 @@ body {
     border-radius: 50px;
     padding: 3px;
     display: inline-block;
+    z-index: 1; /* Garante que o botão fique acima da imagem de fundo */
 }
 
 .btn-start {
@@ -38,7 +51,7 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.paginator{
+.paginator {
     text-decoration: none;
     color: white;
 }

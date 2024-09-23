@@ -1,5 +1,5 @@
 body {
-    background-image: url('../../assets/images/bg.svg');
+    background-image: url('../../assets/images/bgg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@ body {
     right: 0;
     width: 300px;
     height: 100%;
-    background-color: #f0804b;
+    background-color: #19598d;
     border-radius: 0 0 0 100%; 
     z-index: -1;
 }
@@ -143,6 +143,8 @@ body {
     background-color: #f4e3df;
     padding: 20px;
     border-radius: 10px;
+    z-index: 20;
+    position: relative;
 }
 
 .unidade {
@@ -234,6 +236,7 @@ body {
     transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
+    z-index: 10;
 }
 
 .arrow-btnLeft, .arrow-btnRight {
@@ -261,7 +264,7 @@ body {
 }
 
 .leftBtnCard, .rightBtnCard {
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -269,13 +272,11 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.leftBtnCard:hover .arrow-btnLeft, .rightBtnCard:hover .arrow-btnRight {
-    background-color: #e270c1;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-
 .leftBtnCard {
+    top: 50%;
+    left: 0;
     border-radius: 0 100px 100px 0;
+    transform: translateY(-50%); 
 }
 
 .leftBtnCard:hover .arrow-btnLeft {
@@ -284,12 +285,20 @@ body {
 }
 
 .rightBtnCard {
+    top: 50%;
+    right: 0;
     border-radius: 100px 0 0 100px;
+    transform: translateY(-50%);
 }
 
 .rightBtnCard:hover .arrow-btnRight {
     margin-right: 40px;
     transition: margin-right 0.3s ease;
+}
+
+.leftBtnCard:hover .arrow-btnLeft, .rightBtnCard:hover .arrow-btnRight {
+    background-color: #0056b3;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .paginator {
