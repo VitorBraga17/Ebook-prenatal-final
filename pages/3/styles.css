@@ -495,3 +495,9 @@ body {
 .red{
     color: red;
 }
+
+.table-responsive .table {
+    background-color: transparent !important;
+    border: 1px solid rgb(58, 58, 58);
+    border-radius: 6px;
+}
