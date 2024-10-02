@@ -143,8 +143,6 @@ body {
     background-color: #f4e3df;
     padding: 20px;
     border-radius: 10px;
-    z-index: 20;
-    position: relative;
 }
 
 .unidade {
@@ -494,4 +492,10 @@ body {
 
 .red{
     color: red;
+}
+
+.table-responsive .table {
+    background-color: transparent !important;
+    border: 1px solid rgb(58, 58, 58);
+    border-radius: 6px;
 }
