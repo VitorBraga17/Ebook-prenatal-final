@@ -6,6 +6,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     min-height: 90vh;
+    font-size: 1.5rem;
 }
 
 .bgTransparent{
@@ -160,7 +161,7 @@ body {
 .btn-start {
     background-color: #2e78a0;
     color: white;
-    font-size: 24px;
+    font-size: 2rem;
     padding: 10px 40px;
     border: none;
     border-radius: 50px;
@@ -175,6 +176,11 @@ body {
 }
 
 .paginator{
+    text-decoration: none;
+    color: white;
+}
+
+a {
     text-decoration: none;
     color: white;
 }
