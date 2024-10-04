@@ -115,7 +115,8 @@ body {
     }
 
     .menu-icon {
-        display: block; 
+        display: block;
+        color:black;
     }
 
     .header::before {
@@ -378,11 +379,11 @@ body {
 }
 
 
-@media (max-width: 775px) {
+/* @media (max-width: 775px) {
     .alignCenterOfScreen {
         display: none;
     }
-}
+} */
 
 .footerSlider {
     background: #81adc3;
@@ -537,4 +538,31 @@ body {
 a {
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .header>.ml15vw>.subtitle{
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .custom-button {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .describe {
+        font-size: 1.5rem;
+    }
+
+    .collapse-custom {
+        padding: 20px;
+    }
 }
