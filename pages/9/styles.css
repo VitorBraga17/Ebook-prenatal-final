@@ -514,6 +514,8 @@ a {
 
 .list-group-item{
     font-size: 2rem;
+    background-color: transparent;
+    border: none;
 }
 
 @media (max-width: 576px) {
