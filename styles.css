@@ -20,14 +20,16 @@ body {
     height: 100%;
     background-image: url('assets/images/CAPA_PROJETO_MAGNA.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     z-index: -1;
 }
+
 .btn-wrapper {
     position: relative;
     display: inline-block;
     z-index: 1;
+    top: -15vh;
 }
 
 .btn-start {

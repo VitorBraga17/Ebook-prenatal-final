@@ -101,50 +101,7 @@ ul{
     list-style: none;
 }
 
-span{
-    font-weight: 600;
-}
-
-.capitulo1 {
-    color: #ff5733; 
-}
-
-.capitulo2 {
-    color: #33c1ff; 
-}
-
-.capitulo3 {
-    color: #75ff33; 
-}
-
-.capitulo4 {
-    color: #ff33f6;
-}
-
-.capitulo5 {
-    color: #ffcc33;
-}
-
-.capitulo6 {
-    color: #33ff75;
-}
-
-.capitulo7 {
-    color: #ff3385;
-}
-
-.capitulo8 {
-    color: #3385ff;
-}
-
-.capitulo9 {
-    color: #f3ff33; 
-}
-
-.capitulo10 {
-    color: #ff3333;
-}
-
-.capitulo11 {
-    color: #3333ff;
+.capitulo {
+    color: #4f81bd;
+    font-weight: bold;
 }
