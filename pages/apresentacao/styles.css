@@ -105,3 +105,13 @@ ul{
     color: #4f81bd;
     font-weight: bold;
 }
+
+.brasao{
+    width: 100px;
+}
+
+.innovation-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
