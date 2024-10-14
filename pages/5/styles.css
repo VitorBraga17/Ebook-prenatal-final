@@ -12,6 +12,13 @@ body {
     background-color: #ffffffab;
     min-height: 90vh;
 }
+.dropdown {
+    background-color: #caf0f8;
+}
+
+.dropdown2 {
+    background-color: #90e0ef;
+}
 
 .header {
     background-image: url('../../assets/images/bgheader.png');
@@ -41,7 +48,7 @@ body {
 }
 
 .header .title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 

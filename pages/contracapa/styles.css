@@ -126,6 +126,10 @@ li {
     font-weight: 500;
 }
 
+.describe-question {
+    font-style: italic;
+}
+
 .blue{
     color: blue;
     font-weight: 600;
@@ -133,4 +137,10 @@ li {
 
 .content{
     height: 40vh;
+}
+
+.warning {
+    color: #d15263; /* Example color */
+    font-weight: bold; /* Makes text bold */
+    background-color: yellow; /* Optional background color */
 }
