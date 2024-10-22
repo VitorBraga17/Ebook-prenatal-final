@@ -5,6 +5,15 @@ body {
     background-repeat: no-repeat;
     margin: 0;
     overflow-x: hidden;
+    min-height: 90vh;
+    font-family: "Montserrat", sans-serif;
+    src: url("../../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-weight: 700;
 }
 
 .bgTransparent {
@@ -39,7 +48,7 @@ body {
 }
 
 .header .title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -290,7 +299,7 @@ body {
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
     color: #3D76A4;
@@ -301,9 +310,22 @@ body {
     font-weight: 400;
 }
 
-.describe-table {
+thead.bgHeaderTable th {
+    background-color: #b2a1c7 !important;
+    color: white;
+}
+
+table.describe, table.describe th, table.describe td {
+    font-size: 1.6rem !important;
+}
+
+.imageFontSize{
     font-size: 1.6rem;
-    font-weight: 400;
+}
+
+.fonte{
+    text-align: end;
+    font-size: 1.2rem;
 }
 
 .tabDescription {

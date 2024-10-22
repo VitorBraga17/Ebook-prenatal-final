@@ -6,8 +6,15 @@ body {
     margin: 0;
     overflow-x: hidden;
     min-height: 90vh;
+    font-family: "Montserrat", sans-serif;
+    src: url("../../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-weight: 700;
+}
 .bgTransparent {
     background-color: #ffffffab;
     min-height: 90vh;
@@ -41,7 +48,7 @@ body {
 }
 
 .header .title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -292,15 +299,19 @@ body {
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
-    color: #80365c;
+    color: #3D76A4;
 }
 
 .describe {
     font-size: 2rem;
     font-weight: 500;
+}
+
+.describe-question {
+    font-style: italic;
 }
 
 .tabDescription {
@@ -321,7 +332,7 @@ body {
 }
 
 .custom-button {
-    background-color: #80365c;
+    background-color: #5a92c6;
     color: white;
     padding: 10px 20px;
     border: 2px solid white;
@@ -337,7 +348,7 @@ body {
 }
 
 .custom-button:hover {
-    background-color: #80365c;
+    background-color: #487aab;
 }
 
 .collapse-custom {
@@ -347,7 +358,7 @@ body {
     margin-top: 10px;
     border-radius: 50px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #c27ba0;
+    background-color: #5a92c6;
     color: white;
 }
 
@@ -359,7 +370,7 @@ body {
 } */
 
 .footerSlider {
-    background: #c27ba0;
+    background: #81adc3;
     border-radius: 100px;
     padding: 16px 30px 16px 20px;
     width: 100%;
@@ -392,7 +403,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #80365c;
+    background-color: #0056b3;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     color: white;
     text-decoration: none;
@@ -402,7 +413,7 @@ body {
 }
 
 .btn-circle:hover {
-    background-color: #80365c;
+    background-color: #0056b3;
 }
 
 .btn-circle img {
@@ -431,7 +442,7 @@ body {
 }
 
 .bgPurple {
-    background-color: #c27ba0;
+    background-color: #e46c0a;
     color: white;
     padding: 20px;
     display: flex;
@@ -440,6 +451,10 @@ body {
     min-height: 150px;
     position: relative;
     margin-top: 6rem;
+}
+
+.bgPurple .describe{
+    font-size: 1.8rem;
 }
 
 .content {

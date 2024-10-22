@@ -6,6 +6,14 @@ body {
     margin: 0;
     overflow-x: hidden;
     min-height: 90vh;
+    font-family: "Montserrat", sans-serif;
+    src: url("../../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-weight: 700;
 }
 
 .bgTransparent {
@@ -41,7 +49,7 @@ body {
 }
 
 .header .title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -282,7 +290,7 @@ body {
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
     color: #3D76A4;
@@ -291,6 +299,10 @@ body {
 .describe {
     font-size: 2rem;
     font-weight: 500;
+}
+
+.describe-question {
+    font-style: italic;
 }
 
 .tabDescription {
@@ -430,6 +442,10 @@ body {
     min-height: 150px;
     position: relative;
     margin-top: 6rem;
+}
+
+.bgRed .describe{
+    font-size: 1.8rem;
 }
 
 .content {
