@@ -463,7 +463,6 @@ body {
 }
 
 .fonte{
-    text-align: end;
     font-size: 1.2rem;
 }
 
@@ -528,4 +527,18 @@ a {
     .collapse-custom {
         padding: 20px;
     }
+}
+
+.video-size {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.cardAlert{
+    border: 2px solid red;
+    padding: 20px;
+    background-color: white;
 }

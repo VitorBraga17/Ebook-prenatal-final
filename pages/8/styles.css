@@ -471,7 +471,6 @@ table.describe, table.describe th, table.describe td {
 }
 
 .fonte{
-    text-align: end;
     font-size: 1.2rem;
 }
 
@@ -533,10 +532,6 @@ table.describe, table.describe th, table.describe td {
 @media (max-width: 1025px) {
     .imgSize {
         max-width: 100%;
-    }
-
-    .image-container {
-        flex-direction: column;
     }
 }
 
