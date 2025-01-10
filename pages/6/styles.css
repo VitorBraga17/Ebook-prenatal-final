@@ -6,14 +6,310 @@ body {
     margin: 0;
     overflow-x: hidden;
     min-height: 90vh;
-    font-family: "Montserrat", sans-serif;
-    src: url("../../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-family: "Outfit";
+    src: url("../../fonts/outfit/OutfitRegular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("../../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
-    font-weight: 700;
+    font-family: "Outfit";
+    src: url("../../fonts/outfit/OutfitRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OutfitBold";
+    src: url("../../fonts/outfit/OutfitBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OutfitMedium";
+    src: url("../../fonts/outfit/OutfitMedium.ttf") format("truetype");
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.capitulo-card {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.capitulo-numeroTitle {
+    background-color: #69c0e4;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 20px 0 0 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px, 
+    rgba(0, 0, 0, 0.15) 10px 10px, 
+    rgba(0, 0, 0, 0.1) 15px 15px, 
+    rgba(0, 0, 0, 0.05) 20px 20px, 
+    rgba(0, 0, 0, 0.03) 25px 25px;
+
+}
+
+.capitulo-tituloTitle {
+    color: #19598d;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    font-family: "OutfitMedium";
+}
+
+.sumario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.sumario-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    max-width: 800px;
+    min-width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+
+.capitulo-numero {
+    background-color: #69c0e4;
+    flex: 0 0 25%;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 30px 0 0 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "OrdaxItalic";
+}
+
+.capitulo-titulo {
+    flex-grow: 1; /* Permite que o elemento cresça */
+    flex-shrink: 0; /* Evita que o elemento encolha além do seu tamanho mínimo */
+    flex-basis: auto; /* Define a base como automática */
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    max-width: 70%; /* Limita a largura máxima */
+    background-color: #4f81bd;
+    color: white;
+    border-radius: 0 30px 30px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px, 
+                rgba(0, 0, 0, 0.15) 10px 10px, 
+                rgba(0, 0, 0, 0.1) 15px 15px, 
+                rgba(0, 0, 0, 0.05) 20px 20px, 
+                rgba(0, 0, 0, 0.03) 25px 25px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.capitulo-titulo a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    width: 100%;
+    text-align: center;
+}
+
+.capitulo-titulo a:hover {
+    text-decoration: underline;
+}
+
+.sumario-container {
+    background-color: #69c0e4;
+    color: white;
+    border-radius: 30px 0px 30px 30px;
+    padding: 15px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sumario-text {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.custom-list {
+    padding: 0;
+    margin-left: 25px;
+    list-style: none;
+}
+
+.list-group {
+    list-style-type: none; /* Remove os marcadores padrão */
+    padding: 0;
+    margin: 0;
+    text-align: left!important; /* Alinha o texto à esquerda */
+}
+
+.list-group-item {
+    list-style-type: none;
+    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+    font-family: "Montserrat", sans-serif; /* Aplica a fonte desejada */
+    color: #003d73; /* Ajusta a cor do texto */
+    background-color: transparent; /* Remove o fundo padrão */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 0; /* Ajusta o espaçamento entre os itens */
+    display: flex;
+    align-items: start; /* Alinha verticalmente os itens */
+}
+
+.list-group-item:before {
+    content: "🔹";
+    margin-top: 1vh;
+    margin-right: 2vh;
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+.list-group-item b {
+    font-weight: bold; /* Destaca texto em negrito */
+    color: #003d73; /* Ajusta a cor do texto em negrito */
+    font-family: "OutfitBold";
+}
+
+.titleCard {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem; /* Ajuste proporcional do tamanho da fonte */
+    font-weight: bold;
+    color: #003d73; /* Azul escuro */
+    background-color: #19598d; /* Fundo azul escuro */
+    text-align: center;
+    border: 3px solid #69c0e4; /* Borda azul clara */
+    border-radius: 30px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para realce */
+    display: inline-block; /* Faz com que o texto ocupe apenas o espaço necessário */
+    color: white; /* Texto branco */
+}
+
+.decision-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.decision-button {
+    background-color: #69c0e4;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.line-connector {
+    width: 3px;
+    height: 50px;
+    background-color: #69c0e4;
+    position: relative;
+    z-index: 0;
+}
+
+.line-connector {
+    width: 3px; /* Largura */
+    height: 0; /* Altura padrão (invisível) */
+    background-color: #69c0e4; /* Cor azul clara */
+    margin: 0 auto; /* Centraliza a linha */
+    position: relative;
+    z-index: 0;
+    transition: height 0.3s ease; /* Suaviza o efeito ao abrir/fechar */
+}
+
+.line-connector.active {
+    height: 50px; /* Altura visível quando ativo */
+}
+
+
+.decision-description {
+    border: 2px solid #69c0e4;
+    color: #19598d;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #ffffff;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.row.align-items-center {
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    .decision-button {
+        font-size: 1.2rem;
+        width: 120px;
+        padding: 8px 16px;
+    }
+
+    .decision-description {
+        font-size: 1rem;
+        padding: 8px 12px;
+        max-width: 250px;
+    }
+
+    .line-connector {
+        height: 30px;
+    }
+}
+
+.alert-card {
+    background-color: #e6f7ff; /* Azul claro */
+    color: #19598d; /* Azul escuro */
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    text-align: center;
+    line-height: 1.5; /* Ajusta o espaçamento entre as linhas */
+}
+
+.alert-card strong {
+    color: #003d73; /* Azul mais forte */
+    font-weight: bold;
 }
 
 .bgTransparent {
@@ -21,96 +317,90 @@ body {
     min-height: 90vh;
 }
 
-.header {
-    background-image: url('../../assets/images/bgheader.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 150px;
-    padding: 15px;
+.pagination-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    position: relative;
-    z-index: 10;
+    justify-content: center;
+    background-color: #69c0e4;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin: auto;
+}
+
+.pagination-btn {
+    background-color: #ffffff;
+    color: #19598d;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.pagination-btn:hover {
+    background-color: #19598d;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.pagination-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.6rem;
+    color: #003d73; /* Azul escuro */
+    border-radius: 10px;
     overflow: hidden;
 }
 
-.header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 260px;
-    height: 100%;
-    background-color: #19598d;
-    border-radius: 0 0 0 100%; 
-    z-index: -1;
+.custom-table thead {
+    background-color: #69c0e4; /* Azul claro para o cabeçalho */
+    color: #fff; /* Texto branco */
 }
 
-.header .title {
-    font-size: 1.8rem;
-    font-weight: bold;
+.custom-table tbody {
+    background-color: #e6f7ff; /* Fundo azul claro para o corpo da tabela */
 }
 
-.header .subtitle{
-    margin-left: 15vw;
-    font-size: 2rem;
-    margin-left: 0vw;
-    width: 80%;
+.custom-table th,
+.custom-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
 }
 
-.imgSize {
-    max-width: 100%;
-    height: auto;
-    display: block;
+.custom-table tbody tr:nth-child(even) {
+    background-color: #dff0ff; /* Azul um pouco mais claro para linhas pares */
 }
 
-.image-container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  
-.imgSize {
-    max-width: 45%;
-    height: auto;
-    margin-bottom: 15px;
-}
-  
-@media (max-width: 1025px) {
-    .imgSize {
-        max-width: 100%;
-    }
-
-    .image-container {
-        flex-direction: column;
-    }
-}
-  
-.sumario-container {
-    color: white;
-    padding: 20px 20px;
-    border-radius: 0 0 100% 0;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    z-index: 1;
+.custom-table tbody tr:hover {
+    background-color: #cce7ff; /* Azul mais forte ao passar o mouse */
 }
 
-.arrow {
-    margin-left: 5px;
-}
-
-.sumario-text {
-    display: block;
-}
-
-.menu-icon {
-    display: none;
-    font-size: 1.5rem; 
-    margin-left: 10px;
+.table-footer {
+    font-size: 1.4rem;
+    color: #555; /* Cinza claro */
+    margin-top: 10px;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -140,8 +430,8 @@ body {
     }
 
     .sumario-container {
-        border-radius: 50%;
-        padding: 10px;
+        border-radius: 30px 0px 30px 30px;
+        padding: 15px;
         font-size: 1.2rem;
         position: absolute;
         top: 40px;
@@ -153,9 +443,33 @@ body {
 }
 
 .collapse-content {
-    background-color: #f4e3df;
+    background-color: #d8f1f6;
     padding: 20px;
     border-radius: 10px;
+}
+
+.cardBordered {
+    border: 2px solid #69c0e4; /* Cor da borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #ffffff; /* Fundo branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.collapse-custom {
+    width: 100%;
+    padding: 15px 20px; /* Ajuste de espaçamento interno */
+    border-radius: 10px;
+    background-color: #f0f8ff; /* Fundo azul claro */
+    color: #003d73; /* Azul escuro */
+    font-size: 1rem; /* Tamanho da fonte */
+    line-height: 1.5; /* Altura das linhas */
+    text-align: center; /* Centraliza o texto */
+    word-wrap: break-word; /* Garante que as palavras não ultrapassem a caixa */
+    overflow-wrap: break-word; /* Adiciona quebra de linha se necessário */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
 .unidade {
@@ -240,20 +554,11 @@ body {
     justify-content: end;
 }
 
-.alignCenterOfScreen {
-    position: fixed;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: space-between;
-    z-index: 10;
-}
 
 .arrow-btnLeft, .arrow-btnRight {
     width: 50px;
     height: 50px;
-    background-color: #377ab9;
+    background-color: #29c1f2;
     color: white;
     border: none;
     border-radius: 50%;
@@ -308,7 +613,7 @@ body {
 }
 
 .leftBtnCard:hover .arrow-btnLeft, .rightBtnCard:hover .arrow-btnRight {
-    background-color: #0056b3;
+    background-color: #29c1f2;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -329,24 +634,58 @@ body {
 }
 
 .title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
     color: #3D76A4;
+    text-align: left;
+    margin-left: 10px;
+    font-family: "OutfitBold", sans-serif;
 }
 
-.fonte{
-    text-align: end;
-    font-size: 1.2rem;
+.textBold{
+    font-family: "OutfitBold", sans-serif;
 }
 
-.describe {
-    font-size: 2.5rem;
+.titleBlueGray{
+    font-size: 2rem;
+    color: #29c1f2;
+    text-align: left;
+    margin-left: 10px;
+    font-family: "OutfitBold", sans-serif;
+}
+
+.fontBlueGray{
+    color: #29c1f2;
+}
+
+.subtitle {
+    font-size: 2rem;
+    color: #3D76A4;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.table-subtitle {
+    font-size: 1.5rem;
+    color: #3D76A4;
+    text-align: left;
+    font-weight: bold;
+}
+
+.fontRegular{
+    font-size: 1.5rem;
+    color: #3D76A4;
+    font-weight: bold;
+}
+
+.table-font{
+    font-size: 1.5rem;
+    color: #3D76A4;
+    font-weight: 100;
+}
+
+.describeInfo {
+    font-size: 1.5rem;
     font-weight: 500;
-}
-
-.imageFontSize{
-    font-size: 1.6rem;
 }
 
 .tabDescription {
@@ -366,24 +705,60 @@ body {
     text-align: center;
 }
 
+.button-container {
+    display: flex;
+    justify-content: space-around; /* Alinha os botões uniformemente */
+    align-items: center; /* Centraliza os botões verticalmente */
+    flex-wrap: wrap; /* Permite que os botões quebrem a linha em telas menores */
+    gap: 15px; /* Espaço entre os botões */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
 .custom-button {
-    background-color: #5a92c6;
-    color: white;
-    padding: 10px 20px;
-    border: 2px solid white;
-    border-radius: 50px;
-    font-size: 2.0rem;
-    text-decoration: none;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff; /* Fundo azul claro */
+    color: #007bff; /* Texto azul */
+    border: 2px solid #007bff; /* Borda azul */
+    border-radius: 30px; /* Bordas arredondadas */
+    width: 180px; /* Largura fixa maior */
+    height: 60px; /* Altura fixa maior */
+    font-size: 0.9rem; /* Tamanho do texto reduzido */
+    font-weight: bold; /* Texto em negrito */
     text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-    width: 60%;
-    cursor: pointer;
+    text-decoration: none; /* Remove sublinhado */
+    transition: all 0.3s ease; /* Animações suaves para hover */
+    overflow: hidden; /* Garante que o texto não saia dos limites */
+    text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
+    white-space: normal; /* Permite quebra de linha */
+    padding: 5px; /* Adiciona espaçamento interno */
+    line-height: 1.2; /* Ajusta o espaçamento entre as linhas */
 }
 
 .custom-button:hover {
-    background-color: #487aab;
+    background-color: #007bff; /* Fundo azul mais escuro ao passar o mouse */
+    color: #fff; /* Texto branco */
+}
+
+.custom-button.active {
+    background-color: #007bff; /* Fundo azul mais escuro */
+    color: #fff; /* Texto branco */
+    border-color: #0056b3; /* Borda azul mais escura */
 }
 
 .collapse-custom {
@@ -397,7 +772,6 @@ body {
     color: white;
 }
 
-
 /* @media (max-width: 775px) {
     .alignCenterOfScreen {
         display: none;
@@ -405,50 +779,48 @@ body {
 } */
 
 .footerSlider {
-    background: #81adc3;
-    border-radius: 100px;
-    padding: 16px 30px 16px 20px;
-    width: 100%;
+    background: #69c0e4;
+    border-radius: 50px;
+    padding: 10px 30px;
+    width: fit-content;
+    margin: auto;
     margin-top: 20px;
-    margin-bottom: 20px;
-    height: 100px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .mini-slider {
-    color: #222222;
-    font-size: 22px;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 10;
-    background: #fff;
-    box-shadow: 6px 10px 20px rgba(41, 121, 255, 0.2);
-    border-radius: 100px;
-    padding: 6px;
-    min-width: 280px;
-    transition-duration: 0.5s;
+    gap: 20px;
+}
+
+.page-indicator {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
 }
 
 .btn-circle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     background-color: #0056b3;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     color: white;
-    text-decoration: none;
-    font-size: 20px;
-    border: none;
-    transition: background-color 0.3s;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
 .btn-circle:hover {
-    background-color: #0056b3;
+    background-color: #003d73;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .btn-circle img {
@@ -469,31 +841,87 @@ body {
     font-size: 24px;
 }
 
-.bgBlueWrapper {
+.bgRedWrapper {
     position: relative;
     width: 98.5vw;
     left: 50%;
     margin-left: -50vw;
 }
 
-.bgBlue {
-    background-color: #e46c0a;
-    color: white;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 150px;
-    position: relative;
-    margin-top: 6rem;
+.bgRed {
+    background-color: #e6f7ff;
+    color: #003d73;
+    font-weight: normal;
+    font-size: 1rem;
+    padding: 20px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 1.5;
 }
 
-.bgBlue .describe{
+.bgRed .describe{
     font-size: 1.8rem;
 }
 
 .content {
     text-align: center;
+}
+
+.titleBlueGray{
+    font-size: 2rem;
+    margin-right: 2vh;
+    color: #007bff;
+    text-align: left;
+    margin-left: 10px;
+    font-family: "OutfitBold", sans-serif;
+}
+
+.indicationText {
+    color: #0033cc; /* Azul similar ao print */
+    font-size: 1rem; /* Ajuste conforme necessário */
+    font-weight: 400; /* Ou "bold", conforme o design */
+    line-height: 1.5; /* Para um espaçamento agradável */
+}
+
+.fontBlueGray{
+    color: #29c1f2;
+}
+
+.attention-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto; /* Centraliza o card */
+}
+
+.attention-label {
+    position: absolute;
+    top: -15px; /* Ajuste a posição vertical */
+    left: 15%;
+    transform: translateX(-50%);
+    background-color: #00a2d9; /* Cor de fundo do label */
+    color: #fff;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.attention-card {
+    background-color: #007bff; /* Cor do card */
+    border: 5px solid #29c1f2;
+    color: #fff;
+    padding: 15px;
+    border-radius: 60px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+.attention-text {
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 /* Estilo da badge */
@@ -514,13 +942,6 @@ body {
     left: 30%;
     transform: translateX(-50%);
     z-index: 1;
-}
-
-.atention{
-    background-color: #b6d7a8;
-    padding: 20px;
-    border-radius: 16px;
-    text-align: center;
 }
 
 a {
@@ -559,9 +980,342 @@ a {
     }
 }
 
-.cardAlert{
+.table-striped {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1.4rem;
+}
+
+.table-striped thead {
+    background-color: #003d73; /* Fundo azul escuro */
+    color: white; /* Texto branco */
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 8px 0 0; /* Canto arredondado */
+}
+
+.table-striped th, 
+.table-striped td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle; /* Alinha verticalmente no meio */
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #d9f1fa !important; /* Azul claro */
+}
+
+.table-striped tbody tr:nth-child(even) {
+    background-color: #ffffff !important; /* Branco */
+}
+
+.table-striped tbody tr:hover {
+    background-color: #cce7ff !important; /* Azul mais escuro ao passar o mouse */
+}
+
+.table-striped .red {
+    color: #ee1d23; /* Texto em vermelho */
+    font-weight: bold;
+}
+
+.table-responsive {
+    overflow-x: auto; /* Faz a tabela rolável em telas menores */
+}
+
+.table-font {
+    font-weight: 100;
+    color: #3D76A4;
+}
+
+.bgHeaderTable tr:first-child th:first-child {
+    background-color: #0e5dac; /* Azul mais escuro */
+    color: white; /* Texto branco */
+    font-size: 1.2rem;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px 8px 0 0; /* Bordas arredondadas no topo */
+}
+
+.bgHeaderTable th {
+    background-color: #29c1f2; /* Azul claro */
+    color: white; /* Texto branco */
+    font-size: 1.2rem; /* Ajuste o tamanho da fonte */
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+
+.cardBordered {
+    border: 2px solid #69c0e4; /* Cor da borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding-top: 20px; /* Espaçamento interno */
+    background-color: #ffffff; /* Fundo branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.cardBorderedW0 {
+    border: 2px solid #69c0e4; /* Cor da borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #ffffff; /* Fundo branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    width: min-content;
+}
+
+
+.table-container {
+    max-width: 100%;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.custom-table thead {
+    background-color: #69c0e4;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.custom-table th, .custom-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    word-wrap: break-word;
+}
+
+.custom-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #e6f7ff;
+}
+
+.table {
+    margin: 0 auto; /* Centraliza a tabela na página */
+    text-align: center; /* Centraliza o texto dentro da tabela */
+}
+
+.table th,
+.table td {
+    text-align: center; /* Centraliza horizontalmente o conteúdo */
+    vertical-align: middle; /* Centraliza verticalmente o conteúdo */
+}
+
+.bgHeaderTable th {
+    text-align: center; /* Centraliza os cabeçalhos */
+    vertical-align: middle; /* Centraliza verticalmente os cabeçalhos */
+}
+
+.cardBordered {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente a tabela dentro do card */
+    align-items: center; /* Centraliza verticalmente a tabela dentro do card */
+}
+
+.fonte {
+    text-align: center; /* Centraliza o texto das fontes abaixo da tabela */
+}
+
+.table-responsive {
+    display: flex;
+    justify-content: center; /* Centraliza a tabela em dispositivos móveis */
+    align-items: center; /* Centraliza verticalmente em dispositivos móveis */
+}
+
+
+@media (max-width: 768px) {
+    .custom-table {
+        font-size: 0.9rem;
+    }
+    
+}
+
+.sumario-container[aria-expanded="true"] .arrow {
+    transform: rotate(180deg); /* Gira a seta para cima quando expandido */
+}
+
+.alert-card {
+    background-color: #e6f7ff; /* Azul claro */
+    color: #003d73; /* Azul escuro */
+    font-weight: normal; /* Remove o bold */
+    font-size: 1rem;
+    padding: 20px 30px;
+    border-radius: 30px; /* Deixa as bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    text-align: center;
+    line-height: 1.5; /* Ajusta o espaçamento entre as linhas */
+}
+
+.alert-card span {
+    display: block; /* Quebra cada linha */
+    margin-top: 10px; /* Espaçamento entre as linhas */
+    font-weight: normal; /* Normal para as linhas intermediárias */
+}
+
+.alert-card span:first-child,
+.alert-card span:last-child {
+    font-weight: bold; /* Mantém o bold apenas na primeira e última linha */
+    font-size: 1.2rem; /* Destaca a primeira e última linha */
+}
+
+.cartilha-text-container {
+    text-align: center; /* Centraliza o texto */
     padding: 20px;
-    background-color: white;
-    border: 2px solid blue;
-    border-radius: 16px;
+    background-color: #f0f8ff; /* Azul claro de fundo */
+    border-radius: 15px; /* Bordas arredondadas */
+    max-width: 600px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.cartilha-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #003d73; /* Azul escuro */
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.cartilha-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #69c0e4; /* Azul claro brilhante */
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .leftBtnCard,
+    .rightBtnCard {
+        display: none;
+    }
+
+    .mbSmall{
+        margin-bottom: 20px;
+    }
+
+    .sumario-text {
+        display: none; /* Esconde o texto "Sumário" */
+    }
+
+    .arrow {
+        display: inline-block; /* Garante que a seta continue visível */
+        font-size: 1.5rem; /* Ajuste o tamanho, se necessário */
+    }
+
+    .sumario-container {
+        justify-content: flex-end; /* Alinha a seta à direita, se necessário */
+        padding: 5px 10px;
+    }
+
+    .collapse-content {
+        padding: 10px; /* Reduz espaço interno do dropdown */
+    }
+
+    .custom-button {
+        font-size: 0.8rem; /* Diminui o botão */
+        width: 150px;
+        height: 50px;
+    }
+
+    .pagination-container {
+        padding: 5px 10px; /* Reduz bordas do container de paginação */
+    }
+
+    .imgSize {
+        width: 95vw;
+    }
+
+    .table-container {
+        padding: 5px;
+    }
+
+    .cartilha-text-container {
+        padding: 10px;
+    }
+    
+}
+
+.imgSize {
+    height: auto;
+    border-radius: 5px;
+}
+
+.bgBlue {
+    background-color: #007bff; /* Azul brilhante */
+    border-radius: 0px 60px 60px 0px; /* Bordas arredondadas */
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+}
+
+.text-white {
+    color: #ffffff; /* Texto branco */
+}
+
+.describe {
+    font-size: 1.2rem; /* Ajuste conforme necessário */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    font-weight: bold; /* Negrito */
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px; /* Ajusta o espaçamento entre os itens */
+}
+
+.custom-card {
+    border: 2px solid #69c0e4;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px; /* Limita o tamanho do card */
+}
+
+.img-same-size {
+    max-width: 100%; /* Ajusta as imagens para ocupar o espaço do card */
+    height: auto; /* Mantém a proporção */
+    object-fit: cover; /* Mantém a proporção da imagem ao preencher o espaço */
+    border-radius: 5px;
+}
+
+.image-caption {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .custom-card {
+        max-width: 90%; /* Garante que os cards ocupem mais espaço em telas pequenas */
+        height: auto; /* Remove a altura fixa para telas menores */
+    }
+    .img-same-size {
+        max-width: 90%; /* Ajusta o tamanho das imagens em telas menores */
+        height: auto; /* Remove a altura fixa para evitar distorções */
+    }
 }

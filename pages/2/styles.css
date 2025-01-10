@@ -6,20 +6,23 @@ body {
     margin: 0;
     overflow-x: hidden;
     min-height: 90vh;
-    font-family: "Ordax", sans-serif;
-    src: url("../../fonts/Ordax-Regular-BF63b78f7cd48b1.otf") format("truetype");
+    font-family: "Outfit";
+    src: url("../../fonts/outfit/OutfitRegular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Ordax";
-    src: url("../../fonts/Ordax-Regular-BF63b78f7cd48b1.otf") format("truetype");
-    font-weight: 700;
+    font-family: "Outfit";
+    src: url("../../fonts/outfit/OutfitRegular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "OrdaxBold";
-    src: url("../../fonts/Ordax-Bold-BF63b78f7d0c74d.otf") format("truetype");
-    font-weight: 700;
+    font-family: "OutfitBold";
+    src: url("../../fonts/outfit/OutfitBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OutfitMedium";
+    src: url("../../fonts/outfit/OutfitMedium.ttf") format("truetype");
 }
 
 .header {
@@ -58,6 +61,7 @@ body {
     padding: 10px 20px;
     font-size: 1.2rem;
     white-space: nowrap;
+    font-family: "OutfitMedium";
 }
 
 .sumario-container {
@@ -595,7 +599,11 @@ body {
     color: #3D76A4;
     text-align: left;
     margin-left: 10px;
-    font-family: "OrdaxBold", sans-serif;
+    font-family: "OutfitBold", sans-serif;
+}
+
+.textBold{
+    font-family: "OutfitBold", sans-serif;
 }
 
 .subtitle {
@@ -624,10 +632,6 @@ body {
     color: #3D76A4;
 }
 
-.textBold{
-    font-family: "OrdaxBold", sans-serif;
-    font-weight: 600;
-}
 .describe {
     font-size: 2rem;
     font-weight: 500;
