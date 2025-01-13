@@ -92,14 +92,8 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px, 
-                rgba(0, 0, 0, 0.15) 10px 10px, 
-                rgba(0, 0, 0, 0.1) 15px 15px, 
-                rgba(0, 0, 0, 0.05) 20px 20px, 
-                rgba(0, 0, 0, 0.03) 25px 25px;
     transition: transform 0.2s, box-shadow 0.2s;
 }
-
 
 .capitulo-titulo a {
     text-decoration: none;
