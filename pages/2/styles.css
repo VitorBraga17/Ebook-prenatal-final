@@ -623,7 +623,7 @@ body {
 
 .title {
     font-size: 2rem;
-    color: #3D76A4;
+    color: #004A82;
     text-align: left;
     margin-left: 10px;
     font-family: "Myriado", sans-serif;
@@ -636,33 +636,33 @@ body {
 
 .subtitle {
     font-size: 2rem;
-    color: #3D76A4;
+    color: #004A82;
     text-align: left;
     margin-left: 10px;
 }
 
 .table-subtitle {
     font-size: 1.5rem;
-    color: #3D76A4;
+    color: #004A82;
     text-align: left;
     font-weight: bold;
 }
 
 .fontRegular{
     font-size: 1.5rem;
-    color: #3D76A4;
+    color: #004A82;
 }
 
 .table-font {
     font-weight: 100;
     font-size: 1.3rem;
-    color: #3D76A4;
+    color: #004A82;
 }
 
 .table-fontCenter {
     font-weight: 100;
     font-size: 1.3rem;
-    color: #3D76A4;
+    color: #004A82;
     text-align: center;
 }
 
@@ -715,7 +715,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #007bff; /* Fundo azul claro */
+    background-color: #004A82; /* Fundo azul claro */
     color: #f0f8ff; /* Texto azul */
     border: 2px solid #007bff; /* Borda azul */
     border-radius: 30px; /* Bordas arredondadas */

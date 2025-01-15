@@ -16,13 +16,13 @@ body {
 }
 
 @font-face {
-    font-family: "OutfitBold";
-    src: url("../../fonts/outfit/OutfitBold.ttf") format("truetype");
+    font-family: "AlumniItalic";
+    src: url("../../fonts/alumni/AlumniSansMediumItalic.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "OutfitMedium";
-    src: url("../../fonts/outfit/OutfitMedium.ttf") format("truetype");
+    font-family: "Myriado";
+    src: url("../../fonts/myriad/MYRIADPRO-REGULAR.OTF") format("truetype");
 }
 
 .header {
@@ -42,15 +42,16 @@ body {
     background-color: #69c0e4;
     color: white;
     font-weight: bold;
-    padding: 15px;
+    padding: 10px 20px;
     border-radius: 20px 0 0 20px;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    font-family: "AlumniItalic";
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.2) 5px 5px, 
-    rgba(0, 0, 0, 0.15) 10px 10px, 
-    rgba(0, 0, 0, 0.1) 15px 15px, 
-    rgba(0, 0, 0, 0.05) 20px 20px, 
-    rgba(0, 0, 0, 0.03) 25px 25px;
+            rgba(0, 0, 0, 0.15) 10px 10px, 
+            rgba(0, 0, 0, 0.1) 15px 15px, 
+            rgba(0, 0, 0, 0.05) 20px 20px, 
+            rgba(0, 0, 0, 0.03) 25px 25px;
 
 }
 
@@ -61,6 +62,15 @@ body {
     font-size: 1.2rem;
     white-space: nowrap;
     font-family: "OutfitMedium";
+}
+
+.capitulotituloTitle1{
+    color: #19598d;
+    font-weight: bold;
+    padding: 10px 20px;
+    white-space: nowrap;
+    font-family: "Outfit";
+    line-height: 2vh;
 }
 
 .sumario {
@@ -120,14 +130,15 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px, 
-                rgba(0, 0, 0, 0.15) 10px 10px, 
-                rgba(0, 0, 0, 0.1) 15px 15px, 
-                rgba(0, 0, 0, 0.05) 20px 20px, 
-                rgba(0, 0, 0, 0.03) 25px 25px;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.indicationText {
+    color: #0033cc; /* Azul similar ao print */
+    font-size: 1rem; /* Ajuste conforme necessário */
+    font-weight: 400; /* Ou "bold", conforme o design */
+    line-height: 1.5; /* Para um espaçamento agradável */
+}
 
 .capitulo-titulo a {
     text-decoration: none;
@@ -135,10 +146,6 @@ body {
     font-weight: normal;
     width: 100%;
     text-align: center;
-}
-
-.capitulo-titulo a:hover {
-    text-decoration: underline;
 }
 
 .sumario-container {
@@ -155,6 +162,8 @@ body {
 .sumario-text {
     font-weight: bold;
     margin-left: 10px;
+    font-family: "AlumniItalic";
+    font-size: 1.3rem;
 }
 
 .custom-list {
@@ -167,6 +176,7 @@ body {
     list-style-type: none; /* Remove os marcadores padrão */
     padding: 0;
     margin: 0;
+    text-align: left!important; /* Alinha o texto à esquerda */
 }
 
 .list-group-item {
@@ -186,19 +196,6 @@ body {
     margin-top: 1vh;
     margin-right: 2vh;
     color: #007bff;
-    font-size: 1.2rem;
-}
-
-.list-group-item1 {
-    list-style-type: none;
-    font-family: "Montserrat", sans-serif; /* Aplica a fonte desejada */
-}
-
-.list-group-item1:before {
-    content: "🔹";
-    color: #007bff;
-    margin-top: 1vh;
-    margin-right: 2vh;
     font-size: 1.2rem;
 }
 
@@ -360,12 +357,6 @@ body {
     transition: background-color 0.3s, transform 0.2s;
 }
 
-.pagination-btn:hover {
-    background-color: #19598d;
-    color: #ffffff;
-    transform: scale(1.1);
-}
-
 .pagination-text {
     font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
@@ -407,6 +398,41 @@ body {
 .custom-table tbody tr:hover {
     background-color: #cce7ff; /* Azul mais forte ao passar o mouse */
 }
+
+.custom-tableCard {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.6rem;
+    color: #003d73; /* Azul escuro */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.custom-tableCard thead {
+    background-color: #69c0e4; /* Azul claro para o cabeçalho */
+    color: #fff; /* Texto branco */
+}
+
+.custom-tableCard tbody {
+    background-color: #d9f1fa; /* Fundo azul claro para o corpo da tabela */
+}
+
+.custom-tableCard th,
+.custom-tableCard td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.custom-tableCard tbody tr:nth-child(even) {
+    background-color: #E0F9FF; /* Azul um pouco mais claro para linhas pares */
+}
+
+.custom-tableCard tbody tr:nth-child(odd) {
+    background-color: white; /* Azul um pouco mais claro para linhas pares */
+}
+
 
 .table-footer {
     font-size: 1.4rem;
@@ -647,10 +673,11 @@ body {
 
 .title {
     font-size: 2rem;
-    color: #3D76A4;
+    color: #004A82;
     text-align: left;
     margin-left: 10px;
-    font-family: "OutfitBold", sans-serif;
+    font-family: "Myriado", sans-serif;
+    font-weight: bolder;
 }
 
 .textBold{
@@ -669,34 +696,36 @@ body {
     color: #29c1f2;
 }
 
-.fontBlue{
-    color: #3D76A4;
-}
-
 .subtitle {
     font-size: 2rem;
-    color: #3D76A4;
+    color: #004A82;
     text-align: left;
     margin-left: 10px;
 }
 
 .table-subtitle {
     font-size: 1.5rem;
-    color: #3D76A4;
+    color: #004A82;
     text-align: left;
     font-weight: bold;
 }
 
 .fontRegular{
     font-size: 1.5rem;
-    color: #3D76A4;
+    color: #004A82;
     font-weight: bold;
 }
 
-.table-font{
-    font-size: 1.5rem;
-    color: #3D76A4;
+.table-font {
     font-weight: 100;
+    font-size: 1.3rem;
+    color: #004A82;
+}
+
+.quadro{
+    color: #003d73;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .describeInfo {
@@ -745,30 +774,19 @@ body {
 }
 
 .custom-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f8ff;
-    color: #007bff;
-    border: 2px solid #007bff;
-    border-radius: 30px;
-    width: 180px;
-    height: 60px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    text-align: center;
+    background-color: #29c1f2;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 2.0rem;
     text-decoration: none;
-    transition: all 0.3s ease;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    padding: 5px;
-    line-height: 1.2;
-}
-
-.custom-button:hover {
-    background-color: #007bff; /* Fundo azul mais escuro ao passar o mouse */
-    color: #fff; /* Texto branco */
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    min-width: 180px; /* Largura fixa maior */
+    cursor: pointer;
 }
 
 .custom-button.active {
@@ -786,6 +804,14 @@ body {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #5a92c6;
     color: white;
+}
+
+.borderCard{
+    border: 2px solid #69c0e4; /* Cor da borda */
+    border-radius: 60px; /* Bordas arredondadas */
+    background-color: #ffffff; /* Fundo branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    padding: 20px 0px;
 }
 
 /* @media (max-width: 775px) {
@@ -913,7 +939,7 @@ body {
 .attention-label {
     position: absolute;
     top: -15px; /* Ajuste a posição vertical */
-    left: 50%;
+    left: 15%;
     transform: translateX(-50%);
     background-color: #00a2d9; /* Cor de fundo do label */
     color: #fff;
@@ -1042,10 +1068,10 @@ a {
 
 .table-font {
     font-weight: 100;
-    color: #3D76A4;
+    color: #004A82;
 }
 
-.bgHeaderTable{
+.bgHeaderTable tr:first-child th:first-child {
     background-color: #0e5dac; /* Azul mais escuro */
     color: white; /* Texto branco */
     font-size: 1.2rem;
@@ -1081,13 +1107,6 @@ a {
     width: min-content;
 }
 
-.borderCard{
-    border: 2px solid #69c0e4; /* Cor da borda */
-    border-radius: 60px; /* Bordas arredondadas */
-    background-color: #ffffff; /* Fundo branco */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    padding: 20px 0px;
-}
 
 .table-container {
     max-width: 100%;
@@ -1124,10 +1143,6 @@ a {
 
 .custom-table tbody tr:nth-child(even) {
     background-color: #ffffff;
-}
-
-.custom-table tbody tr:hover {
-    background-color: #e6f7ff;
 }
 
 .table {
@@ -1219,7 +1234,7 @@ a {
 .cartilha-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    color: #69c0e4;
+    color: #004A82;
     font-weight: bold;
     margin: 0;
     line-height: 1.4;
@@ -1343,52 +1358,10 @@ a {
     }
 }
 
-.line-connector {
-    width: 3px;
-    height: 0; /* Altura padrão (invisível) */
-    background-color: #69c0e4; /* Cor azul clara */
-    margin: 0 auto; /* Centraliza a linha */
-    transition: height 0.3s ease; /* Suaviza o efeito ao abrir/fechar */
-}
-
-.line-connector.active {
-    height: 50px; /* Altura visível quando ativo */
-}
-
-.cardBordered {
-    border: 2px solid #69c0e4;
-    border-radius: 10px;
-    padding: 15px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-}
-
-.cartilha-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    color: #69c0e4;
-    font-weight: bold;
-    margin: 0;
-    line-height: 1.4;
-}
-
-.collapse-custom {
-    padding: 15px;
-    border-radius: 10px;
-    background-color: #f0f8ff;
+.quadro{
     color: #003d73;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .cartilha-title {
-        font-size: 1rem;
-    }
-    .custom-button {
-        font-size: 1.2rem;
-    }
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .bgBlueCard{
@@ -1396,8 +1369,4 @@ a {
     color: white;
     padding: 20px;
     border-radius: 0px 0px 10px 10px;
-}
-
-.mtAbsolute{
-    margin-top: 15vh;
 }

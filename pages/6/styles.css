@@ -16,13 +16,13 @@ body {
 }
 
 @font-face {
-    font-family: "OutfitBold";
-    src: url("../../fonts/outfit/OutfitBold.ttf") format("truetype");
+    font-family: "AlumniItalic";
+    src: url("../../fonts/alumni/AlumniSansMediumItalic.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "OutfitMedium";
-    src: url("../../fonts/outfit/OutfitMedium.ttf") format("truetype");
+    font-family: "Myriado";
+    src: url("../../fonts/myriad/MYRIADPRO-REGULAR.OTF") format("truetype");
 }
 
 .header {
@@ -42,15 +42,16 @@ body {
     background-color: #69c0e4;
     color: white;
     font-weight: bold;
-    padding: 15px;
+    padding: 10px 20px;
     border-radius: 20px 0 0 20px;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    font-family: "AlumniItalic";
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.2) 5px 5px, 
-    rgba(0, 0, 0, 0.15) 10px 10px, 
-    rgba(0, 0, 0, 0.1) 15px 15px, 
-    rgba(0, 0, 0, 0.05) 20px 20px, 
-    rgba(0, 0, 0, 0.03) 25px 25px;
+            rgba(0, 0, 0, 0.15) 10px 10px, 
+            rgba(0, 0, 0, 0.1) 15px 15px, 
+            rgba(0, 0, 0, 0.05) 20px 20px, 
+            rgba(0, 0, 0, 0.03) 25px 25px;
 
 }
 
@@ -61,6 +62,15 @@ body {
     font-size: 1.2rem;
     white-space: nowrap;
     font-family: "OutfitMedium";
+}
+
+.capitulotituloTitle1{
+    color: #19598d;
+    font-weight: bold;
+    padding: 10px 20px;
+    white-space: nowrap;
+    font-family: "Outfit";
+    line-height: 2vh;
 }
 
 .sumario {
@@ -120,11 +130,6 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px, 
-                rgba(0, 0, 0, 0.15) 10px 10px, 
-                rgba(0, 0, 0, 0.1) 15px 15px, 
-                rgba(0, 0, 0, 0.05) 20px 20px, 
-                rgba(0, 0, 0, 0.03) 25px 25px;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -135,10 +140,6 @@ body {
     font-weight: normal;
     width: 100%;
     text-align: center;
-}
-
-.capitulo-titulo a:hover {
-    text-decoration: underline;
 }
 
 .sumario-container {
@@ -155,6 +156,8 @@ body {
 .sumario-text {
     font-weight: bold;
     margin-left: 10px;
+    font-family: "AlumniItalic";
+    font-size: 1.3rem;
 }
 
 .custom-list {
@@ -346,12 +349,6 @@ body {
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.2s;
-}
-
-.pagination-btn:hover {
-    background-color: #19598d;
-    color: #ffffff;
-    transform: scale(1.1);
 }
 
 .pagination-text {
@@ -635,10 +632,11 @@ body {
 
 .title {
     font-size: 2rem;
-    color: #3D76A4;
+    color: #004A82;
     text-align: left;
     margin-left: 10px;
-    font-family: "OutfitBold", sans-serif;
+    font-family: "Myriado", sans-serif;
+    font-weight: bolder;
 }
 
 .textBold{
@@ -659,28 +657,34 @@ body {
 
 .subtitle {
     font-size: 2rem;
-    color: #3D76A4;
+    color: #004A82;
     text-align: left;
     margin-left: 10px;
 }
 
 .table-subtitle {
     font-size: 1.5rem;
-    color: #3D76A4;
+    color: #004A82;
     text-align: left;
     font-weight: bold;
 }
 
 .fontRegular{
     font-size: 1.5rem;
-    color: #3D76A4;
+    color: #004A82;
     font-weight: bold;
 }
 
-.table-font{
-    font-size: 1.5rem;
-    color: #3D76A4;
+.table-font {
     font-weight: 100;
+    font-size: 1.3rem;
+    color: #004A82;
+}
+
+.quadro{
+    color: #003d73;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .describeInfo {
@@ -748,11 +752,6 @@ body {
     white-space: normal; /* Permite quebra de linha */
     padding: 5px; /* Adiciona espaçamento interno */
     line-height: 1.2; /* Ajusta o espaçamento entre as linhas */
-}
-
-.custom-button:hover {
-    background-color: #007bff; /* Fundo azul mais escuro ao passar o mouse */
-    color: #fff; /* Texto branco */
 }
 
 .custom-button.active {
@@ -1026,7 +1025,7 @@ a {
 
 .table-font {
     font-weight: 100;
-    color: #3D76A4;
+    color: #004A82;
 }
 
 .bgHeaderTable tr:first-child th:first-child {
@@ -1101,10 +1100,6 @@ a {
 
 .custom-table tbody tr:nth-child(even) {
     background-color: #ffffff;
-}
-
-.custom-table tbody tr:hover {
-    background-color: #e6f7ff;
 }
 
 .table {
