@@ -16,13 +16,13 @@ body {
 }
 
 @font-face {
-    font-family: "OutfitBold";
-    src: url("../../fonts/outfit/OutfitBold.ttf") format("truetype");
+    font-family: "AlumniItalic";
+    src: url("../../fonts/alumni/AlumniSansMediumItalic.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "OutfitMedium";
-    src: url("../../fonts/outfit/OutfitMedium.ttf") format("truetype");
+    font-family: "Myriado";
+    src: url("../../fonts/myriad/MYRIADPRO-REGULAR.OTF") format("truetype");
 }
 
 .header {
@@ -42,15 +42,16 @@ body {
     background-color: #69c0e4;
     color: white;
     font-weight: bold;
-    padding: 15px;
+    padding: 10px 20px;
     border-radius: 20px 0 0 20px;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    font-family: "AlumniItalic";
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.2) 5px 5px, 
-    rgba(0, 0, 0, 0.15) 10px 10px, 
-    rgba(0, 0, 0, 0.1) 15px 15px, 
-    rgba(0, 0, 0, 0.05) 20px 20px, 
-    rgba(0, 0, 0, 0.03) 25px 25px;
+            rgba(0, 0, 0, 0.15) 10px 10px, 
+            rgba(0, 0, 0, 0.1) 15px 15px, 
+            rgba(0, 0, 0, 0.05) 20px 20px, 
+            rgba(0, 0, 0, 0.03) 25px 25px;
 
 }
 
@@ -61,6 +62,15 @@ body {
     font-size: 1.2rem;
     white-space: nowrap;
     font-family: "OutfitMedium";
+}
+
+.capitulotituloTitle1 {
+    color: #19598d;
+    font-weight: bold;
+    padding: 10px 20px;
+    white-space: nowrap;
+    font-family: "Outfit";
+    line-height: 2vh;
 }
 
 .sumario {
@@ -82,7 +92,6 @@ body {
     overflow: hidden;
     gap: 10px;
 }
-
 
 .capitulo-numero {
     background-color: #69c0e4;
@@ -120,14 +129,8 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px, 
-                rgba(0, 0, 0, 0.15) 10px 10px, 
-                rgba(0, 0, 0, 0.1) 15px 15px, 
-                rgba(0, 0, 0, 0.05) 20px 20px, 
-                rgba(0, 0, 0, 0.03) 25px 25px;
     transition: transform 0.2s, box-shadow 0.2s;
 }
-
 
 .capitulo-titulo a {
     text-decoration: none;
@@ -137,15 +140,11 @@ body {
     text-align: center;
 }
 
-.capitulo-titulo a:hover {
-    text-decoration: underline;
-}
-
 .sumario-container {
     background-color: #69c0e4;
     color: white;
     border-radius: 30px 0px 30px 30px;
-    padding: 15px;
+    padding: 10px 20px;
     font-size: 1rem;
     display: flex;
     align-items: center;
@@ -155,6 +154,8 @@ body {
 .sumario-text {
     font-weight: bold;
     margin-left: 10px;
+    font-family: "AlumniItalic";
+    font-size: 1.3rem;
 }
 
 .custom-list {
@@ -295,18 +296,6 @@ body {
     }
 }
 
-.alert-card {
-    background-color: #e6f7ff; /* Azul claro */
-    color: #19598d; /* Azul escuro */
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 20px 30px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    text-align: center;
-    line-height: 1.5; /* Ajusta o espaçamento entre as linhas */
-}
-
 .alert-card strong {
     color: #003d73; /* Azul mais forte */
     font-weight: bold;
@@ -348,12 +337,6 @@ body {
     transition: background-color 0.3s, transform 0.2s;
 }
 
-.pagination-btn:hover {
-    background-color: #19598d;
-    color: #ffffff;
-    transform: scale(1.1);
-}
-
 .pagination-text {
     font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
@@ -390,10 +373,6 @@ body {
 
 .custom-table tbody tr:nth-child(even) {
     background-color: #dff0ff; /* Azul um pouco mais claro para linhas pares */
-}
-
-.custom-table tbody tr:hover {
-    background-color: #cce7ff; /* Azul mais forte ao passar o mouse */
 }
 
 .table-footer {
@@ -519,10 +498,6 @@ body {
     line-height: 1;
 }
 
-.close-btn:hover {
-    background-color: transparent;
-}
-
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -635,14 +610,11 @@ body {
 
 .title {
     font-size: 2rem;
-    color: #3D76A4;
+    color: #004A82;
     text-align: left;
     margin-left: 10px;
-    font-family: "OutfitBold", sans-serif;
-}
-
-.textBold{
-    font-family: "OutfitBold", sans-serif;
+    font-family: "Myriado", sans-serif;
+    font-weight: bolder;
 }
 
 .titleBlueGray{
@@ -653,33 +625,36 @@ body {
     font-family: "OutfitBold", sans-serif;
 }
 
-.fontBlueGray{
+.fontBlueGraySubtitle{
     color: #29c1f2;
+    font-weight: 500;
+    font-size: 1.3rem;
 }
 
 .subtitle {
-    font-size: 2rem;
-    color: #3D76A4;
+    font-size: 1.5rem;
+    color: #004A82;
+    font-weight: bolder;
     text-align: left;
     margin-left: 10px;
 }
 
 .table-subtitle {
     font-size: 1.5rem;
-    color: #3D76A4;
+    color: #004A82;
     text-align: left;
     font-weight: bold;
 }
 
 .fontRegular{
     font-size: 1.5rem;
-    color: #3D76A4;
+    color: #004A82;
     font-weight: bold;
 }
 
 .table-font{
     font-size: 1.5rem;
-    color: #3D76A4;
+    color: #004A82;
     font-weight: 100;
 }
 
@@ -729,25 +704,19 @@ body {
 }
 
 .custom-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f8ff; /* Fundo azul claro */
-    color: #007bff; /* Texto azul */
-    border: 2px solid #007bff; /* Borda azul */
-    border-radius: 30px; /* Bordas arredondadas */
-    width: 180px; /* Largura fixa maior */
-    height: 60px; /* Altura fixa maior */
-    font-size: 0.9rem; /* Tamanho do texto reduzido */
-    font-weight: bold; /* Texto em negrito */
+    background-color: #29c1f2;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 2.0rem;
+    text-decoration: none;
+    display: inline-block;
     text-align: center;
-    text-decoration: none; /* Remove sublinhado */
-    transition: all 0.3s ease; /* Animações suaves para hover */
-    overflow: hidden; /* Garante que o texto não saia dos limites */
-    text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
-    white-space: normal; /* Permite quebra de linha */
-    padding: 5px; /* Adiciona espaçamento interno */
-    line-height: 1.2; /* Ajusta o espaçamento entre as linhas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    min-width: 180px; /* Largura fixa maior */
+    cursor: pointer;
 }
 
 .custom-button:hover {
@@ -879,9 +848,10 @@ body {
 
 .indicationText {
     color: #0033cc; /* Azul similar ao print */
-    font-size: 1rem; /* Ajuste conforme necessário */
+    font-size: 1.1rem; /* Ajuste conforme necessário */
     font-weight: 400; /* Ou "bold", conforme o design */
     line-height: 1.5; /* Para um espaçamento agradável */
+    font-family: "AlumniItalic";
 }
 
 .fontBlueGray{
@@ -890,7 +860,7 @@ body {
 
 .attention-container {
     position: relative;
-    width: 100%;
+    width: 60%;
     margin: 0 auto; /* Centraliza o card */
 }
 
@@ -899,7 +869,7 @@ body {
     top: -15px; /* Ajuste a posição vertical */
     left: 15%;
     transform: translateX(-50%);
-    background-color: #00a2d9; /* Cor de fundo do label */
+    background-color: #01C5FF; /* Cor de fundo do label */
     color: #fff;
     padding: 5px 15px;
     font-weight: bold;
@@ -909,11 +879,11 @@ body {
 }
 
 .attention-card {
-    background-color: #007bff; /* Cor do card */
-    border: 5px solid #29c1f2;
+    background-color: #004A82; /* Cor do card */
+    border: 5px solid #01C5FF;
     color: #fff;
-    padding: 15px;
-    border-radius: 30px;
+    padding: 20px;
+    border-radius: 60px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     text-align: center;
@@ -950,7 +920,7 @@ a {
 }
 
 .list-group-item{
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 @media (max-width: 576px) {
@@ -1026,7 +996,7 @@ a {
 
 .table-font {
     font-weight: 100;
-    color: #3D76A4;
+    color: #004A82;
 }
 
 .bgHeaderTable tr:first-child th:first-child {
@@ -1103,10 +1073,6 @@ a {
     background-color: #ffffff;
 }
 
-.custom-table tbody tr:hover {
-    background-color: #e6f7ff;
-}
-
 .table {
     margin: 0 auto; /* Centraliza a tabela na página */
     text-align: center; /* Centraliza o texto dentro da tabela */
@@ -1156,9 +1122,8 @@ a {
     color: #003d73; /* Azul escuro */
     font-weight: normal; /* Remove o bold */
     font-size: 1rem;
+    border-radius: 60px!important;
     padding: 20px 30px;
-    border-radius: 30px; /* Deixa as bordas arredondadas */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
     text-align: center;
     line-height: 1.5; /* Ajusta o espaçamento entre as linhas */
 }
@@ -1196,7 +1161,7 @@ a {
 .cartilha-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    color: #69c0e4; /* Azul claro brilhante */
+    color: #004A82;
     font-weight: bold;
     margin: 0;
     line-height: 1.4;

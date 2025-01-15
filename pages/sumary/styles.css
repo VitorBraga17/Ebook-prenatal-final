@@ -6,30 +6,27 @@ body {
     margin: 0;
     overflow-x: hidden;
     min-height: 90vh;
-    font-family: "Ordax", sans-serif;
-    src: url("../../fonts/Ordax-Regular-BF63b78f7cd48b1.otf") format("truetype");
+    font-family: "Outfit";
+    src: url("../../fonts/outfit/OutfitRegular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Ordax";
-    src: url("../../fonts/Ordax-Regular-BF63b78f7cd48b1.otf") format("truetype");
-    font-weight: 700;
+    font-family: "Outfit";
+    src: url("../../fonts/outfit/OutfitRegular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "OrdaxItalic";
-    src: url("../../fonts/Ordax-BoldItalic-BF63b78f7d16838.otf") format("truetype");
-    font-weight: 700;
+    font-family: "AlumniItalic";
+    src: url("../../fonts/alumni/AlumniSansMediumItalic.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "OrdaxBold";
-    src: url("../../fonts/Ordax-Bold-BF63b78f7d0c74d.otf") format("truetype");
-    font-weight: 700;
+    font-family: "Myriado";
+    src: url("../../fonts/myriad/MYRIADPRO-REGULAR.OTF") format("truetype");
 }
 
 .textBold{
-    font-family: "OrdaxBold", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: 600;
     color:#29c1f2;
     font-size: 1.3rem;
@@ -72,7 +69,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-family: "OrdaxItalic";
+    font-family: "AlumniItalic";
 }
 
 .capitulo-titulo {
@@ -92,14 +89,8 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px, 
-                rgba(0, 0, 0, 0.15) 10px 10px, 
-                rgba(0, 0, 0, 0.1) 15px 15px, 
-                rgba(0, 0, 0, 0.05) 20px 20px, 
-                rgba(0, 0, 0, 0.03) 25px 25px;
     transition: transform 0.2s, box-shadow 0.2s;
 }
-
 
 .capitulo-titulo a {
     text-decoration: none;
@@ -136,14 +127,14 @@ body {
 }
 
 .sumario-title {
-    font-size: 7rem;
+    font-size: 8.5rem!important;
     color: rgba(70, 130, 180, 0.2);
     text-transform: uppercase;
     font-weight: bold;
     margin: 0;
     white-space: nowrap;
     text-align: center;
-    font-family: "OrdaxItalic";
+    font-family: "AlumniItalic";
 }
 
 @media (max-width: 768px) {
@@ -247,4 +238,11 @@ body {
     .rightBtnCard {
         display: none;
     }
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }

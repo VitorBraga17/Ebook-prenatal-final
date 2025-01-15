@@ -33,9 +33,37 @@ body {
 
 .title{
     color: #0e5dac;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     font-family: "OutfitBold";
+}
+
+.subtitle{
+    color: #0e5dac;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "OutfitBold";
+}
+
+.subtitleGray{
+    color: #69c0e4;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "OutfitBold";
+}
+
+.titleGray{
+    color: #69c0e4;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "OutfitBold";
+}
+
+.description{
+    color: #0e5dac;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: "Outfit";
 }
 
 .bgTransparent {
@@ -141,7 +169,10 @@ li {
 .footer {
     text-align: center;
     margin-top: 20px;
-    color: #000080;
+    color: #0e5dac;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "OutfitBold";
 }
 
 .footer p {

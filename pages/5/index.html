@@ -16,11 +16,11 @@
             <header class="header">
                 <div class="capitulo-card">
                     <div class="capitulo-numeroTitle">
-                        Capítulo 4
+                        Capítulo 5
                     </div>
-                    <div class="capitulo-tituloTitle">
-                        <b class="titulo-destaque">Orientações sobre</b> <br>
-                        <span class="titulo-normal">sintomas da gravidez</span>
+                    <div class="">
+                        <h3 class="textBold m-0 pb-0 capitulotituloTitle1"><b>Orientações sobre</b></h3>
+                        <span class="capitulotituloTitle1 pt-0">sintomas da gravidez</span>
                     </div>
                 </div>
                 <div class="sumario-container" data-bs-toggle="collapse" data-bs-target="#collapseSumario" aria-expanded="false" aria-controls="collapseSumario">
@@ -88,7 +88,6 @@
                     </div>
 
                 </div>
-
             </div>
         </div>
 
@@ -96,58 +95,80 @@
             <div class="col-md-10 col-lg-10 col-xl-10 zIndex">
                 <div class="container-fluid mt-5">
                     <div class="card-title">
-                        <h4 class="text-white ms-3">Azia</h4>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAzia" aria-expanded="false" aria-controls="collapseAzia">
+                            <h4 class="text-white ms-3">Azia</h4>       
+                        </button>
                     </div>
-                    <div class="row cardBordered mt-3">
-                        <div class="col-12">
-                            <p class="text-start subtitle"><b>Se queixa de azia, fornecer as seguintes orientações<sup>2,12</sup>:</b></p>
-                            <ul class="list-group text-start">
-                                <li class="list-group-item">Fazer pelo menos três refeições ao dia e dois lanches (meio da manhã e meio da tarde);</li>
-                                <li class="list-group-item"><b>Evitar líquido durante as refeições </b> (ingerir 1 hora antes ou 1 hora após se alimentar) e não se deitar logo após as refeições;</li>
-                                <li class="list-group-item">Ingerir líquido gelado durante a crise, de preferência suco natural de frutas cítricas (laranja, limão, acerola, etc.);</li>
-                                <li class="list-group-item"><b>Dormir com travesseiro alto;</b></li>
-                                <li class="list-group-item">Evitar frituras, refrigerante, café, chá mate e preto, doces, farinha, alimentos gordurosos e/ou picantes;</li>
-                                <li class="list-group-item"><b>Evitar álcool, fumo e drogas ilícitas.</b></li>
-                            </ul>
+                    <div class="accordion mt-3" id="aziaAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingAzia">
+                            </h2>
+                            <div id="collapseAzia" class="accordion-collapse collapse" aria-labelledby="headingAzia" data-bs-parent="#aziaAccordion">
+                                <div class="accordion-body cardBordered">
+                                    <p class="text-start subtitle"><b>Se queixa de azia, fornecer as seguintes orientações<sup>2,12</sup>:</b></p>
+                                    <ul class="list-group text-start">
+                                        <li class="list-group-item">Fazer pelo menos três refeições ao dia e dois lanches (meio da manhã e meio da tarde);</li>
+                                        <li class="list-group-item"><b>Evitar líquido durante as refeições</b> (ingerir 1 hora antes ou 1 hora após se alimentar) e não se deitar logo após as refeições;</li>
+                                        <li class="list-group-item">Ingerir líquido gelado durante a crise, de preferência suco natural de frutas cítricas (laranja, limão, acerola, etc.);</li>
+                                        <li class="list-group-item"><b>Dormir com travesseiro alto;</b></li>
+                                        <li class="list-group-item">Evitar frituras, refrigerante, café, chá mate e preto, doces, farinha, alimentos gordurosos e/ou picantes;</li>
+                                        <li class="list-group-item"><b>Evitar álcool, fumo e drogas ilícitas.</b></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container-fluid mt-5">
+                    <div class="card-title">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSangramento" aria-expanded="false" aria-controls="collapseSangramento">
+                            <h4 class="text-white ms-3">Sangramento gengival</h4>
+                        </button>
+                    </div>
+                    <div class="accordion mt-3" id="sangramentoAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSangramento"></h2>
+                            <div id="collapseSangramento" class="accordion-collapse collapse" aria-labelledby="headingSangramento" data-bs-parent="#sangramentoAccordion">
+                                <div class="accordion-body cardBordered">
+                                    <p class="text-start subtitle"><b>Se a gestante referir sangramento gengival, o ACS deve orientar<sup>2</sup>:</b></p>
+                                    <ul class="list-group text-start">
+                                        <li class="list-group-item">Fazer pelo menos três refeições ao dia e dois lanches (meio da manhã e meio da tarde);</li>
+                                        <li class="list-group-item">Evitar líquido durante as refeições (ingerir 1 hora antes ou 1 hora após se alimentar) e não se deitar logo após as refeições;</li>
+                                        <li class="list-group-item">Ingerir líquido gelado durante a crise, de preferência suco natural de frutas cítricas (laranja, limão, acerola, etc.);</li>
+                                        <li class="list-group-item">Dormir com travesseiro alto;</li>
+                                        <li class="list-group-item">Evitar frituras, refrigerante, café, chá mate e preto, doces, farinha, alimentos gordurosos e/ou picantes;</li>
+                                        <li class="list-group-item">Evitar álcool, fumo e drogas ilícitas.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="container-fluid mt-5">
                     <div class="card-title">
-                        <h4 class="text-white ms-3">Sangramento gengival</h4>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNauseas" aria-expanded="false" aria-controls="collapseNauseas">
+                            <h4 class="text-white ms-3">Náuseas e vômitos</h4>
+                        </button>
                     </div>
-                    <div class="row cardBordered mt-3">
-                        <div class="col-12">
-                            <p class="text-start subtitle"><b>Se a gestante referir sangramento gengival, o ACS deve orientar<sup>2</sup>:</b></p>
-                            <ul class="list-group text-start">
-                                <li class="list-group-item">Fazer pelo menos três refeições ao dia e dois lanches (meio da manhã e meio da tarde);</li>
-                                <li class="list-group-item">Evitar líquido durante as refeições (ingerir 1 hora antes ou 1 hora após se alimentar) e não se deitar logo após as refeições;</li>
-                                <li class="list-group-item">Ingerir líquido gelado durante a crise, de preferência suco natural de frutas cítricas (laranja, limão, acerola, etc.);</li>
-                                <li class="list-group-item">Dormir com travesseiro alto;</li>
-                                <li class="list-group-item">Evitar frituras, refrigerante, café, chá mate e preto, doces, farinha, alimentos gordurosos e/ou picantes;</li>
-                                <li class="list-group-item">Evitar álcool, fumo e drogas ilícitas.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container-fluid mt-5">
-                    <div class="card-title">
-                        <h4 class="text-white ms-3">Náuseas e vômitos</h4>
-                    </div>
-                    <div class="row cardBordered mt-3">
-                        <div class="col-12">
-                            <p class="text-start subtitle"><b>Em caso de náuseas e vômitos, recomendar<sup>2</sup>:</b></p>
-                            <ul class="list-group text-start">
-                                <li class="list-group-item">Fazer ao menos três refeições ao dia e dois lanches;</li>
-                                <li class="list-group-item">Se os episódios de enjoos e vômitos ocorrem frequentemente ao acordar, procurar comer alimentos secos como biscoito de água e sal, antes mesmo de escovar os dentes;</li>
-                                <li class="list-group-item">Evitar jejum prolongado;</li>
-                                <li class="list-group-item">Comer devagar e mastigar bem os alimentos;</li>
-                                <li class="list-group-item">Evitar alimentos gordurosos e condimentados;</li>
-                                <li class="list-group-item">Evitar doces com grande concentração de açúcar;</li>
-                                <li class="list-group-item">Chupar gelo ou picolé feito com suco natural de frutas cítricas (limão, laranja, acerola, etc.) assim que começar o enjoo.</li>
-                            </ul>
+                    <div class="accordion mt-3" id="nauseasAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNauseas"></h2>
+                            <div id="collapseNauseas" class="accordion-collapse collapse" aria-labelledby="headingNauseas" data-bs-parent="#nauseasAccordion">
+                                <div class="accordion-body cardBordered">
+                                    <p class="text-start subtitle"><b>Em caso de náuseas e vômitos, recomendar<sup>2</sup>:</b></p>
+                                    <ul class="list-group text-start">
+                                        <li class="list-group-item">Fazer ao menos três refeições ao dia e dois lanches;</li>
+                                        <li class="list-group-item">Se os episódios de enjoos e vômitos ocorrem frequentemente ao acordar, procurar comer alimentos secos como biscoito de água e sal, antes mesmo de escovar os dentes;</li>
+                                        <li class="list-group-item">Evitar jejum prolongado;</li>
+                                        <li class="list-group-item">Comer devagar e mastigar bem os alimentos;</li>
+                                        <li class="list-group-item">Evitar alimentos gordurosos e condimentados;</li>
+                                        <li class="list-group-item">Evitar doces com grande concentração de açúcar;</li>
+                                        <li class="list-group-item">Chupar gelo ou picolé feito com suco natural de frutas cítricas (limão, laranja, acerola, etc.) assim que começar o enjoo.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -164,32 +185,46 @@
 
                 <div class="container-fluid mt-5">
                     <div class="card-title">
-                        <h4 class="text-white ms-3">Sialorreia (Salivação excessiva)</h4>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSialorreia" aria-expanded="false" aria-controls="collapseSialorreia">
+                            <h4 class="text-white ms-3">Sialorreia (Salivação excessiva)</h4>
+                        </button>
                     </div>
-                    <div class="row cardBordered mt-3">
-                        <div class="col-12">
-                            <p class="text-start subtitle"><b>Se salivação excessiva, orientar<sup>2</sup>:</b></p>
-                            <ul class="list-group text-start">
-                                <li class="list-group-item">É uma queixa comum no início da gestação;</li>
-                                <li class="list-group-item">Manter dieta semelhante à indicada para náuseas e vômitos (refeições fracionadas, pobres em gorduras e condimentos, etc.);</li>
-                                <li class="list-group-item">Engolir a saliva e tomar líquidos em abundância (especialmente em época de calor).</li>
-                            </ul>
+                    <div class="accordion mt-3" id="sialorreiaAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSialorreia"></h2>
+                            <div id="collapseSialorreia" class="accordion-collapse collapse" aria-labelledby="headingSialorreia" data-bs-parent="#sialorreiaAccordion">
+                                <div class="accordion-body cardBordered">
+                                    <p class="text-start subtitle"><b>Se salivação excessiva, orientar<sup>2</sup>:</b></p>
+                                    <ul class="list-group text-start">
+                                        <li class="list-group-item">É uma queixa comum no início da gestação;</li>
+                                        <li class="list-group-item">Manter dieta semelhante à indicada para náuseas e vômitos (refeições fracionadas, pobres em gorduras e condimentos, etc.);</li>
+                                        <li class="list-group-item">Engolir a saliva e tomar líquidos em abundância (especialmente em época de calor).</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="container-fluid mt-5">
                     <div class="card-title">
-                        <h4 class="text-white ms-3">Dor lombar</h4>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDorLombar" aria-expanded="false" aria-controls="collapseDorLombar">
+                            <h4 class="text-white ms-3">Dor lombar</h4>
+                        </button>
                     </div>
-                    <div class="row cardBordered mt-3">
-                        <div class="col-12">
-                            <p class="text-start subtitle"><b>Em caso de queixa de dor lombar, fornecer as seguintes informações<sup>2</sup>:</b></p>
-                            <ul class="list-group text-start">
-                                <li class="list-group-item">Explicar que durante a gravidez são comuns as dores lombares (dores leves), devido ao aumento do útero gravídico;</li>
-                                <li class="list-group-item">Corrigir a postura ao se sentar e andar;</li>
-                                <li class="list-group-item">Usar sapatos confortáveis e evitar saltos altos.</li>
-                            </ul>
+                    <div class="accordion mt-3" id="dorLombarAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingDorLombar"></h2>
+                            <div id="collapseDorLombar" class="accordion-collapse collapse" aria-labelledby="headingDorLombar" data-bs-parent="#dorLombarAccordion">
+                                <div class="accordion-body cardBordered">
+                                    <p class="text-start subtitle"><b>Em caso de queixa de dor lombar, fornecer as seguintes informações<sup>2</sup>:</b></p>
+                                    <ul class="list-group text-start">
+                                        <li class="list-group-item">Explicar que durante a gravidez são comuns as dores lombares (dores leves), devido ao aumento do útero gravídico;</li>
+                                        <li class="list-group-item">Corrigir a postura ao se sentar e andar;</li>
+                                        <li class="list-group-item">Usar sapatos confortáveis e evitar saltos altos.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -206,18 +241,25 @@
 
                 <div class="container-fluid mt-5">
                     <div class="card-title">
-                        <h4 class="text-white ms-3">Fraqueza/tontura</h4>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFraquezaTontura" aria-expanded="false" aria-controls="collapseFraquezaTontura">
+                            <h4 class="text-white ms-3">Fraqueza/tontura</h4>
+                        </button>
                     </div>
-                    <div class="row cardBordered mt-3">
-                        <div class="col-12">
-                            <p class="text-start subtitle"><b>Se queixa de fraqueza/tontura, orientar<sup>2</sup>:</b></p>
-                            <ul class="list-group text-start">
-                                <li class="list-group-item">Fazer ao menos três refeições ao dia e dois lanches (meio da manhã e meio da tarde);</li>
-                                <li class="list-group-item">Evitar jejum prolongado;</li>
-                                <li class="list-group-item">Sentar-se com a cabeça abaixada (entre as pernas) ou deitar-se do lado esquerdo, respirar profunda e pausadamente quando sentir tontura ou sensação de desmaios;</li>
-                                <li class="list-group-item">Evitar permanecer, por longo tempo em ambientes fechados, quentes ou sem ventilação adequada;</li>
-                                <li class="list-group-item">Avaliar a pressão arterial.</li>
-                            </ul>
+                    <div class="accordion mt-3" id="fraquezaTonturaAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFraquezaTontura"></h2>
+                            <div id="collapseFraquezaTontura" class="accordion-collapse collapse" aria-labelledby="headingFraquezaTontura" data-bs-parent="#fraquezaTonturaAccordion">
+                                <div class="accordion-body cardBordered">
+                                    <p class="text-start subtitle"><b>Se queixa de fraqueza/tontura, orientar<sup>2</sup>:</b></p>
+                                    <ul class="list-group text-start">
+                                        <li class="list-group-item">Fazer ao menos três refeições ao dia e dois lanches (meio da manhã e meio da tarde);</li>
+                                        <li class="list-group-item">Evitar jejum prolongado;</li>
+                                        <li class="list-group-item">Sentar-se com a cabeça abaixada (entre as pernas) ou deitar-se do lado esquerdo, respirar profunda e pausadamente quando sentir tontura ou sensação de desmaios;</li>
+                                        <li class="list-group-item">Evitar permanecer, por longo tempo em ambientes fechados, quentes ou sem ventilação adequada;</li>
+                                        <li class="list-group-item">Avaliar a pressão arterial.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -234,66 +276,99 @@
 
                 <div class="container-fluid mt-5">
                     <div class="card-title">
-                        <h4 class="text-white ms-3">Dor nas mamas</h4>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDorMamas" aria-expanded="false" aria-controls="collapseDorMamas">
+                            <h4 class="text-white ms-3">Dor nas mamas</h4>
+                        </button>
                     </div>
-                    <div class="row cardBordered mt-3">
-                        <div class="col-12">
-                            <p class="text-start subtitle"><b>Se a gestante apresentar queixa de dor lombar, o ACS pode<sup>2</sup>:</b></p>
-                            <ul class="list-group text-start">
-                                <li class="list-group-item">Esclarecer que o aumento das mamas na gestação pode causar desconforto doloroso;</li>
-                                <li class="list-group-item">Orientar uso de sutiã sem aro com boa sustentação.² (Dica: Usar o sutiã de amamentação).</li>
-                            </ul>
+                    <div class="accordion mt-3" id="dorMamasAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingDorMamas"></h2>
+                            <div id="collapseDorMamas" class="accordion-collapse collapse" aria-labelledby="headingDorMamas" data-bs-parent="#dorMamasAccordion">
+                                <div class="accordion-body cardBordered">
+                                    <p class="text-start subtitle"><b>Se a gestante apresentar queixa de dor nas mamas, o ACS pode<sup>2</sup>:</b></p>
+                                    <ul class="list-group text-start">
+                                        <li class="list-group-item">Esclarecer que o aumento das mamas na gestação pode causar desconforto doloroso;</li>
+                                        <li class="list-group-item">Orientar uso de sutiã sem aro com boa sustentação (Dica: usar o sutiã de amamentação).</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="container-fluid mt-5">
                     <div class="card-title">
-                        <h4 class="text-white ms-3">Obstipação/Constipação (dificuldade em eliminar fezes por vários dias) ou Flatulência (gases intestinais)</h4>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseObstipacao" aria-expanded="false" aria-controls="collapseObstipacao">
+                            <h4 class="text-white ms-3">Obstipação/Constipação (dificuldade em eliminar fezes por vários dias) ou Flatulência (gases intestinais)</h4>
+                        </button>
                     </div>
-                    <div class="row cardBordered mt-3">
-                        <div class="col-12">
-                            <p class="text-start subtitle"><b>Se queixa de constipação, orientar<sup>2</sup>:</b></p>
-                            <ul class="list-group text-start">
-                                <li class="list-group-item">• Alimentação adequada e rica em fibras (aveia, mamão, ameixa, hortaliças, etc.);</li>
-                                <li class="list-group-item">• Aumentar a ingestão de água (pelo menos 2 litros ao dia);</li>
-                                <li class="list-group-item">• Evitar alimentos que causam gases (feijão, grão-de-bico, lentilha, repolho, brócolis, pimentão, pepino e couve);</li>
-                                <li class="list-group-item">• Prevenir fissuras anais (não usar papel higiênico, usar água e sabão para limpeza após as evacuações).</li>
-                            </ul>
+                    <div class="accordion mt-3" id="obstipacaoAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingObstipacao"></h2>
+                            <div id="collapseObstipacao" class="accordion-collapse collapse" aria-labelledby="headingObstipacao" data-bs-parent="#obstipacaoAccordion">
+                                <div class="accordion-body cardBordered">
+                                    <p class="text-start subtitle"><b>Se queixa de constipação, orientar<sup>2</sup>:</b></p>
+                                    <ul class="list-group text-start">
+                                        <li class="list-group-item">Alimentação adequada e rica em fibras (aveia, mamão, ameixa, hortaliças, etc.);</li>
+                                        <li class="list-group-item">Aumentar a ingestão de água (pelo menos 2 litros ao dia);</li>
+                                        <li class="list-group-item">Evitar alimentos que causam gases (feijão, grão-de-bico, lentilha, repolho, brócolis, pimentão, pepino e couve);</li>
+                                        <li class="list-group-item">Prevenir fissuras anais (não usar papel higiênico, usar água e sabão para limpeza após as evacuações).</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="container-fluid mt-5">
                     <div class="card-title">
-                        <h4 class="text-white ms-3">Corrimento vaginal</h4>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCorrimentoVaginal" aria-expanded="false" aria-controls="collapseCorrimentoVaginal">
+                            <h4 class="text-white ms-3">Corrimento vaginal</h4>
+                        </button>
                     </div>
-                    <div class="row cardBordered mt-3">
-                        <div class="col-12">
-                            <p class="text-start subtitle"><b>Se queixa de corrimento vaginal, o ACS deve<sup>2</sup>:</b></p>
-                            <ul class="list-group text-start">
-                                <li class="list-group-item">• Explicar que o fluxo vaginal normal é comumente aumentado durante a gestação e não causa coceira, desconforto ou odor fétido, podendo ter aspecto transparente ou esbranquiçado;</li>
-                                <li class="list-group-item">• Lembrar que em qualquer momento da gestação podem ocorrer as Infecções Sexualmente Transmissíveis (IST);</li>
-                                <li class="list-group-item">• Orientar a não usar cremes vaginais por conta própria.</li>
-                            </ul>
+                    <div class="accordion mt-3" id="corrimentoVaginalAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingCorrimentoVaginal"></h2>
+                            <div id="collapseCorrimentoVaginal" class="accordion-collapse collapse" aria-labelledby="headingCorrimentoVaginal" data-bs-parent="#corrimentoVaginalAccordion">
+                                <div class="accordion-body cardBordered">
+                                    <p class="text-start subtitle"><b>Se queixa de corrimento vaginal, o ACS deve<sup>2</sup>:</b></p>
+                                    <ul class="list-group text-start">
+                                        <li class="list-group-item">Explicar que o fluxo vaginal normal é comumente aumentado durante a gestação e não causa coceira, desconforto ou odor fétido, podendo ter aspecto transparente ou esbranquiçado;</li>
+                                        <li class="list-group-item">Lembrar que em qualquer momento da gestação podem ocorrer as Infecções Sexualmente Transmissíveis (IST);</li>
+                                        <li class="list-group-item">Orientar a não usar cremes vaginais por conta própria.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="container-fluid mt-5">
                     <div class="card-title">
-                        <h4 class="text-white ms-3">Câimbra</h4>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCaimbra" aria-expanded="false" aria-controls="collapseCaimbra">
+                            <h4 class="text-white ms-3">Câimbra</h4>
+                        </button>
                     </div>
-                    <div class="row cardBordered mt-3">
-                        <div class="col-12">
-                            <p class="text-start subtitle"><b>Se gestante referir câimbras, o ACS deve orientar<sup>2</sup>:</b></p>
-                            <ul class="list-group text-start">
-                                <li class="list-group-item">• Na gestação avançada, evitar ficar em pé por muito tempo ou a permanência na posição sentada por longo período, como em viagens demoradas;</li>
-                                <li class="list-group-item">• Evitar massagear o músculo contraído e dolorido na hora da câimbra, fazendo apenas movimento de esticar e flexionar os pés;</li>
-                                <li class="list-group-item">• Ingerir banana diariamente.</li>
-                            </ul>
+                    <div class="accordion mt-3" id="caimbraAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingCaimbra"></h2>
+                            <div id="collapseCaimbra" class="accordion-collapse collapse" aria-labelledby="headingCaimbra" data-bs-parent="#caimbraAccordion">
+                                <div class="accordion-body cardBordered">
+                                    <p class="text-start subtitle"><b>Se gestante referir câimbras, o ACS deve orientar<sup>2</sup>:</b></p>
+                                    <ul class="list-group text-start">
+                                        <li class="list-group-item">Na gestação avançada, evitar ficar em pé por muito tempo ou a permanência na posição sentada por longo período, como em viagens demoradas;</li>
+                                        <li class="list-group-item">Evitar massagear o músculo contraído e dolorido na hora da câimbra, fazendo apenas movimento de esticar e flexionar os pés;</li>
+                                        <li class="list-group-item">Ingerir banana diariamente.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="alignCenter mt-5">
+                    <img src="../../assets/images/Brasao_da_UNEB.png" alt="Brasão UNEB" class="img-fluid" style="max-height: 70px;">
+                    <img src="../../assets/images/UNEB1.png" alt="Logo UNEB" class="img-fluid" style="max-height: 70px;">
                 </div>
 
                 <div class="row mt-5 alignCenter mb-4">

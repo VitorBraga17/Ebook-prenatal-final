@@ -16,13 +16,13 @@ body {
 }
 
 @font-face {
-    font-family: "OutfitBold";
-    src: url("../../fonts/outfit/OutfitBold.ttf") format("truetype");
+    font-family: "AlumniItalic";
+    src: url("../../fonts/alumni/AlumniSansMediumItalic.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "OutfitMedium";
-    src: url("../../fonts/outfit/OutfitMedium.ttf") format("truetype");
+    font-family: "Myriado";
+    src: url("../../fonts/myriad/MYRIADPRO-REGULAR.OTF") format("truetype");
 }
 
 .header {
@@ -43,9 +43,10 @@ body {
     background-color: #69c0e4;
     color: white;
     font-weight: bold;
-    padding: 15px;
+    padding: 10px 20px;
     border-radius: 20px 0 0 20px;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    font-family: "AlumniItalic";
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.2) 5px 5px, 
             rgba(0, 0, 0, 0.15) 10px 10px, 
@@ -64,11 +65,20 @@ body {
     font-family: "OutfitMedium";
 }
 
+.capitulotituloTitle1{
+    color: #19598d;
+    font-weight: bold;
+    padding: 10px 20px;
+    white-space: nowrap;
+    font-family: "Outfit";
+    line-height: 2vh;
+}
+
 .sumario-container {
     background-color: #69c0e4;
     color: white;
     border-radius: 30px 0px 30px 30px;
-    padding: 15px;
+    padding: 10px 20px;
     font-size: 1rem;
     display: flex;
     align-items: center;
@@ -132,11 +142,6 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px, 
-                rgba(0, 0, 0, 0.15) 10px 10px, 
-                rgba(0, 0, 0, 0.1) 15px 15px, 
-                rgba(0, 0, 0, 0.05) 20px 20px, 
-                rgba(0, 0, 0, 0.03) 25px 25px;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -147,10 +152,6 @@ body {
     font-weight: normal;
     width: 100%;
     text-align: center;
-}
-
-.capitulo-titulo a:hover {
-    text-decoration: underline;
 }
 
 .capitulo-tituloTitle {
@@ -164,6 +165,8 @@ body {
 .sumario-text {
     font-weight: bold;
     margin-left: 10px;
+    font-family: "AlumniItalic";
+    font-size: 1.3rem;
 }
 
 .custom-list {
@@ -177,7 +180,7 @@ body {
     font-family: "Montserrat", sans-serif;
     color: #19598d;
     border: none;
-    padding-left: 0;
+    padding: 0;
     background: transparent;
 }
 
@@ -329,12 +332,6 @@ body {
     transition: background-color 0.3s, transform 0.2s;
 }
 
-.pagination-btn:hover {
-    background-color: #19598d;
-    color: #ffffff;
-    transform: scale(1.1);
-}
-
 .pagination-text {
     font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
@@ -375,6 +372,40 @@ body {
 
 .custom-table tbody tr:hover {
     background-color: #d9f1fa; /* Azul mais forte ao passar o mouse */
+}
+
+.custom-tableCard {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.6rem;
+    color: #003d73; /* Azul escuro */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.custom-tableCard thead {
+    background-color: #69c0e4; /* Azul claro para o cabeçalho */
+    color: #fff; /* Texto branco */
+}
+
+.custom-tableCard tbody {
+    background-color: #d9f1fa; /* Fundo azul claro para o corpo da tabela */
+}
+
+.custom-tableCard th,
+.custom-tableCard td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.custom-tableCard tbody tr:nth-child(even) {
+    background-color: #E0F9FF; /* Azul um pouco mais claro para linhas pares */
+}
+
+.custom-tableCard tbody tr:nth-child(odd) {
+    background-color: white; /* Azul um pouco mais claro para linhas pares */
 }
 
 .table-footer {
@@ -478,10 +509,6 @@ body {
     cursor: pointer;
     padding: 0;
     line-height: 1;
-}
-
-.close-btn:hover {
-    background-color: transparent;
 }
 
 @media (max-width: 768px) {
@@ -596,10 +623,11 @@ body {
 
 .title {
     font-size: 2rem;
-    color: #3D76A4;
+    color: #004A82;
     text-align: left;
     margin-left: 10px;
-    font-family: "OutfitBold", sans-serif;
+    font-family: "Myriado", sans-serif;
+    font-weight: bolder;
 }
 
 .textBold{
@@ -608,28 +636,34 @@ body {
 
 .subtitle {
     font-size: 2rem;
-    color: #3D76A4;
+    color: #004A82;
     text-align: left;
     margin-left: 10px;
 }
 
 .table-subtitle {
     font-size: 1.5rem;
-    color: #3D76A4;
+    color: #004A82;
     text-align: left;
     font-weight: bold;
 }
 
 .fontRegular{
     font-size: 1.5rem;
-    color: #3D76A4;
+    color: #004A82;
 }
 
 .table-font {
-    font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-size: 1.3rem;
-    color: #3D76A4;
+    color: #004A82;
+}
+
+.table-fontCenter {
+    font-weight: 100;
+    font-size: 1.3rem;
+    color: #004A82;
+    text-align: center;
 }
 
 .describe {
@@ -681,13 +715,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f8ff; /* Fundo azul claro */
-    color: #007bff; /* Texto azul */
+    background-color: #004A82; /* Fundo azul claro */
+    color: #f0f8ff; /* Texto azul */
     border: 2px solid #007bff; /* Borda azul */
     border-radius: 30px; /* Bordas arredondadas */
-    width: 180px; /* Largura fixa maior */
+    min-width: 180px; /* Largura fixa maior */
     height: 60px; /* Altura fixa maior */
-    font-size: 0.9rem; /* Tamanho do texto reduzido */
+    font-size: 1.5rem; /* Tamanho do texto reduzido */
     font-weight: bold; /* Texto em negrito */
     text-align: center;
     text-decoration: none; /* Remove sublinhado */
@@ -697,11 +731,6 @@ body {
     white-space: normal; /* Permite quebra de linha */
     padding: 5px; /* Adiciona espaçamento interno */
     line-height: 1.2; /* Ajusta o espaçamento entre as linhas */
-}
-
-.custom-button:hover {
-    background-color: #007bff; /* Fundo azul mais escuro ao passar o mouse */
-    color: #fff; /* Texto branco */
 }
 
 .custom-button.active {
@@ -765,11 +794,6 @@ body {
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-}
-
-.btn-circle:hover {
-    background-color: #003d73;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .btn-circle img {
@@ -919,6 +943,7 @@ a {
     border-spacing: 0;
     margin-top: 10px;
     font-size: 1rem;
+    margin-bottom: 0px;
 }
 
 .custom-table thead {
@@ -936,15 +961,11 @@ a {
 }
 
 .custom-table tbody tr:nth-child(odd) {
-    background-color: #f2f2f2;
+    background-color: #E0F9FF;
 }
 
 .custom-table tbody tr:nth-child(even) {
-    background-color: #ffffff;
-}
-
-.custom-table tbody tr:hover {
-    background-color: #e6f7ff;
+    background-color: #E0F9FF;
 }
 
 @media (max-width: 768px) {
@@ -987,7 +1008,6 @@ a {
 }
 
 .cartilha-subtitle {
-    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     color: #003d73; /* Azul escuro */
     display: block;
@@ -995,8 +1015,13 @@ a {
     font-weight: normal;
 }
 
+.quadro{
+    color: #003d73;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 .cartilha-title {
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     color: #69c0e4; /* Azul claro brilhante */
     font-weight: bold;
