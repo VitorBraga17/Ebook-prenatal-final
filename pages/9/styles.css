@@ -47,12 +47,6 @@ body {
     font-size: 2rem;
     font-family: "AlumniItalic";
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px, 
-            rgba(0, 0, 0, 0.15) 10px 10px, 
-            rgba(0, 0, 0, 0.1) 15px 15px, 
-            rgba(0, 0, 0, 0.05) 20px 20px, 
-            rgba(0, 0, 0, 0.03) 25px 25px;
-
 }
 
 .capitulo-tituloTitle {
@@ -70,7 +64,7 @@ body {
     padding: 10px 20px;
     white-space: nowrap;
     font-family: "Outfit";
-    line-height: 2vh;
+    line-height: 3vh;
 }
 
 .sumario {
@@ -152,7 +146,7 @@ body {
     background-color: #69c0e4;
     color: white;
     border-radius: 30px 0px 30px 30px;
-    padding: 15px;
+    padding: 0px 20px;
     font-size: 1rem;
     display: flex;
     align-items: center;
@@ -163,7 +157,7 @@ body {
     font-weight: bold;
     margin-left: 10px;
     font-family: "AlumniItalic";
-    font-size: 1.3rem;
+    font-size: 1.8rem;
 }
 
 .custom-list {

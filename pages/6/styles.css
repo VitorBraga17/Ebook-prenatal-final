@@ -47,12 +47,6 @@ body {
     font-size: 2rem;
     font-family: "AlumniItalic";
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px, 
-            rgba(0, 0, 0, 0.15) 10px 10px, 
-            rgba(0, 0, 0, 0.1) 15px 15px, 
-            rgba(0, 0, 0, 0.05) 20px 20px, 
-            rgba(0, 0, 0, 0.03) 25px 25px;
-
 }
 
 .capitulo-tituloTitle {
@@ -70,7 +64,7 @@ body {
     padding: 10px 20px;
     white-space: nowrap;
     font-family: "Outfit";
-    line-height: 2vh;
+    line-height: 3vh;
 }
 
 .sumario {
@@ -146,7 +140,7 @@ body {
     background-color: #69c0e4;
     color: white;
     border-radius: 30px 0px 30px 30px;
-    padding: 15px;
+    padding: 0px 20px;
     font-size: 1rem;
     display: flex;
     align-items: center;
@@ -157,7 +151,7 @@ body {
     font-weight: bold;
     margin-left: 10px;
     font-family: "AlumniItalic";
-    font-size: 1.3rem;
+    font-size: 1.8rem;
 }
 
 .custom-list {
@@ -898,7 +892,7 @@ body {
     top: -15px; /* Ajuste a posição vertical */
     left: 15%;
     transform: translateX(-50%);
-    background-color: #00a2d9; /* Cor de fundo do label */
+    background-color: #004F99; /* Cor de fundo do label */
     color: #fff;
     padding: 5px 15px;
     font-weight: bold;
@@ -908,8 +902,8 @@ body {
 }
 
 .attention-card {
-    background-color: #007bff; /* Cor do card */
-    border: 5px solid #29c1f2;
+    background-color: #004F99; /* Cor do card */
+    border: 5px solid #01C5FF;
     color: #fff;
     padding: 15px;
     border-radius: 60px;
@@ -1255,9 +1249,8 @@ a {
 }
 
 .bgBlue {
-    background-color: #007bff; /* Azul brilhante */
+    background-color: #19598d; /* Azul brilhante */
     border-radius: 0px 60px 60px 0px; /* Bordas arredondadas */
-    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
 }
 
 .text-white {

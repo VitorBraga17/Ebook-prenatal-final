@@ -47,12 +47,6 @@ body {
     font-size: 2rem;
     font-family: "AlumniItalic";
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px, 
-            rgba(0, 0, 0, 0.15) 10px 10px, 
-            rgba(0, 0, 0, 0.1) 15px 15px, 
-            rgba(0, 0, 0, 0.05) 20px 20px, 
-            rgba(0, 0, 0, 0.03) 25px 25px;
-
 }
 
 .capitulo-tituloTitle {

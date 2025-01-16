@@ -59,7 +59,7 @@ body {
     height: 100%;
     color: white;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -243,6 +243,23 @@ body {
 .flexRow{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+
+.ms5{
+    margin-left: 5vw;
+}
+
+@media (max-width: 1024px) {
+    .flexRow {
+        display: initial; /* Pode ser 'block' ou outro valor padrão */
+        flex-direction: initial;
+        justify-content: initial;
+        align-items: initial;
+    }
+
+    .ms5 {
+        margin-left: 0; /* Remove o espaçamento */
+    }
 }
