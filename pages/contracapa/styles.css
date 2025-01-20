@@ -16,8 +16,8 @@ body {
 }
 
 @font-face {
-    font-family: "OutfitBold";
-    src: url("../../fonts/outfit/OutfitBold.ttf") format("truetype");
+    font-family: "Outfit";
+    src: url("../../fonts/outfit/Outfit.ttf") format("truetype");
 }
 
 @font-face {
@@ -35,7 +35,7 @@ body {
     color: #0e5dac;
     font-size: 2rem;
     font-weight: bold;
-    font-family: "OutfitBold";
+    font-family: "Outfit";
 }
 
 .bgTransparent {

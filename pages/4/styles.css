@@ -93,7 +93,7 @@ body {
     height: 100%;
     color: white;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,7 +103,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-family: "OrdaxItalic";
+    font-family: "AlumniItalic";
 }
 
 .capitulo-titulo {
@@ -181,7 +181,7 @@ body {
     content: "◆";
     margin-top: 1vh;
     margin-right: 2vh;
-    color: #007bff;
+    color: #003d73;
     font-size: 1.2rem;
 }
 
@@ -832,16 +832,15 @@ body {
 }
 
 .titleBlueGray{
-    font-size: 2rem;
     margin-right: 2vh;
-    color: #007bff;
+    color: #004A82;
     text-align: left;
     margin-left: 10px;
     font-family: "Outfit", sans-serif;
 }
 
 .indicationText {
-    color: #0033cc; /* Azul similar ao print */
+    color: #003d73; /* Azul similar ao print */
     font-size: 1.1rem; /* Ajuste conforme necessário */
     font-weight: 400; /* Ou "bold", conforme o design */
     line-height: 1.5; /* Para um espaçamento agradável */

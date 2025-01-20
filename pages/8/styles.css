@@ -94,7 +94,7 @@ body {
     height: 100%;
     color: white;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,7 +104,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-family: "OrdaxItalic";
+    font-family: "AlumniItalic";
 }
 
 .capitulo-titulo {
@@ -180,17 +180,47 @@ body {
 }
 
 .list-group-item:before {
-    content: "🔹";
+    content: "◆";
     margin-top: 1vh;
     margin-right: 2vh;
-    color: #007bff;
+    color: #003d73;
     font-size: 1.2rem;
+}
+
+.titleListgroup{
+    margin-top: 1vh;
+    margin-right: 2vh;
+    color: white;
+    font-size: 1.3rem;
 }
 
 .list-group-item b {
     font-weight: bold; /* Destaca texto em negrito */
     color: #003d73; /* Ajusta a cor do texto em negrito */
-    font-family: "OutfitBold";
+    font-family: "Outfit"
+}
+
+.list-group-item1 {
+    list-style-type: none;
+    font-size: 1.3rem; /* Ajusta o tamanho da fonte */
+    font-family: "Montserrat", sans-serif; /* Aplica a fonte desejada */
+    color: white; /* Ajusta a cor do texto */
+    background-color: transparent; /* Remove o fundo padrão */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 0; /* Ajusta o espaçamento entre os itens */
+}
+
+.list-group-item1:before {
+    content: "◆";
+    margin-top: 1vh;
+    margin-right: 2vh;
+    color: white;
+    font-size: 1rem;
+}
+
+.list-group-item1 b {
+    color: white;
+    font-family: "Outfit"
 }
 
 .titleCard {
@@ -669,7 +699,7 @@ body {
 }
 
 .textBold{
-    font-family: "OutfitBold", sans-serif;
+    font-family: "Outfitans-serif;
 }
 
 .titleBlueGray{
@@ -677,7 +707,7 @@ body {
     color: #29c1f2;
     text-align: left;
     margin-left: 10px;
-    font-family: "OutfitBold", sans-serif;
+    font-family: "Outfitans-serif;
 }
 
 .fontBlueGray{
@@ -904,7 +934,7 @@ body {
     color: #007bff;
     text-align: left;
     margin-left: 10px;
-    font-family: "OutfitBold", sans-serif;
+    font-family: "Outfitans-serif;
 }
 
 .indicationText {
@@ -939,7 +969,7 @@ body {
 }
 
 .attention-card {
-    background-color: #007bff; /* Cor do card */
+    background-color: #004F99; /* Cor do card */
     border: 5px solid #29c1f2;
     color: #fff;
     padding: 15px;

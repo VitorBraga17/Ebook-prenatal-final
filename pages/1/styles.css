@@ -77,7 +77,7 @@ body {
     height: 100%;
     color: white;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +87,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-family: "OrdaxItalic";
+    font-family: "AlumniItalic";
 }
 
 .capitulo-titulo {
@@ -553,7 +553,7 @@ body {
 }
 
 .textBold{
-    font-family: "OutfitBold", sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
 .describe {
