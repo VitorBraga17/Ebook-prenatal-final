@@ -94,7 +94,7 @@ body {
     height: 100%;
     color: white;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,7 +104,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-family: "OrdaxItalic";
+    font-family: "AlumniItalic";
 }
 
 .capitulo-titulo {
@@ -186,17 +186,17 @@ body {
 }
 
 .list-group-item:before {
-    content: "🔹";
+    content: "◆";
     margin-top: 1vh;
     margin-right: 2vh;
-    color: #007bff;
+    color: #003d73;
     font-size: 1.2rem;
 }
 
 .list-group-item b {
     font-weight: bold; /* Destaca texto em negrito */
     color: #003d73; /* Ajusta a cor do texto em negrito */
-    font-family: "OutfitBold";
+    font-family: "Outfit";
 }
 
 .titleCard {
@@ -496,7 +496,7 @@ body {
 }
 
 .list-group-item1:before {
-    content: "🔹";
+    content: "◆";
     color: #003d73;
     margin-top: 1vh;
     margin-right: 2vh;
@@ -688,7 +688,7 @@ body {
 }
 
 .textBold{
-    font-family: "OutfitBold", sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
 .titleBlueGray{
@@ -696,7 +696,7 @@ body {
     color: #29c1f2;
     text-align: left;
     margin-left: 10px;
-    font-family: "OutfitBold", sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
 .fontBlueGray{
@@ -923,7 +923,7 @@ body {
     color: #007bff;
     text-align: left;
     margin-left: 10px;
-    font-family: "OutfitBold", sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
 .indicationText {
