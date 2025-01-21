@@ -709,9 +709,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #004A82; /* Fundo azul claro */
-    color: #f0f8ff; /* Texto azul */
-    border: 2px solid #007bff; /* Borda azul */
+    background-color: #29c1f2;
+    color: white;
+    border: 2px solid white;
     border-radius: 30px; /* Bordas arredondadas */
     min-width: 180px; /* Largura fixa maior */
     height: 60px; /* Altura fixa maior */
