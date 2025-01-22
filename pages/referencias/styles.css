@@ -6,8 +6,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     min-height: 90vh;
-    font-family: "Outfit";
-    src: url("../../fonts/outfit/OutfitRegular.ttf") format("truetype");
+    font-family: "Outfit", sans-serif;
 }
 
 @font-face {
@@ -16,15 +15,9 @@ body {
 }
 
 @font-face {
-    font-family: "Outfit";
-    src: url("../../fonts/outfit/Outfit.ttf") format("truetype");
+    font-family: "AlumniItalic";
+    src: url("../../fonts/alumni/AlumniSansMediumItalic.ttf") format("truetype");
 }
-
-@font-face {
-    font-family: "OutfitMedium";
-    src: url("../../fonts/outfit/OutfitMedium.ttf") format("truetype");
-}
-
 .header {
     display: flex;
     justify-content: space-between;
