@@ -440,7 +440,7 @@ body {
 }
 
 .cardSubBorderedWithouthBorder{
-    padding: 10px; /* Espaçamento interno */
+    padding: 10px 60px 10px 0px;
     text-align: center; /* Centraliza o conteúdo */
     font-family: "Outfit", sans-serif; /* Fonte personalizada */
     color: #19598d; /* Texto azul escuro */
@@ -644,7 +644,7 @@ body {
 }
 
 .subtitle {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #19598d;
     text-align: left;
 }
@@ -932,10 +932,6 @@ body {
 a {
     text-decoration: none;
     color: white;
-}
-
-.list-group-item{
-    font-size: 2rem;
 }
 
 @media (max-width: 576px) {
@@ -1249,9 +1245,8 @@ a {
 }
 
 .list-group-item {
-    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
     color: #19598d; /* Texto azul escuro */
-    margin-bottom: 10px; /* Espaçamento entre itens */
     border: none; /* Remove bordas */
     background-color: transparent; /* Fundo transparente */
     padding: 0px;

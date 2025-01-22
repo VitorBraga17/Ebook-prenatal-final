@@ -181,7 +181,7 @@ body {
 
 .titleCard {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.8rem; /* Ajuste proporcional do tamanho da fonte */
+    font-size: 1.6rem; /* Ajuste proporcional do tamanho da fonte */
     font-weight: bold;
     color: #19598d; /* Azul escuro */
     background-color: #19598d; /* Fundo azul escuro */
@@ -613,11 +613,6 @@ body {
     font-weight: bold;
 }
 
-.table-font{
-    font-size: 1rem;
-    color: #19598d;
-    font-weight: 100;
-}
 
 .describe {
     font-size: 2rem;
@@ -905,6 +900,10 @@ a {
 }
 
 .table-font {
+    color: #19598d;
+}
+
+.table-fontBold {
     font-weight: 600;
     color: #19598d;
 }
@@ -1152,4 +1151,6 @@ a {
     text-align: center; /* Centraliza o conteúdo */
     font-family: "Outfit", sans-serif; /* Fonte personalizada */
     color: #19598d; /* Texto azul escuro */
+    font-size: 1.6rem;
+    width: 100%;
 }

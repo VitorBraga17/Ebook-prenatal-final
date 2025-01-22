@@ -83,9 +83,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal; /* Permite a quebra de linha */
+    overflow-wrap: break-word; /* Quebra palavras longas */
+    word-wrap: break-word; /* Suporte para navegadores mais antigos */
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -143,11 +143,6 @@ body {
     .capitulo-numero {
         font-size: 0.9rem;
         padding: 10px 5px;
-    }
-
-    .capitulo-titulo {
-        font-size: 1rem;
-        padding: 10px;
     }
 
     .sumario-title {
