@@ -935,7 +935,7 @@ a {
     border-collapse: collapse;
     border-spacing: 0;
     margin-top: 10px;
-    font-size: 1rem;
+    font-size: 1.6rem;
     margin-bottom: 0px;
 }
 
@@ -988,7 +988,7 @@ a {
 .alert-card span:first-child,
 .alert-card span:last-child {
     font-weight: bold; /* Mantém o bold apenas na primeira e última linha */
-    font-size: 1.2rem; /* Destaca a primeira e última linha */
+    font-size: 1.5rem; /* Destaca a primeira e última linha */
 }
 
 .cartilha-text-container {
@@ -1073,4 +1073,9 @@ a {
         padding: 10px;
     }
     
+}
+
+.fonte{
+    color: #19598d;
+    text-align: center;
 }

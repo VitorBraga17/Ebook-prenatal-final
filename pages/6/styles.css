@@ -160,13 +160,6 @@ body {
     list-style: none;
 }
 
-.list-group {
-    list-style-type: none; /* Remove os marcadores padrão */
-    padding: 0;
-    margin: 0;
-    text-align: left!important; /* Alinha o texto à esquerda */
-}
-
 .list-group-item {
     list-style-type: none;
     font-size: 1.5rem; /* Ajusta o tamanho da fonte */
@@ -176,7 +169,9 @@ body {
     border: none; /* Remove a borda padrão */
     padding: 10px 0; /* Ajusta o espaçamento entre os itens */
     display: flex;
-    align-items: start; /* Alinha verticalmente os itens */
+    text-align: left;
+    align-items: center; /* Alinha verticalmente os itens */
+    margin-left: 5%;
 }
 
 .list-group-item:before {
@@ -681,7 +676,7 @@ body {
 }
 
 .describeInfo {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 500;
 }
 
@@ -904,15 +899,16 @@ body {
     background-color: #004F99; /* Cor do card */
     border: 5px solid #01C5FF;
     color: #fff;
-    padding: 15px;
+    padding: 20px;
     border-radius: 60px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     text-align: center;
+    font-size: 1.6rem;
 }
 
 .attention-text {
-    font-size: 20px;
+    font-size: 1.5rem;
     line-height: 1.5;
 }
 
@@ -939,10 +935,6 @@ body {
 a {
     text-decoration: none;
     color: white;
-}
-
-.list-group-item{
-    font-size: 2rem;
 }
 
 @media (max-width: 576px) {
@@ -1303,4 +1295,8 @@ a {
         max-width: 90%; /* Ajusta o tamanho das imagens em telas menores */
         height: auto; /* Remove a altura fixa para evitar distorções */
     }
+}
+
+.msPercent{
+    margin-left: 15%;
 }

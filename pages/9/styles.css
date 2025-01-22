@@ -128,10 +128,11 @@ body {
 }
 
 .indicationText {
-    color: #19598d; /* Azul similar ao print */
-    font-size: 1rem; /* Ajuste conforme necessário */
-    font-weight: 400; /* Ou "bold", conforme o design */
-    line-height: 1.5; /* Para um espaçamento agradável */
+    color: #19598d;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "AlumniItalic";
 }
 
 .capitulo-titulo a {
@@ -182,7 +183,8 @@ body {
     border: none; /* Remove a borda padrão */
     padding: 10px 0; /* Ajusta o espaçamento entre os itens */
     display: flex;
-    align-items: start; /* Alinha verticalmente os itens */
+    align-items: center; /* Alinha verticalmente os itens */
+    margin-left: 5%;
 }
 
 .list-group-item:before {
@@ -396,7 +398,7 @@ body {
 .custom-tableCard {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin-bottom: 20px;
     font-size: 1.6rem;
     color: #19598d; /* Azul escuro */
     border-radius: 10px;
@@ -688,6 +690,7 @@ body {
 
 .fontBlueGray{
     color: #29c1f2;
+    font-size: 1.5rem;
 }
 
 .subtitle {
@@ -720,6 +723,11 @@ body {
     color: #19598d;
     font-size: 1.5rem;
     text-align: center;
+}
+
+.fontBlue{
+    color: #19598d;
+    font-size: 1.5rem;
 }
 
 .describeInfo {
@@ -920,17 +928,6 @@ body {
     font-family: "Outfit"
 }
 
-.indicationText {
-    color: #19598d; /* Azul similar ao print */
-    font-size: 1rem; /* Ajuste conforme necessário */
-    font-weight: 400; /* Ou "bold", conforme o design */
-    line-height: 1.5; /* Para um espaçamento agradável */
-}
-
-.fontBlueGray{
-    color: #29c1f2;
-}
-
 .attention-container {
     position: relative;
     width: 100%;
@@ -955,11 +952,12 @@ body {
     background-color: #19598d; /* Cor do card */
     border: 5px solid #29c1f2;
     color: #fff;
-    padding: 15px;
+    padding: 20px;
     border-radius: 60px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     text-align: center;
+    font-size: 1.6rem;
 }
 
 .attention-text {
@@ -990,10 +988,6 @@ body {
 a {
     text-decoration: none;
     color: white;
-}
-
-.list-group-item{
-    font-size: 2rem;
 }
 
 @media (max-width: 576px) {
@@ -1166,6 +1160,7 @@ a {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente a tabela dentro do card */
     align-items: center; /* Centraliza verticalmente a tabela dentro do card */
+    flex-direction: column;
 }
 
 .fonte {

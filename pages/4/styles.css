@@ -172,9 +172,9 @@ body {
     color: #19598d; /* Ajusta a cor do texto */
     background-color: transparent; /* Remove o fundo padrão */
     border: none; /* Remove a borda padrão */
-    padding: 10px 0; /* Ajusta o espaçamento entre os itens */
     display: flex;
-    align-items: start; /* Alinha verticalmente os itens */
+    align-items: center; /* Alinha verticalmente os itens */
+    margin-left: 5%;
 }
 
 .list-group-item:before {
@@ -612,7 +612,7 @@ body {
 }
 
 .titleBlueGray{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #29c1f2;
     text-align: left;
     margin-left: 10px;
@@ -622,7 +622,7 @@ body {
 .fontBlueGraySubtitle{
     color: #29c1f2;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .subtitle {
@@ -711,17 +711,6 @@ body {
     transition: background-color 0.3s ease;
     min-width: 180px; /* Largura fixa maior */
     cursor: pointer;
-}
-
-.collapse-custom {
-    width: 100%;
-    text-align: center;
-    padding: 30px 30px;
-    margin-top: 10px;
-    border-radius: 50px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #19598d;
-    color: white;
 }
 
 /* @media (max-width: 775px) {
@@ -830,7 +819,7 @@ body {
 
 .indicationText {
     color: #19598d; /* Azul similar ao print */
-    font-size: 1.1rem; /* Ajuste conforme necessário */
+    font-size: 1.5rem; /* Ajuste conforme necessário */
     font-weight: 400; /* Ou "bold", conforme o design */
     line-height: 1.5; /* Para um espaçamento agradável */
     font-family: "AlumniItalic";
@@ -842,7 +831,7 @@ body {
 
 .attention-container {
     position: relative;
-    width: 60%;
+    width: 100%;
     margin: 0 auto; /* Centraliza o card */
 }
 
@@ -872,7 +861,7 @@ body {
 }
 
 .attention-text {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.5;
 }
 
@@ -899,10 +888,6 @@ body {
 a {
     text-decoration: none;
     color: white;
-}
-
-.list-group-item{
-    font-size: 1.3rem;
 }
 
 @media (max-width: 576px) {
@@ -1119,7 +1104,7 @@ a {
 .alert-card span:first-child,
 .alert-card span:last-child {
     font-weight: bold; /* Mantém o bold apenas na primeira e última linha */
-    font-size: 1.2rem; /* Destaca a primeira e última linha */
+    font-size: 1.6rem; /* Destaca a primeira e última linha */
 }
 
 .cartilha-text-container {

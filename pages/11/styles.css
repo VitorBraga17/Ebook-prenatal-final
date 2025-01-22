@@ -966,6 +966,7 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     text-align: center;
+    font-size: 1.6rem;
 }
 
 .attention-text {
@@ -1384,14 +1385,12 @@ a {
 }
 
 .cardSubBordered {
-    border: 2px solid #69c0e4; /* Cor da borda */
-    border-radius: 50px; /* Bordas mais arredondadas */
     padding: 10px 20px; /* Espaçamento interno */
-    background-color: #f0f8ff; /* Fundo azul claro */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
     text-align: center; /* Centraliza o conteúdo */
     font-family: "Outfit", sans-serif; /* Fonte personalizada */
     color: #19598d; /* Texto azul escuro */
+    font-size: 1.5rem;
 }
 
 .video-size{
