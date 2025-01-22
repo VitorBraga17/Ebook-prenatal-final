@@ -64,7 +64,7 @@ body {
     padding: 10px 20px;
     white-space: nowrap;
     font-family: "Outfit";
-    line-height: 3vh;
+    line-height: 2vh;
 }
 
 .sumario {
@@ -171,7 +171,7 @@ body {
     list-style-type: none;
     font-size: 1.5rem; /* Ajusta o tamanho da fonte */
     font-family: "Montserrat", sans-serif; /* Aplica a fonte desejada */
-    color: #003d73; /* Ajusta a cor do texto */
+    color: #19598d; /* Ajusta a cor do texto */
     background-color: transparent; /* Remove o fundo padrão */
     border: none; /* Remove a borda padrão */
     padding: 10px 0; /* Ajusta o espaçamento entre os itens */
@@ -183,13 +183,13 @@ body {
     content: "◆";
     margin-top: 1vh;
     margin-right: 2vh;
-    color: #003d73;
+    color: #19598d;
     font-size: 1.2rem;
 }
 
 .list-group-item b {
     font-weight: bold; /* Destaca texto em negrito */
-    color: #003d73; /* Ajusta a cor do texto em negrito */
+    color: #19598d; /* Ajusta a cor do texto em negrito */
     font-family: "Outfit";
 }
 
@@ -197,7 +197,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 1.8rem; /* Ajuste proporcional do tamanho da fonte */
     font-weight: bold;
-    color: #003d73; /* Azul escuro */
+    color: #19598d; /* Azul escuro */
     background-color: #19598d; /* Fundo azul escuro */
     text-align: center;
     border: 3px solid #69c0e4; /* Borda azul clara */
@@ -305,7 +305,7 @@ body {
 }
 
 .alert-card strong {
-    color: #003d73; /* Azul mais forte */
+    color: #19598d; /* Azul mais forte */
     font-weight: bold;
 }
 
@@ -358,7 +358,7 @@ body {
     border-collapse: collapse;
     margin: 20px 0;
     font-size: 1.6rem;
-    color: #003d73; /* Azul escuro */
+    color: #19598d; /* Azul escuro */
     border-radius: 10px;
     overflow: hidden;
 }
@@ -454,7 +454,7 @@ body {
     padding: 15px 20px; /* Ajuste de espaçamento interno */
     border-radius: 10px;
     background-color: #f0f8ff; /* Fundo azul claro */
-    color: #003d73; /* Azul escuro */
+    color: #19598d; /* Azul escuro */
     font-size: 1rem; /* Tamanho da fonte */
     line-height: 1.5; /* Altura das linhas */
     text-align: center; /* Centraliza o texto */
@@ -626,7 +626,7 @@ body {
 
 .title {
     font-size: 2rem;
-    color: #004A82;
+    color: #19598d;
     text-align: left;
     margin-left: 10px;
     font-family: "Myriado", sans-serif;
@@ -649,34 +649,37 @@ body {
     color: #29c1f2;
 }
 
+.fontBlue{
+    color: #19598d;
+}
 .subtitle {
     font-size: 2rem;
-    color: #004A82;
+    color: #19598d;
     text-align: left;
     margin-left: 10px;
 }
 
 .table-subtitle {
     font-size: 1.5rem;
-    color: #004A82;
+    color: #19598d;
     text-align: left;
     font-weight: bold;
 }
 
 .fontRegular{
     font-size: 1.5rem;
-    color: #004A82;
+    color: #19598d;
     font-weight: bold;
 }
 
 .table-font {
     font-weight: 100;
     font-size: 1.3rem;
-    color: #004A82;
+    color: #19598d;
 }
 
 .quadro{
-    color: #003d73;
+    color: #19598d;
     font-size: 1.5rem;
     text-align: center;
 }
@@ -814,7 +817,7 @@ body {
 }
 
 .btn-circle:hover {
-    background-color: #003d73;
+    background-color: #19598d;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -845,7 +848,7 @@ body {
 
 .bgRed {
     background-color: #e6f7ff;
-    color: #003d73;
+    color: #19598d;
     font-weight: normal;
     font-size: 1rem;
     padding: 20px 30px;
@@ -894,7 +897,7 @@ body {
     top: -15px; /* Ajuste a posição vertical */
     left: 15%;
     transform: translateX(-50%);
-    background-color: #00a2d9; /* Cor de fundo do label */
+    background-color: #19598d; /* Cor de fundo do label */
     color: #fff;
     padding: 5px 15px;
     font-weight: bold;
@@ -904,7 +907,7 @@ body {
 }
 
 .attention-card {
-    background-color: #004F99; /* Cor do card */
+    background-color: #19598d; /* Cor do card */
     border: 5px solid #29c1f2;
     color: #fff;
     padding: 15px;
@@ -983,7 +986,7 @@ a {
 }
 
 .table-striped thead {
-    background-color: #003d73; /* Fundo azul escuro */
+    background-color: #19598d; /* Fundo azul escuro */
     color: white; /* Texto branco */
     font-weight: bold;
     text-align: center;
@@ -1021,11 +1024,11 @@ a {
 
 .table-font {
     font-weight: 100;
-    color: #004A82;
+    color: #19598d;
 }
 
 .bgHeaderTable tr:first-child th:first-child {
-    background-color: #0e5dac; /* Azul mais escuro */
+    background-color: #19598d; /* Azul mais escuro */
     color: white; /* Texto branco */
     font-size: 1.2rem;
     padding: 15px;
@@ -1144,7 +1147,7 @@ a {
 
 .alert-card {
     background-color: #e6f7ff; /* Azul claro */
-    color: #003d73; /* Azul escuro */
+    color: #19598d; /* Azul escuro */
     font-weight: normal; /* Remove o bold */
     font-size: 1rem;
     padding: 20px 30px;
@@ -1178,7 +1181,7 @@ a {
 .cartilha-subtitle {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    color: #003d73; /* Azul escuro */
+    color: #19598d; /* Azul escuro */
     display: block;
     margin-bottom: 5px;
     font-weight: normal;
@@ -1187,7 +1190,7 @@ a {
 .cartilha-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    color: #004A82;
+    color: #19598d;
     font-weight: bold;
     margin: 0;
     line-height: 1.4;
@@ -1251,7 +1254,7 @@ a {
 }
 
 .bgBlue {
-    background-color: #004F99; /* Azul brilhante */
+    background-color: #19598d; /* Azul brilhante */
     border-radius: 0px 60px 60px 0px; /* Bordas arredondadas */
 }
 

@@ -64,7 +64,7 @@ body {
     padding: 10px 20px;
     white-space: nowrap;
     font-family: "Outfit";
-    line-height: 3vh;
+    line-height: 2vh;
 }
 
 .sumario {
@@ -114,7 +114,7 @@ body {
     padding: 15px 25px;
     font-size: 1.1rem;
     max-width: 70%; /* Limita a largura máxima */
-    background-color: #4f81bd;
+    background-color: #19598d;
     color: white;
     border-radius: 0 30px 30px 0;
     text-align: center;
@@ -171,7 +171,7 @@ body {
     list-style-type: none;
     font-size: 1.5rem; /* Ajusta o tamanho da fonte */
     font-family: "Montserrat", sans-serif; /* Aplica a fonte desejada */
-    color: #003d73; /* Ajusta a cor do texto */
+    color: #19598d; /* Ajusta a cor do texto */
     background-color: transparent; /* Remove o fundo padrão */
     border: none; /* Remove a borda padrão */
     padding: 10px 0; /* Ajusta o espaçamento entre os itens */
@@ -183,20 +183,20 @@ body {
     content: "◆";
     margin-top: 1vh;
     margin-right: 2vh;
-    color: #003d73;
+    color: #19598d;
     font-size: 1.2rem;
 }
 
 .list-group-item b {
     font-weight: bold; /* Destaca texto em negrito */
-    color: #003d73; /* Ajusta a cor do texto em negrito */
+    color: #19598d; /* Ajusta a cor do texto em negrito */
     font-family: "Outfit"
 }
 .titleCard {
     font-family: "Montserrat", sans-serif;
     font-size: 1.8rem; /* Ajuste proporcional do tamanho da fonte */
     font-weight: bold;
-    color: #003d73; /* Azul escuro */
+    color: #19598d; /* Azul escuro */
     background-color: #19598d; /* Fundo azul escuro */
     text-align: center;
     border: 3px solid #69c0e4; /* Borda azul clara */
@@ -304,7 +304,7 @@ body {
 }
 
 .alert-card strong {
-    color: #003d73; /* Azul mais forte */
+    color: #19598d; /* Azul mais forte */
     font-weight: bold;
 }
 
@@ -357,7 +357,7 @@ body {
     border-collapse: collapse;
     margin: 20px 0;
     font-size: 1.6rem;
-    color: #003d73; /* Azul escuro */
+    color: #19598d; /* Azul escuro */
     border-radius: 10px;
     overflow: hidden;
 }
@@ -453,7 +453,7 @@ body {
     padding: 15px 20px; /* Ajuste de espaçamento interno */
     border-radius: 10px;
     background-color: #f0f8ff; /* Fundo azul claro */
-    color: #003d73; /* Azul escuro */
+    color: #19598d; /* Azul escuro */
     font-size: 1rem; /* Tamanho da fonte */
     line-height: 1.5; /* Altura das linhas */
     text-align: center; /* Centraliza o texto */
@@ -469,7 +469,7 @@ body {
 }
 
 .unidade-header {
-    background-color: #4f81bd;
+    background-color: #19598d;
     color: white;
     font-weight: bold;
     padding: 15px;
@@ -493,7 +493,7 @@ body {
     align-items: center;
     width: 50px;
     height: 50px;
-    background-color: #4f81bd;
+    background-color: #19598d;
     border-radius: 50%;
     margin: 0 auto;
     margin-top: 20px;
@@ -633,7 +633,7 @@ body {
 }
 
 .textBold{
-    font-family: "Outfitans-serif;
+    font-family: "Outfit"
 }
 
 .titleBlueGray{
@@ -641,7 +641,7 @@ body {
     color: #29c1f2;
     text-align: left;
     margin-left: 10px;
-    font-family: "Outfitans-serif;
+    font-family: "Outfit"
 }
 
 .fontBlueGray{
@@ -675,7 +675,7 @@ body {
 }
 
 .quadro{
-    color: #003d73;
+    color: #19598d;
     font-size: 1.5rem;
     text-align: center;
 }
@@ -811,7 +811,7 @@ body {
 }
 
 .btn-circle:hover {
-    background-color: #003d73;
+    background-color: #19598d;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -842,7 +842,7 @@ body {
 
 .bgRed {
     background-color: #e6f7ff;
-    color: #003d73;
+    color: #19598d;
     font-weight: normal;
     font-size: 1rem;
     padding: 20px 30px;
@@ -866,7 +866,7 @@ body {
     color: #007bff;
     text-align: left;
     margin-left: 10px;
-    font-family: "Outfitans-serif;
+    font-family: "Outfit"
 }
 
 .indicationText {
@@ -980,7 +980,7 @@ a {
 }
 
 .table-striped thead {
-    background-color: #003d73; /* Fundo azul escuro */
+    background-color: #19598d; /* Fundo azul escuro */
     color: white; /* Texto branco */
     font-weight: bold;
     text-align: center;
@@ -1141,7 +1141,7 @@ a {
 
 .alert-card {
     background-color: #e6f7ff; /* Azul claro */
-    color: #003d73; /* Azul escuro */
+    color: #19598d; /* Azul escuro */
     font-weight: normal; /* Remove o bold */
     font-size: 1rem;
     padding: 20px 30px;
@@ -1175,7 +1175,7 @@ a {
 .cartilha-subtitle {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    color: #003d73; /* Azul escuro */
+    color: #19598d; /* Azul escuro */
     display: block;
     margin-bottom: 5px;
     font-weight: normal;
@@ -1271,10 +1271,8 @@ a {
 }
 
 .custom-card {
-    border: 2px solid #69c0e4;
     border-radius: 10px;
     padding: 15px;
-    background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
