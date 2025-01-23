@@ -44,7 +44,7 @@ body {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 20px 0 0 20px;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: "AlumniItalic";
     text-align: center;
 }
@@ -94,7 +94,7 @@ body {
     height: 100%;
     color: white;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,7 +176,7 @@ body {
 .list-group-item {
     list-style-type: none;
     font-size: 1.5rem; /* Ajusta o tamanho da fonte */
-    font-family: "Montserrat", sans-serif; /* Aplica a fonte desejada */
+      /* Aplica a fonte desejada */
     color: #19598d; /* Ajusta a cor do texto */
     background-color: transparent; /* Remove o fundo padrão */
     border: none; /* Remove a borda padrão */
@@ -199,8 +199,30 @@ body {
     font-family: "Outfit";
 }
 
+.list-group-item1 {
+    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+      /* Aplica a fonte desejada */
+    color: #19598d; /* Ajusta a cor do texto */
+    background-color: transparent; /* Remove o fundo padrão */
+    border: none; /* Remove a borda padrão */
+    display: flex;
+    align-items: start; /* Alinha verticalmente os itens */
+}
+
+.list-group-item1:before {
+    margin-right: 2vh;
+    color: #19598d;
+    font-size: 1.2rem;
+}
+
+.list-group-item1 b {
+    font-weight: bold; /* Destaca texto em negrito */
+    color: #19598d; /* Ajusta a cor do texto em negrito */
+    font-family: "Outfit";
+}
+
 .titleCard {
-    font-family: "Montserrat", sans-serif;
+     
     font-size: 1.8rem; /* Ajuste proporcional do tamanho da fonte */
     font-weight: bold;
     color: #19598d; /* Azul escuro */
@@ -352,7 +374,7 @@ body {
 }
 
 .pagination-text {
-    font-family: "Montserrat", sans-serif;
+     
     font-size: 1.2rem;
     font-weight: bold;
     color: #ffffff;
@@ -666,7 +688,7 @@ body {
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #19598d;
     text-align: left;
     margin-left: 10px;
@@ -679,7 +701,7 @@ body {
 }
 
 .titleBlueGray{
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #E0F9FF;
     text-align: left;
     margin-left: 10px;
@@ -691,7 +713,7 @@ body {
 }
 
 .subtitle {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #19598d;
     text-align: left;
     margin-left: 10px;
@@ -905,7 +927,7 @@ body {
 }
 
 .titleBlueGray{
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-right: 2vh;
     color: #19598d;
     text-align: left;
@@ -984,10 +1006,6 @@ body {
 a {
     text-decoration: none;
     color: white;
-}
-
-.list-group-item{
-    font-size: 2rem;
 }
 
 @media (max-width: 576px) {

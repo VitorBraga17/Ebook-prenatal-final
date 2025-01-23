@@ -44,7 +44,7 @@ body {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 20px 0 0 20px;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: "AlumniItalic";
     text-align: center;
 }
@@ -93,7 +93,7 @@ body {
     height: 100%;
     color: white;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,7 +187,7 @@ body {
 }
 
 .titleCard {
-    font-family: "Montserrat", sans-serif;
+     
     font-size: 1.8rem; /* Ajuste proporcional do tamanho da fonte */
     font-weight: bold;
     color: #19598d; /* Azul escuro */
@@ -339,7 +339,7 @@ body {
 }
 
 .pagination-text {
-    font-family: "Montserrat", sans-serif;
+     
     font-size: 1.2rem;
     font-weight: bold;
     color: #ffffff;
@@ -619,7 +619,7 @@ body {
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #19598d;
     text-align: left;
     margin-left: 10px;
@@ -632,7 +632,7 @@ body {
 }
 
 .titleBlueGray{
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #29c1f2;
     text-align: left;
     margin-left: 10px;
@@ -669,7 +669,7 @@ body {
 }
 
 .describe {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 500;
 }
 
@@ -854,7 +854,7 @@ body {
 }
 
 .titleBlueGray{
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-right: 2vh;
     color: #19598d;
     text-align: left;
@@ -1266,8 +1266,6 @@ a {
     border-radius: 30px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
-    position: relative;
-    left: -3vw;
 }
 
 .accordion-item{

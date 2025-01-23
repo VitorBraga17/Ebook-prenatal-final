@@ -44,7 +44,7 @@ body {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 20px 0 0 20px;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: "AlumniItalic";
     text-align: center;
 }
@@ -93,7 +93,7 @@ body {
     height: 100%;
     color: white;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,18 +168,16 @@ body {
 .list-group-item {
     list-style-type: none;
     font-size: 1.5rem; /* Ajusta o tamanho da fonte */
-    font-family: "Montserrat", sans-serif; /* Aplica a fonte desejada */
+      /* Aplica a fonte desejada */
     color: #19598d; /* Ajusta a cor do texto */
     background-color: transparent; /* Remove o fundo padrão */
     border: none; /* Remove a borda padrão */
     display: flex;
-    align-items: center; /* Alinha verticalmente os itens */
     margin-left: 5%;
 }
 
 .list-group-item:before {
-    content: "◆";
-    margin-top: 1vh;
+    content: "-";
     margin-right: 2vh;
     color: #19598d;
     font-size: 1.2rem;
@@ -192,7 +190,7 @@ body {
 }
 
 .titleCard {
-    font-family: "Montserrat", sans-serif;
+     
     font-size: 1.8rem; /* Ajuste proporcional do tamanho da fonte */
     font-weight: bold;
     color: #19598d; /* Azul escuro */
@@ -332,7 +330,7 @@ body {
 }
 
 .pagination-text {
-    font-family: "Montserrat", sans-serif;
+     
     font-size: 1.2rem;
     font-weight: bold;
     color: #ffffff;
@@ -603,7 +601,7 @@ body {
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #19598d;
     text-align: left;
     margin-left: 10px;
@@ -653,7 +651,7 @@ body {
 }
 
 .describe {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 500;
 }
 
@@ -822,7 +820,6 @@ body {
     font-size: 1.5rem; /* Ajuste conforme necessário */
     font-weight: 400; /* Ou "bold", conforme o design */
     line-height: 1.5; /* Para um espaçamento agradável */
-    font-family: "AlumniItalic";
 }
 
 .fontBlueGray{

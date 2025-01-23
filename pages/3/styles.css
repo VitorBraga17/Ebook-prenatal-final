@@ -44,7 +44,7 @@ body {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 20px 0 0 20px;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: "AlumniItalic";
     text-align: center;
 }
@@ -93,7 +93,7 @@ body {
     height: 100%;
     color: white;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,7 +161,7 @@ body {
 
 .custom-list .list-group-item {
     font-size: 1.2rem;
-    font-family: "Montserrat", sans-serif;
+     
     color: #19598d;
     border: none;
     padding-left: 0;
@@ -180,7 +180,7 @@ body {
 }
 
 .titleCard {
-    font-family: "Montserrat", sans-serif;
+     
     font-size: 1.6rem; /* Ajuste proporcional do tamanho da fonte */
     font-weight: bold;
     color: #19598d; /* Azul escuro */
@@ -317,7 +317,7 @@ body {
 }
 
 .pagination-text {
-    font-family: "Montserrat", sans-serif;
+     
     font-size: 1.2rem;
     font-weight: bold;
     color: #ffffff;
@@ -568,7 +568,7 @@ body {
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #19598d;
     text-align: left;
     margin-left: 10px;
@@ -581,7 +581,7 @@ body {
 }
 
 .titleBlueGray{
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #29c1f2;
     font-weight: bold;
     text-align: left;
@@ -594,7 +594,7 @@ body {
 }
 
 .subtitle {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #19598d;
     text-align: left;
     margin-left: 10px;
@@ -615,7 +615,7 @@ body {
 
 
 .describe {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 500;
 }
 
@@ -825,7 +825,7 @@ a {
 }
 
 .list-group-item{
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 @media (max-width: 576px) {

@@ -83,3 +83,14 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     left: -35px;
 }
+
+.alignFooter {
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
