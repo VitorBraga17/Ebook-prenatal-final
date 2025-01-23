@@ -1079,3 +1079,7 @@ a {
     color: #19598d;
     text-align: center;
 }
+
+.imgSize{
+    width: 100%;
+}
