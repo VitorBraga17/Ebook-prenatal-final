@@ -641,6 +641,7 @@ body {
 
 .fontBlueGray{
     color: #29c1f2;
+    font-size: 1.5rem
 }
 
 .subtitle {
@@ -1269,14 +1270,10 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 300px; /* Limita o tamanho do card */
 }
 
 .img-same-size {
-    max-width: 100%; /* Ajusta as imagens para ocupar o espaço do card */
-    height: auto; /* Mantém a proporção */
-    object-fit: cover; /* Mantém a proporção da imagem ao preencher o espaço */
-    border-radius: 5px;
+    width: 100%; /* Ajusta as imagens para ocupar o espaço do card */
 }
 
 .image-caption {
