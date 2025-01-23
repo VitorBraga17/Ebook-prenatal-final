@@ -44,7 +44,7 @@ body {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 20px 0 0 20px;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: "AlumniItalic";
     text-align: center;
 }
@@ -94,7 +94,7 @@ body {
     height: 100%;
     color: white;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,7 +132,7 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.5;
-    font-family: "AlumniItalic";
+    font-family: "Outfit";
 }
 
 .capitulo-titulo a {
@@ -177,32 +177,29 @@ body {
 .list-group-item {
     list-style-type: none;
     font-size: 1.5rem; /* Ajusta o tamanho da fonte */
-    font-family: "Montserrat", sans-serif; /* Aplica a fonte desejada */
+      /* Aplica a fonte desejada */
     color: #19598d; /* Ajusta a cor do texto */
     background-color: transparent; /* Remove o fundo padrão */
     border: none; /* Remove a borda padrão */
-    padding: 10px 0; /* Ajusta o espaçamento entre os itens */
     display: flex;
-    align-items: center; /* Alinha verticalmente os itens */
     margin-left: 5%;
 }
 
 .list-group-item:before {
-    content: "◆";
-    margin-top: 1vh;
+    content: "-";
     margin-right: 2vh;
     color: #19598d;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .list-group-item b {
     font-weight: bold; /* Destaca texto em negrito */
     color: #19598d; /* Ajusta a cor do texto em negrito */
-    font-family: "Outfit"
+    font-family: "Outfit";
 }
 
 .titleCard {
-    font-family: "Montserrat", sans-serif;
+     
     font-size: 1.8rem; /* Ajuste proporcional do tamanho da fonte */
     font-weight: bold;
     color: #19598d; /* Azul escuro */
@@ -354,7 +351,7 @@ body {
 }
 
 .pagination-text {
-    font-family: "Montserrat", sans-serif;
+     
     font-size: 1.2rem;
     font-weight: bold;
     color: #ffffff;
@@ -668,7 +665,7 @@ body {
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #19598d;
     text-align: left;
     margin-left: 10px;
@@ -681,7 +678,7 @@ body {
 }
 
 .titleBlueGray{
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #29c1f2;
     text-align: left;
     margin-left: 10px;
@@ -694,7 +691,7 @@ body {
 }
 
 .subtitle {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #19598d;
     text-align: left;
     margin-left: 10px;
@@ -717,6 +714,8 @@ body {
     font-weight: 100;
     font-size: 1.3rem;
     color: #19598d;
+    text-align: left;
+    margin-left: 1%;
 }
 
 .quadro{
@@ -920,7 +919,7 @@ body {
 }
 
 .titleBlueGray{
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-right: 2vh;
     color: #19598d;
     text-align: left;
