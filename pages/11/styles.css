@@ -488,8 +488,9 @@ body {
 }
 
 .list-group-item1:before {
-    content: "◆";
+    content: "";
     color: #19598d;
+    text-align: center;
     margin-top: 1vh;
     margin-right: 2vh;
     font-size: 1.2rem;
@@ -725,7 +726,6 @@ body {
 
 .table-font {
     font-weight: 100;
-    font-size: 1.3rem;
     color: #19598d;
 }
 
@@ -1306,6 +1306,13 @@ a {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    width: 100%;
+}
+
+.imgSize2 {
+    height: auto;
+    border-radius: 5px;
+    width: 50%;
 }
 
 .bgBlue {
