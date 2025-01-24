@@ -395,7 +395,6 @@ body {
 .custom-tableCard {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
     font-size: 1.6rem;
     color: #19598d; /* Azul escuro */
     border-radius: 10px;
@@ -712,7 +711,7 @@ body {
 
 .table-font {
     font-weight: 100;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #19598d;
     text-align: left;
     margin-left: 1%;

@@ -186,11 +186,12 @@ body {
 }
 
 .list-group-item:before {
-    content: "◆";
+    content: "-";
     margin-top: 1vh;
     margin-right: 2vh;
     color: #19598d;
     font-size: 1.2rem;
+    font-family: "Outfit";
 }
 
 .list-group-item b {
@@ -730,12 +731,6 @@ body {
     font-size: 1.5rem;
     color: #19598d;
     font-weight: bold;
-}
-
-.table-font {
-    font-weight: 100;
-    font-size: 1.3rem;
-    color: #19598d;
 }
 
 .quadro{
