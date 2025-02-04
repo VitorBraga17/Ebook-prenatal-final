@@ -166,38 +166,33 @@ body {
     list-style: none;
 }
 
-.list-group {
-    list-style-type: none; /* Remove os marcadores padrão */
+.list-group-item{
+    list-style-type: none;
+    font-size: 1.5rem;
+    color: #19598d;
+    background-color: transparent;
+    border: none;
+    margin-left: 5%;
     padding: 0;
-    margin: 0;
-    text-align: left!important; /* Alinha o texto à esquerda */
+    text-align: left;
 }
 
-.list-group-item {
-    list-style-type: none;
-    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
-      /* Aplica a fonte desejada */
-    color: #19598d; /* Ajusta a cor do texto */
-    background-color: transparent; /* Remove o fundo padrão */
-    border: none; /* Remove a borda padrão */
-    padding: 10px 0; /* Ajusta o espaçamento entre os itens */
-    display: flex;
-    align-items: start; /* Alinha verticalmente os itens */
+.list-group-item span {
+    font-size: 1.5rem;
+    color: #19598d;
+    margin-right: 10px;
+}
+
+.list-group-item b {
+    font-weight: bold;
+    color: #19598d;
 }
 
 .list-group-item:before {
     content: "-";
-    margin-top: 1vh;
     margin-right: 2vh;
     color: #19598d;
     font-size: 1.2rem;
-    font-family: "Outfit";
-}
-
-.list-group-item b {
-    font-weight: bold; /* Destaca texto em negrito */
-    color: #19598d; /* Ajusta a cor do texto em negrito */
-    font-family: "Outfit";
 }
 
 .list-group-item1 {
@@ -1173,7 +1168,6 @@ a {
 .cardBordered {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente a tabela dentro do card */
-    align-items: center; /* Centraliza verticalmente a tabela dentro do card */
 }
 
 .fonte {
@@ -1378,4 +1372,12 @@ a {
     color: white;
     padding: 20px;
     border-radius: 0px 0px 10px 10px;
+}
+
+.mtPercent{
+    margin-top: 30vh!important;
+}
+
+.mt10{
+    margin-top: 5vh!important;
 }

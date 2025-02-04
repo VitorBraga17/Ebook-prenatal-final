@@ -492,7 +492,6 @@ body {
     color: #19598d;
     text-align: center;
     margin-top: 1vh;
-    margin-right: 2vh;
     font-size: 1.2rem;
 }
 
@@ -681,7 +680,7 @@ body {
 }
 
 .titleSubcap{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #19598d;
     text-align: center;
     font-family: "Myriado", sans-serif;
@@ -1174,7 +1173,6 @@ a {
 .cardBordered {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente a tabela dentro do card */
-    align-items: center; /* Centraliza verticalmente a tabela dentro do card */
 }
 
 .fonte {

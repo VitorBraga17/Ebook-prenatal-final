@@ -165,15 +165,26 @@ body {
     text-align: left!important; /* Alinha o texto à esquerda */
 }
 
-.list-group-item {
+.list-group-item{
     list-style-type: none;
-    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
-      /* Aplica a fonte desejada */
-    color: #19598d; /* Ajusta a cor do texto */
-    background-color: transparent; /* Remove o fundo padrão */
-    border: none; /* Remove a borda padrão */
+    font-size: 1.5rem;
+    color: #19598d;
+    background-color: transparent;
+    border: none;
     display: flex;
     margin-left: 5%;
+    padding: 0;
+}
+
+.list-group-item span {
+    font-size: 1.5rem;
+    color: #19598d;
+    margin-right: 10px;
+}
+
+.list-group-item b {
+    font-weight: bold;
+    color: #19598d;
 }
 
 .list-group-item:before {
@@ -181,12 +192,6 @@ body {
     margin-right: 2vh;
     color: #19598d;
     font-size: 1.2rem;
-}
-
-.list-group-item b {
-    font-weight: bold; /* Destaca texto em negrito */
-    color: #19598d; /* Ajusta a cor do texto em negrito */
-    font-family: "Outfit";
 }
 
 .titleCard {

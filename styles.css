@@ -14,13 +14,13 @@ body {
 .container-fluid::before {
     content: '';
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('assets/images/CAPA_PROJETO_MAGNA.png');
+    background-image: url('assets/images/CARTILHA_DIGITAL_CAPA.png');
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
     background-size: cover;
     z-index: -1;
 }
@@ -29,7 +29,7 @@ body {
     position: relative;
     display: inline-block;
     z-index: 1;
-    top: -15vh;
+    top: -10vh;
 }
 
 .btn-start {
@@ -86,7 +86,7 @@ body {
 
 .alignFooter {
     position: absolute;
-    bottom: 5vh;
+    top: 3vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;

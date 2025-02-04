@@ -371,7 +371,7 @@ body {
 .custom-tableCard {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 20px 0px 0px 0px;
     font-size: 1.6rem;
     color: #19598d; /* Azul escuro */
     border-radius: 10px;
@@ -711,8 +711,8 @@ body {
     color: white;
     border: 2px solid white;
     border-radius: 30px; /* Bordas arredondadas */
-    min-width: 180px; /* Largura fixa maior */
-    height: 60px; /* Altura fixa maior */
+    min-width: 200px;
+    height: 70px;
     font-size: 1.2rem; /* Tamanho do texto reduzido */
     font-weight: bold; /* Texto em negrito */
     text-align: center;
@@ -985,8 +985,7 @@ a {
     font-weight: normal; /* Normal para as linhas intermediárias */
 }
 
-.alert-card span:first-child,
-.alert-card span:last-child {
+.alert-card span{
     font-weight: bold; /* Mantém o bold apenas na primeira e última linha */
     font-size: 1.5rem; /* Destaca a primeira e última linha */
 }

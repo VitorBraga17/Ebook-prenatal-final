@@ -167,28 +167,33 @@ body {
     text-align: left!important; /* Alinha o texto à esquerda */
 }
 
-.list-group-item {
+.list-group-item{
     list-style-type: none;
-    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
-      /* Aplica a fonte desejada */
-    color: #19598d; /* Ajusta a cor do texto */
-    background-color: transparent; /* Remove o fundo padrão */
-    border: none; /* Remove a borda padrão */
-    display: flex;
+    font-size: 1.5rem;
+    color: #19598d;
+    background-color: transparent;
+    border: none;
     margin-left: 5%;
+    padding: 0;
+    text-align: left;
+}
+
+.list-group-item span {
+    font-size: 1.5rem;
+    color: #19598d;
+    margin-right: 10px;
+}
+
+.list-group-item b {
+    font-weight: bold;
+    color: #19598d;
 }
 
 .list-group-item:before {
     content: "-";
     margin-right: 2vh;
     color: #19598d;
-    font-size: 1.5rem;
-}
-
-.list-group-item b {
-    font-weight: bold; /* Destaca texto em negrito */
-    color: #19598d; /* Ajusta a cor do texto em negrito */
-    font-family: "Outfit";
+    font-size: 1.2rem;
 }
 
 .titleListgroup{
@@ -198,33 +203,32 @@ body {
     font-size: 1.3rem;
 }
 
-.list-group-item b {
-    font-weight: bold; /* Destaca texto em negrito */
-    color: #19598d; /* Ajusta a cor do texto em negrito */
-    font-family: "Outfit"
-}
-
-.list-group-item1 {
+.list-group-item1{
     list-style-type: none;
-    font-size: 1.6rem; /* Ajusta o tamanho da fonte */
-      /* Aplica a fonte desejada */
-    background-color: transparent; /* Remove o fundo padrão */
-    border: none; /* Remove a borda padrão */
-    padding: 10px 0; /* Ajusta o espaçamento entre os itens */
-    text-align: center;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    margin-left: 5%;
+    padding: 0;
+    color: white;
 }
 
-.list-group-item1:before {
-    content: "◆";
-    margin-top: 1vh;
-    margin-right: 2vh;
-    color: white;
-    font-size: 1rem;
+.list-group-item1 span {
+    font-size: 1.5rem;
+    color: #19598d;
+    margin-right: 10px;
 }
 
 .list-group-item1 b {
+    font-weight: bold;
+    color: #19598d;
+}
+
+.list-group-item1:before {
+    content: "-";
+    margin-right: 2vh;
     color: white;
-    font-family: "Outfit"
+    font-size: 1.2rem;
 }
 
 .titleCard {
@@ -424,7 +428,6 @@ body {
 .custom-tableCard {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
     font-size: 1.6rem;
     color: #19598d; /* Azul escuro */
     border-radius: 10px;
@@ -742,6 +745,7 @@ body {
 .table-font {
     font-weight: 100;
     color: #004A82;
+    text-align: left;
 }
 
 .quadro{
@@ -1073,6 +1077,11 @@ a {
 }
 
 .table-striped .red {
+    color: #ee1d23; /* Texto em vermelho */
+    font-weight: bold;
+}
+
+.red {
     color: #ee1d23; /* Texto em vermelho */
     font-weight: bold;
 }
