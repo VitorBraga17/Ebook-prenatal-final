@@ -1082,8 +1082,7 @@ a {
 }
 
 .red {
-    color: #ee1d23; /* Texto em vermelho */
-    font-weight: bold;
+    color: red; /* Texto em vermelho */
 }
 
 .table-responsive {
@@ -1096,7 +1095,7 @@ a {
 }
 
 .bgHeaderTable tr:first-child th:first-child {
-    background-color: #0e5dac; /* Azul mais escuro */
+    background-color: #19598d; /* Azul mais escuro */
     color: white; /* Texto branco */
     font-size: 1.2rem;
     padding: 15px;
@@ -1105,9 +1104,9 @@ a {
 }
 
 .bgHeaderTable th {
-    background-color: #29c1f2; /* Azul claro */
-    color: white; /* Texto branco */
-    font-size: 1.2rem; /* Ajuste o tamanho da fonte */
+    background-color: #29c1f2;
+    color: white;
+    font-size: 1.6rem;
     padding: 15px;
     border-radius: 6px;
     text-align: center;
