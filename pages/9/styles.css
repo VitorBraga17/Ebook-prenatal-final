@@ -174,28 +174,33 @@ body {
     text-align: left!important; /* Alinha o texto à esquerda */
 }
 
-.list-group-item {
+.list-group-item{
     list-style-type: none;
-    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
-      /* Aplica a fonte desejada */
-    color: #19598d; /* Ajusta a cor do texto */
-    background-color: transparent; /* Remove o fundo padrão */
-    border: none; /* Remove a borda padrão */
-    display: flex;
+    font-size: 1.5rem;
+    color: #19598d;
+    background-color: transparent;
+    border: none;
     margin-left: 5%;
+    padding: 0;
+    text-align: left;
+}
+
+.list-group-item span {
+    font-size: 1.5rem;
+    color: #19598d;
+    margin-right: 10px;
+}
+
+.list-group-item b {
+    font-weight: bold;
+    color: #19598d;
 }
 
 .list-group-item:before {
     content: "-";
     margin-right: 2vh;
     color: #19598d;
-    font-size: 1.5rem;
-}
-
-.list-group-item b {
-    font-weight: bold; /* Destaca texto em negrito */
-    color: #19598d; /* Ajusta a cor do texto em negrito */
-    font-family: "Outfit";
+    font-size: 1.2rem;
 }
 
 .titleCard {
@@ -393,12 +398,12 @@ body {
 }
 
 .custom-tableCard {
-    width: 100%;
-    border-collapse: collapse;
+    padding: 0px 15px;
     font-size: 1.6rem;
     color: #19598d; /* Azul escuro */
     border-radius: 10px;
     overflow: hidden;
+    border-collapse:separate;
 }
 
 .custom-tableCard thead {
@@ -486,6 +491,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
     overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
     text-align: center; /* Centraliza o conteúdo */
+    padding-bottom: 15px !important;
 }
 
 .collapse-custom {
@@ -781,8 +787,8 @@ body {
     color: white;
     border: 2px solid white;
     border-radius: 30px; /* Bordas arredondadas */
-    min-width: 180px; /* Largura fixa maior */
-    height: 60px; /* Altura fixa maior */
+    min-width: 200px;
+    height: 70px;
     font-size: 1.2rem; /* Tamanho do texto reduzido */
     font-weight: bold; /* Texto em negrito */
     text-align: center;
@@ -801,6 +807,7 @@ body {
     color: #fff; /* Texto branco */
     border-color: #19598d; /* Borda azul mais escura */
 }
+
 
 .collapse-custom {
     width: 100%;
@@ -1064,19 +1071,12 @@ a {
     color: #19598d;
 }
 
-.bgHeaderTable tr:first-child th:first-child {
-    background-color: #0e5dac; /* Azul mais escuro */
-    color: white; /* Texto branco */
-    font-size: 1.2rem;
-    padding: 15px;
-    text-align: center;
-    border-radius: 8px 8px 0 0; /* Bordas arredondadas no topo */
-}
+
 
 .bgHeaderTable th {
     background-color: #29c1f2; /* Azul claro */
     color: white; /* Texto branco */
-    font-size: 1.2rem; /* Ajuste o tamanho da fonte */
+    font-size: 1.6rem; /* Ajuste o tamanho da fonte */
     padding: 15px;
     border-radius: 6px;
     text-align: center;

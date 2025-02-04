@@ -160,17 +160,26 @@ body {
     list-style: none;
 }
 
-.list-group-item {
+.list-group-item{
     list-style-type: none;
-    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
-      /* Aplica a fonte desejada */
-    color: #19598d; /* Ajusta a cor do texto */
-    background-color: transparent; /* Remove o fundo padrão */
-    border: none; /* Remove a borda padrão */
-    padding: 10px 0; /* Ajusta o espaçamento entre os itens */
-    display: flex;
-    text-align: left;
+    font-size: 1.5rem;
+    color: #19598d;
+    background-color: transparent;
+    border: none;
     margin-left: 5%;
+    padding: 0;
+    text-align: left;
+}
+
+.list-group-item span {
+    font-size: 1.5rem;
+    color: #19598d;
+    margin-right: 10px;
+}
+
+.list-group-item b {
+    font-weight: bold;
+    color: #19598d;
 }
 
 .list-group-item:before {
@@ -180,11 +189,6 @@ body {
     font-size: 1.2rem;
 }
 
-.list-group-item b {
-    font-weight: bold; /* Destaca texto em negrito */
-    color: #19598d; /* Ajusta a cor do texto em negrito */
-    font-family: "Outfit"
-}
 .titleCard {
      
     font-size: 1.8rem; /* Ajuste proporcional do tamanho da fonte */

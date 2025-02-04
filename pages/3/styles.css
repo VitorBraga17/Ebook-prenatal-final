@@ -327,7 +327,7 @@ body {
 .custom-tableCard {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 15px 0px 0px 0px;
     font-size: 1.6rem;
     color: #19598d; /* Azul escuro */
     border-radius: 10px;
@@ -920,7 +920,7 @@ a {
 .bgHeaderTable th {
     background-color: #29c1f2; /* Azul claro */
     color: white; /* Texto branco */
-    font-size: 1.2rem; /* Ajuste o tamanho da fonte */
+    font-size: 1.6rem;
     padding: 15px;
     border-radius: 6px;
     text-align: center;
