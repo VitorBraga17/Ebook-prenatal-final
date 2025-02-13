@@ -40,7 +40,6 @@ body {
     border: none;
     border-radius: 50px;
     transition: background-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     min-width: 15rem;
     position: relative;
     z-index: 1;
@@ -49,7 +48,6 @@ body {
 
 .btn-start:hover {
     background-color: #1e5780;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .paginator {
@@ -80,7 +78,6 @@ body {
 .btn-icon:hover {
     background-color: #1e5780;
     color: white;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     left: -35px;
 }
 

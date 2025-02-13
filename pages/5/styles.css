@@ -280,9 +280,6 @@ body {
         max-width: 250px;
     }
 
-    .line-connector {
-        height: 30px;
-    }
 }
 
 .alert-card {
@@ -433,7 +430,6 @@ body {
     border-radius: 50px; /* Bordas mais arredondadas */
     padding: 10px; /* Espaçamento interno */
     background-color: #f0f8ff; /* Fundo azul claro */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
     text-align: center; /* Centraliza o conteúdo */
     font-family: "Outfit", sans-serif; /* Fonte personalizada */
     color: #19598d; /* Texto azul escuro */

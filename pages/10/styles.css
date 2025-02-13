@@ -190,9 +190,8 @@ body {
 
 .list-group-item:before {
     content: "-";
-    margin-right: 2vh;
+    margin-right: 5px;
     color: #19598d;
-    font-size: 1.2rem;
 }
 
 .list-group-item1 {
@@ -311,9 +310,6 @@ body {
         max-width: 250px;
     }
 
-    .line-connector {
-        height: 30px;
-    }
 }
 
 .alert-card {
@@ -969,7 +965,7 @@ body {
 }
 
 .attention-text {
-    font-size: 20px;
+    font-size: 1.6rem;
     line-height: 1.5;
 }
 
