@@ -268,9 +268,6 @@ body {
         max-width: 250px;
     }
 
-    .line-connector {
-        height: 30px;
-    }
 }
 
 .alert-card {
@@ -723,7 +720,6 @@ body {
     white-space: normal; /* Permite quebra de linha */
     padding: 5px 10px; /* Espaçamento interno */
     line-height: 1.2; /* Ajusta o espaçamento entre as linhas */
-    margin-bottom: 15px; /* Adiciona espaçamento inferior */
 }
 
 .custom-button.active {

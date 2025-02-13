@@ -163,6 +163,25 @@ body {
     font-size: 1.8rem;
 }
 
+.custom-list {
+    padding: 0;
+    margin-left: 25px;
+    list-style: none;
+}
+
+.list-group-item{
+    font-size: 1.5rem;
+    color: #19598d;
+    padding: 0;
+    margin-left: 5vw;
+}
+
+.list-group-item:before {
+    content: "-";
+    margin-right: 5px;
+    color: #19598d;
+}
+
 .titleCard {
      
     font-size: 1.8rem; /* Ajuste proporcional do tamanho da fonte */
@@ -240,10 +259,6 @@ body {
         font-size: 1rem;
         padding: 8px 12px;
         max-width: 250px;
-    }
-
-    .line-connector {
-        height: 30px;
     }
 }
 
@@ -345,7 +360,7 @@ body {
 .custom-tableCard {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 20px 0px 0px 0px;
     font-size: 1.6rem;
     color: #19598d; /* Azul escuro */
     border-radius: 10px;
@@ -592,7 +607,6 @@ body {
     font-size: 1.6rem;
     color: #19598d;
     text-align: left;
-    margin-left: 10px;
     font-family: "Myriado", sans-serif;
     font-weight: bolder;
 }
@@ -685,8 +699,10 @@ body {
     color: white;
     border: 2px solid white;
     border-radius: 30px; /* Bordas arredondadas */
-    min-width: 180px; /* Largura fixa maior */
-    height: 60px; /* Altura fixa maior */
+    min-width: 200px;
+    height: 70px;
+    font-size: 1.2rem; /* Tamanho do texto reduzido */
+    font-weight: bold; /* Texto em negrito */
     text-align: center;
     text-decoration: none; /* Remove sublinhado */
     transition: all 0.3s ease; /* Animações suaves para hover */
@@ -695,8 +711,7 @@ body {
     white-space: normal; /* Permite quebra de linha */
     padding: 5px 10px; /* Espaçamento interno */
     line-height: 1.2; /* Ajusta o espaçamento entre as linhas */
-    margin-bottom: 15px; /* Adiciona espaçamento inferior */
-    font-size: 1.3rem;
+    font-size: 2.0rem;
 }
 
 .custom-button.active {
@@ -832,28 +847,6 @@ a {
     color: white;
 }
 
-.list-group-item{
-    list-style-type: none;
-    font-size: 1.5rem;
-    color: #19598d;
-    background-color: transparent;
-    border: none;
-    display: flex;
-    margin-left: 18%;
-    padding: 0;
-}
-
-.list-group-item span {
-    font-size: 1.5rem;
-    color: #19598d;
-    margin-right: 10px;
-}
-
-.list-group-item b {
-    font-weight: bold;
-    color: #19598d;
-}
-
 @media (max-width: 576px) {
     .title {
         font-size: 1.5rem;
@@ -865,6 +858,11 @@ a {
     
     .subtitle {
         font-size: 1.2rem;
+    }
+
+    .custom-button {
+        font-size: 1.5rem;
+        padding: 10px;
     }
 
     .describe {
@@ -921,7 +919,7 @@ a {
     border-collapse: collapse;
     border-spacing: 0;
     margin-top: 10px;
-    font-size: 1rem;
+    font-size: 1.6rem;
     margin-bottom: 0px;
 }
 
@@ -957,13 +955,12 @@ a {
     background-color: #e6f7ff; /* Azul claro */
     color: #19598d; /* Azul escuro */
     font-weight: normal; /* Remove o bold */
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding: 20px 30px;
     border-radius: 30px; /* Deixa as bordas arredondadas */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
     text-align: center;
     line-height: 1.5; /* Ajusta o espaçamento entre as linhas */
-    width: 100%;
 }
 
 .alert-card span {
@@ -972,10 +969,9 @@ a {
     font-weight: normal; /* Normal para as linhas intermediárias */
 }
 
-.alert-card span:first-child,
-.alert-card span:last-child {
+.alert-card span{
     font-weight: bold; /* Mantém o bold apenas na primeira e última linha */
-    font-size: 1.2rem; /* Destaca a primeira e última linha */
+    font-size: 1.5rem; /* Destaca a primeira e última linha */
 }
 
 .cartilha-text-container {
@@ -1003,7 +999,6 @@ a {
 }
 
 .cartilha-title {
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     color: #19598d;
     font-weight: bold;
@@ -1012,6 +1007,11 @@ a {
 }
 
 @media (max-width: 768px) {
+    .leftBtnCard,
+    .rightBtnCard {
+        display: none;
+    }
+
     .mbSmall{
         margin-bottom: 20px;
     }
@@ -1034,6 +1034,12 @@ a {
         padding: 10px; /* Reduz espaço interno do dropdown */
     }
 
+    .custom-button {
+        font-size: 0.8rem; /* Diminui o botão */
+        width: 150px;
+        height: 50px;
+    }
+
     .pagination-container {
         padding: 5px 10px; /* Reduz bordas do container de paginação */
     }
@@ -1050,4 +1056,13 @@ a {
         padding: 10px;
     }
     
+}
+
+.fonte{
+    color: #19598d;
+    text-align: center;
+}
+
+.imgSize{
+    width: 100%;
 }

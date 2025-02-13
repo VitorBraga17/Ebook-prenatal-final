@@ -173,22 +173,21 @@ body {
     text-align: left!important; /* Alinha o texto à esquerda */
 }
 
-.list-group-item {
+.list-group-item{
     list-style-type: none;
-    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
-      /* Aplica a fonte desejada */
-    color: #19598d; /* Ajusta a cor do texto */
-    background-color: transparent; /* Remove o fundo padrão */
-    border: none; /* Remove a borda padrão */
+    font-size: 1.6rem;
+    color: #19598d;
+    background-color: transparent;
+    border: none;
     display: flex;
-    margin-left: 5%;
+    margin-left: 6vw;
+    padding: 0;
 }
 
 .list-group-item:before {
     content: "-";
-    margin-right: 2vh;
+    margin-right: 5px;
     color: #19598d;
-    font-size: 1.2rem;
 }
 
 .titleCard {
@@ -285,9 +284,6 @@ body {
         max-width: 250px;
     }
 
-    .line-connector {
-        height: 30px;
-    }
 }
 
 .alert-card {
@@ -1218,7 +1214,7 @@ a {
 .alert-card span:first-child,
 .alert-card span:last-child {
     font-weight: bold; /* Mantém o bold apenas na primeira e última linha */
-    font-size: 1.2rem; /* Destaca a primeira e última linha */
+    font-size: 1.6rem; /* Destaca a primeira e última linha */
 }
 
 .cartilha-text-container {
@@ -1277,9 +1273,8 @@ a {
     }
 
     .custom-button {
-        font-size: 0.8rem; /* Diminui o botão */
-        width: 150px;
-        height: 50px;
+        font-size: 1.4rem; /* Diminui o botão */
+
     }
 
     .pagination-container {
@@ -1391,12 +1386,14 @@ a {
 }
 
 .cardSubBordered {
+    border-radius: 50px; /* Bordas mais arredondadas */
     padding: 10px 20px; /* Espaçamento interno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    background-color: #E0F9FF; /* Fundo azul claro */
     text-align: center; /* Centraliza o conteúdo */
     font-family: "Outfit", sans-serif; /* Fonte personalizada */
     color: #19598d; /* Texto azul escuro */
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    width: 100%;
 }
 
 .video-size{

@@ -176,13 +176,19 @@ body {
 
 .list-group-item{
     list-style-type: none;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #19598d;
     background-color: transparent;
     border: none;
-    margin-left: 5%;
+    display: flex;
+    margin-left: 6vw;
     padding: 0;
-    text-align: left;
+}
+
+.list-group-item:before {
+    content: "-";
+    margin-right: 5px;
+    color: #19598d;
 }
 
 .list-group-item span {
@@ -194,13 +200,6 @@ body {
 .list-group-item b {
     font-weight: bold;
     color: #19598d;
-}
-
-.list-group-item:before {
-    content: "-";
-    margin-right: 2vh;
-    color: #19598d;
-    font-size: 1.2rem;
 }
 
 .titleCard {
@@ -297,9 +296,6 @@ body {
         max-width: 250px;
     }
 
-    .line-connector {
-        height: 30px;
-    }
 }
 
 .alert-card {
@@ -790,7 +786,6 @@ body {
     min-width: 200px;
     height: 70px;
     font-size: 1.2rem; /* Tamanho do texto reduzido */
-    font-weight: bold; /* Texto em negrito */
     text-align: center;
     text-decoration: none; /* Remove sublinhado */
     transition: all 0.3s ease; /* Animações suaves para hover */
@@ -799,7 +794,6 @@ body {
     white-space: normal; /* Permite quebra de linha */
     padding: 5px 10px; /* Espaçamento interno */
     line-height: 1.2; /* Ajusta o espaçamento entre as linhas */
-    margin-bottom: 15px; /* Adiciona espaçamento inferior */
 }
 
 .custom-button.active {

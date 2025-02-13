@@ -162,13 +162,20 @@ body {
 
 .list-group-item{
     list-style-type: none;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #19598d;
     background-color: transparent;
     border: none;
-    margin-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 6vw;
     padding: 0;
-    text-align: left;
+}
+
+.list-group-item:before {
+    content: "-";
+    margin-right: 5px;
+    color: #19598d;
 }
 
 .list-group-item span {
@@ -180,13 +187,6 @@ body {
 .list-group-item b {
     font-weight: bold;
     color: #19598d;
-}
-
-.list-group-item:before {
-    content: "-";
-    margin-right: 2vh;
-    color: #19598d;
-    font-size: 1.2rem;
 }
 
 .titleCard {
@@ -283,9 +283,6 @@ body {
         max-width: 250px;
     }
 
-    .line-connector {
-        height: 30px;
-    }
 }
 
 .alert-card {
