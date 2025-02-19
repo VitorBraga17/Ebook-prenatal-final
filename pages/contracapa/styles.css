@@ -173,3 +173,7 @@ li {
     font-weight: bold; /* Makes text bold */
     background-color: yellow; /* Optional background color */
 }
+
+.imgSize{
+    width: 100%;
+}
