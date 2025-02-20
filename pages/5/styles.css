@@ -158,33 +158,6 @@ body {
     list-style: none;
 }
 
-.list-group {
-    list-style-type: none; /* Remove os marcadores padrão */
-    padding: 0;
-    margin: 0;
-    text-align: left!important; /* Alinha o texto à esquerda */
-}
-
-.list-group-item {
-    white-space: normal; /* Permite que o texto quebre somente quando necessário */
-    word-wrap: break-word; /* Quebra palavras grandes se ultrapassarem o contêiner */
-    overflow-wrap: break-word; /* Adiciona suporte para navegadores modernos */
-}
-
-
-.list-group-item:before {
-    content: "◆";
-    margin-top: 1vh;
-    margin-right: 2vh;
-    color: #19598d;
-    font-size: 1.2rem;
-}
-
-.list-group-item b {
-    font-weight: bold; /* Destaca texto em negrito */
-    color: #19598d; /* Ajusta a cor do texto em negrito */
-    font-family: "Outfit";
-}
 
 .titleCard {
      
@@ -1235,23 +1208,32 @@ a {
     font-weight: bold;
 }
 
-.list-group {
-    list-style-type: none; /* Remove marcadores padrão */
-    padding: 0; /* Remove padding padrão */
-}
-
-.list-group-item {
-    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
-    color: #19598d; /* Texto azul escuro */
-    border: none; /* Remove bordas */
-    background-color: transparent; /* Fundo transparente */
-    padding: 0px;
+.list-group-item{
+    list-style-type: none;
+    font-size: 1.6rem;
+    color: #19598d;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
 }
 
 .list-group-item:before {
-    content: "-"; /* Adiciona um marcador customizado */
-    margin-right: 10px; /* Espaço entre marcador e texto */
-    color: #19598d; /* Azul claro */
+    content: "-";
+    margin-right: 5px;
+    color: #19598d;
+}
+
+.list-group-item span {
+    font-size: 1.5rem;
+    color: #19598d;
+    margin-right: 10px;
+}
+
+.list-group-item b {
+    font-weight: bold;
+    color: #19598d;
 }
 
 .card-title{
