@@ -702,7 +702,6 @@ body {
     min-width: 200px;
     height: 70px;
     font-size: 1.2rem; /* Tamanho do texto reduzido */
-    font-weight: bold; /* Texto em negrito */
     text-align: center;
     text-decoration: none; /* Remove sublinhado */
     transition: all 0.3s ease; /* Animações suaves para hover */
@@ -858,11 +857,6 @@ a {
     
     .subtitle {
         font-size: 1.2rem;
-    }
-
-    .custom-button {
-        font-size: 1.5rem;
-        padding: 10px;
     }
 
     .describe {
@@ -1034,12 +1028,6 @@ a {
         padding: 10px; /* Reduz espaço interno do dropdown */
     }
 
-    .custom-button {
-        font-size: 0.8rem; /* Diminui o botão */
-        width: 150px;
-        height: 50px;
-    }
-
     .pagination-container {
         padding: 5px 10px; /* Reduz bordas do container de paginação */
     }
@@ -1065,4 +1053,8 @@ a {
 
 .imgSize{
     width: 100%;
+}
+
+.hfull{
+    height: 90vh;
 }
