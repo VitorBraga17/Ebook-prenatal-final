@@ -183,7 +183,7 @@ body {
 }
 
 .titleCard {
-    font-size: 1.6rem; /* Ajuste proporcional do tamanho da fonte */
+    font-size: 1.8rem; /* Ajuste proporcional do tamanho da fonte */
     font-weight: bold;
     color: #19598d; /* Azul escuro */
     background-color: #19598d; /* Fundo azul escuro */
@@ -1056,4 +1056,8 @@ a {
 
 .hfull{
     height: 90vh;
+}
+
+.mtPercent{
+    margin-top: 20vh!important;
 }
