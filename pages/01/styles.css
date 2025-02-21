@@ -170,7 +170,7 @@ body {
 }
 
 .list-group-item{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #19598d;
     padding: 0;
     margin-left: 5vw;
@@ -183,8 +183,7 @@ body {
 }
 
 .titleCard {
-     
-    font-size: 1.8rem; /* Ajuste proporcional do tamanho da fonte */
+    font-size: 1.6rem; /* Ajuste proporcional do tamanho da fonte */
     font-weight: bold;
     color: #19598d; /* Azul escuro */
     background-color: #19598d; /* Fundo azul escuro */
