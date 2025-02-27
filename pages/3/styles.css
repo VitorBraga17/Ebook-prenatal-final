@@ -1106,12 +1106,6 @@ a {
         padding: 10px; /* Reduz espaço interno do dropdown */
     }
 
-    .custom-button {
-        font-size: 0.8rem; /* Diminui o botão */
-        width: 150px;
-        height: 50px;
-    }
-
     .pagination-container {
         padding: 5px 10px; /* Reduz bordas do container de paginação */
     }
@@ -1126,6 +1120,10 @@ a {
 
     .cartilha-text-container {
         padding: 10px;
+    }
+
+    .titleBlueGray{
+        margin-left: 0;
     }
     
 }
@@ -1149,4 +1147,26 @@ a {
     color: #19598d; /* Texto azul escuro */
     font-size: 1.6rem;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .sumario-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 60px;
+        border-radius: 30px;
+        overflow: hidden;
+        gap: 10px;
+    }
+
+    .capitulo-titulo {
+        flex-grow: 1;
+        padding: 15px 25px;
+        font-size: 1rem;
+        background-color: #4f81bd;
+        color: white;
+        white-space: normal;
+    }
 }

@@ -1031,6 +1031,7 @@ a {
 @media (max-width: 576px) {
     .title {
         font-size: 1.5rem;
+        margin-left: 0;
     }
 
     .header>.ml15vw>.subtitle{
@@ -1415,4 +1416,26 @@ a {
     color: #19598d; /* Texto azul escuro */
     font-size: 1.6rem;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .sumario-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 60px;
+        border-radius: 30px;
+        overflow: hidden;
+        gap: 10px;
+    }
+
+    .capitulo-titulo {
+        flex-grow: 1;
+        padding: 15px 25px;
+        font-size: 1rem;
+        background-color: #4f81bd;
+        color: white;
+        white-space: normal;
+    }
 }

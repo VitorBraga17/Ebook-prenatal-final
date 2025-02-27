@@ -1234,12 +1234,6 @@ body {
         padding: 10px; /* Reduz espaço interno do dropdown */
     }
 
-    .custom-button {
-        font-size: 0.8rem; /* Diminui o botão */
-        width: 150px;
-        height: 50px;
-    }
-
     .pagination-container {
         padding: 5px 10px; /* Reduz bordas do container de paginação */
     }
