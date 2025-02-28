@@ -75,7 +75,7 @@ body {
     flex-basis: auto; /* Define a base como automática */
     padding: 15px 25px;
     font-size: 1.1rem;
-    max-width: 70%; /* Limita a largura máxima */
+    max-width: 100%; /* Limita a largura máxima */
     background-color: #4f81bd;
     color: white;
     border-radius: 0 30px 30px 0;
