@@ -1,3 +1,6 @@
+/* Import global styles */
+@import url('../global.css');
+
 body {
     background-image: url('../../assets/images/bgg.jpg');
     background-size: cover;
@@ -6,7 +9,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     min-height: 90vh;
-    font-family: "Outfit", sans-serif;
+    font-family: "Outfit";
 }
 
 @font-face {
@@ -631,11 +634,12 @@ body {
 }
 
 .title {
-    font-size: 1.6rem;
     color: #004A82;
     text-align: left;
     margin-left: 10px;
     font-family: "Outfit", sans-serif;
+    font-weight: bolder;
+    font-size: var(--font-size-2xl);
 }
 
 .textBold{
@@ -1400,4 +1404,44 @@ a {
     color: #2faae8;
     word-wrap: break-word;
     overflow-wrap: break-word;
+}
+
+.reference-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reference-item {
+    color: #19598d;
+    margin-bottom: 1.5rem;
+    line-height: var(--line-height-relaxed);
+    font-size: var(--font-size-base);
+    text-align: justify;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.reference-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 8px;
+    height: 8px;
+    background-color: #19598d;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: var(--font-size-xl);
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .reference-item {
+        font-size: var(--font-size-sm);
+        padding-left: 1.5rem;
+    }
 }

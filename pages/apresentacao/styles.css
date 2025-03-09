@@ -1,3 +1,6 @@
+/* Import global styles */
+@import url('../global.css');
+
 body {
     background-image: url('../../assets/images/bgg.jpg');
     background-size: cover;
@@ -6,163 +9,54 @@ body {
     margin: 0;
     overflow-x: hidden;
     min-height: 90vh;
-    font-size: 1.2rem;
-     
+    font-family: "Outfit";
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("../../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
-    font-weight: 700;
+    font-family: "Outfit";
+    src: url("../../fonts/outfit/OutfitRegular.ttf") format("truetype");
 }
 
-header {
-    background-color: #19598d;
-    color: white;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    border-radius: 0 0 30px 30px;
-}
-
-header .header-text {
-    font-size: 1.2rem;
-    font-weight: bold;
-    flex: 1;
-}
-
-header .header-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-header .header-images img {
-    max-height: 70px;
-    object-fit: contain;
-}
-
-.alignCenterOfScreen {
-    position: fixed;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: space-between;
-}
-
-.arrow-btnLeft,
-.arrow-btnLeft,
-.arrow-btnRight {
-    width: 50px;
-    height: 50px;
-    background-color: #377ab9; /* Azul mais claro */
-    color: white;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    padding: 0; /* Remove padding interno */
-    position: relative; /* Garante que o conteúdo seja relativo ao botão */
-}
-
-.arrow-btnLeft img,
-.arrow-btnRight img {
-    width: 20px; /* Ajusta o tamanho do ícone */
-    height: 20px;
-    filter: brightness(0) invert(1); /* Garante a cor branca do ícone */
-    display: block; /* Garante que o ícone seja tratado como bloco para centralização */
-}
-
-.leftBtnCard,
-.rightBtnCard {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: rgb(255, 255, 255);
-}
-
-.leftBtnCard:hover .arrow-btnLeft,
-.rightBtnCard:hover .arrow-btnRight {
-    background-color: #19598d;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-
-.leftBtnCard {
-    border-radius: 0 100px 100px 0;
-}
-
-.rightBtnCard {
-    border-radius: 100px 0 0 100px;
-}
-
-.title-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #19598d;
-    color: #ffffff; 
-    padding: 10px 20px;
-    border-radius: 30px; 
-    width: fit-content;
-    margin: 30px auto;
-    text-align: center; 
+.title {
+    color: #004A82;
+    text-align: left;
+    margin-left: 10px;
+    font-family: "Outfit", sans-serif;
+    font-weight: bolder;
+    font-size: var(--font-size-2xl);
 }
 
 .describe {
-    color: #19598d;
-    font-size: 1.6rem;
-    line-height: 1.6;
-}
-
-.describe b {
-    color: #19598d;
+    line-height: var(--line-height-relaxed);
     font-weight: bold;
 }
 
-.chapter-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
+.textBold {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    color: #29c1f2;
+    font-size: var(--font-size-lg);
 }
 
-.chapter-list li {
-    color: #19598d;
-    margin-bottom: 8px;
-    line-height: 1.5;
-    font-size: 1.5rem;
+.titleBlueGray {
+    color: #29c1f2;
+    text-align: left;
+    margin-left: 10px;
+    font-family: "Outfit";
+    font-size: var(--font-size-xl);
 }
 
 @media (max-width: 768px) {
-    .alignCenterOfScreen {
-        position: fixed;
-        top: 50%;
-        transform: translateY(-50%);
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
+    .title {
+        font-size: var(--font-size-xl);
+        margin-left: 0;
     }
-
-    .arrow-btnLeft, .arrow-btnRight {
-        width: 40px;
-        height: 40px;
+    
+    .textBold {
+        font-size: var(--font-size-base);
     }
-
-    .arrow-btnLeft img, .arrow-btnRight img {
-        width: 20px;
-        height: 20px;
-    }
-
-    .title-container {
-        font-size: 1rem;
+    
+    .titleBlueGray {
+        font-size: var(--font-size-lg);
     }
 }

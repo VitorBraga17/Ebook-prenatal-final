@@ -1,3 +1,6 @@
+/* Import global styles */
+@import url('../global.css');
+
 body {
     background-image: url('../../assets/images/bgg.jpg');
     background-size: cover;
@@ -30,6 +33,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
+    background-color: var(--color-background);
 }
 
 .capitulo-card {
@@ -39,23 +43,23 @@ body {
 }
 
 .capitulo-numeroTitle {
-    background-color: #69c0e4;
-    color: white;
+    background-color: var(--color-primary-light);
+    color: var(--color-background);
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 20px 0 0 20px;
-    font-size: 1.6rem;
+    font-size: var(--font-size-xl);
     font-family: "AlumniItalic";
     text-align: center;
 }
 
 .capitulo-tituloTitle {
-    color: #19598d;
+    color: var(--color-primary);
     font-weight: bold;
     padding: 10px 20px;
-    font-size: 1.2rem;
+    font-size: var(--font-size-lg);
     white-space: nowrap;
-    font-family: "OutfitMedium";
+    font-family: "Outfit";
 }
 
 .capitulotituloTitle1{
@@ -210,67 +214,78 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+    gap: 10px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.row.align-items-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    margin: 0;
 }
 
 .decision-button {
-    background-color: #69c0e4;
+    background-color: var(--color-primary-light);
     color: white;
     font-weight: bold;
     font-size: 1.5rem;
     text-align: center;
     padding: 10px 20px;
     border-radius: 30px;
-    margin-bottom: 10px;
     width: 150px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 1;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
-.line-connector {
-    width: 3px;
-    height: 50px;
-    background-color: #69c0e4;
-    position: relative;
-    z-index: 0;
+.decision-button:hover {
+    background-color: var(--color-primary);
+    transform: scale(1.05);
 }
-
-.line-connector {
-    width: 3px; /* Largura */
-    height: 0; /* Altura padrão (invisível) */
-    background-color: #69c0e4; /* Cor azul clara */
-    margin: 0 auto; /* Centraliza a linha */
-    position: relative;
-    z-index: 0;
-    transition: height 0.3s ease; /* Suaviza o efeito ao abrir/fechar */
-}
-
-.line-connector.active {
-    height: 50px; /* Altura visível quando ativo */
-}
-
 
 .decision-description {
-    border: 2px solid #69c0e4;
-    color: #19598d;
+    border: 2px solid var(--color-primary-light);
+    color: var(--color-primary);
     font-weight: bold;
     font-size: 1.1rem;
     padding: 10px 15px;
     border-radius: 15px;
     text-align: center;
-    background-color: #ffffff;
+    background-color: var(--color-background);
     max-width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 1;
+    margin: 0 auto;
 }
 
-.row.align-items-center {
-    justify-content: space-around;
+.line-connector {
+    width: 3px;
+    height: 0;
+    background-color: var(--color-primary-light);
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+    transition: height 0.3s ease;
+}
+
+.line-connector.active {
+    height: 50px;
 }
 
 @media (max-width: 768px) {
+    .row.align-items-center {
+        gap: 20px;
+    }
+
     .decision-button {
         font-size: 1.2rem;
         width: 120px;
@@ -282,19 +297,17 @@ body {
         padding: 8px 12px;
         max-width: 250px;
     }
-
 }
 
 .alert-card {
     background-color: #e6f7ff; /* Azul claro */
     color: #19598d; /* Azul escuro */
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-weight: normal; /* Remove o bold */
     padding: 20px 30px;
-    border-radius: 15px;
+    border-radius: 30px; /* Deixa as bordas arredondadas */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
     text-align: center;
-    line-height: 1.5; /* Ajusta o espaçamento entre as linhas */
+    line-height: var(--line-height-normal);
 }
 
 .alert-card strong {
@@ -311,7 +324,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #69c0e4;
+    background-color: var(--color-primary-light);
     padding: 10px 20px;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -320,9 +333,9 @@ body {
 }
 
 .pagination-btn {
-    background-color: #ffffff;
-    color: #19598d;
-    font-size: 1.5rem;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    font-size: var(--font-size-xl);
     font-weight: bold;
     border: none;
     border-radius: 50%;
@@ -335,7 +348,13 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     text-decoration: none;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: all 0.3s ease;
+}
+
+.pagination-btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    transform: scale(1.1);
 }
 
 .pagination-text {
@@ -546,7 +565,7 @@ body {
     color: white;
     border: none;
     border-radius: 50%;
-    font-size: 24px;
+    font-size: var(--font-size-xl);
     cursor: pointer;
     outline: none;
     display: flex;
@@ -1131,18 +1150,6 @@ a {
     transform: rotate(180deg); /* Gira a seta para cima quando expandido */
 }
 
-.alert-card {
-    background-color: #e6f7ff; /* Azul claro */
-    color: #19598d; /* Azul escuro */
-    font-weight: normal; /* Remove o bold */
-    font-size: 1rem;
-    padding: 20px 30px;
-    border-radius: 30px; /* Deixa as bordas arredondadas */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    text-align: center;
-    line-height: 1.5; /* Ajusta o espaçamento entre as linhas */
-}
-
 .alert-card span {
     display: block; /* Quebra cada linha */
     margin-top: 10px; /* Espaçamento entre as linhas */
@@ -1243,9 +1250,8 @@ a {
 }
 
 .describe {
-    font-size: 1.2rem; /* Ajuste conforme necessário */
-    line-height: 1.5; /* Espaçamento entre linhas */
-    font-weight: bold; /* Negrito */
+    line-height: var(--line-height-relaxed);
+    font-weight: bold;
 }
 
 .flexRow {

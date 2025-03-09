@@ -1,0 +1,232 @@
+:root {
+    /* Base font sizes */
+    --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+    --font-size-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+    --font-size-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+    --font-size-lg: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);
+    --font-size-xl: clamp(1.25rem, 1.125rem + 0.75vw, 1.5rem);
+    --font-size-2xl: clamp(1.5rem, 1.25rem + 1.25vw, 2rem);
+    --font-size-3xl: clamp(2rem, 1.5rem + 2.5vw, 3rem);
+    --font-size-4xl: clamp(2.5rem, 2rem + 3.75vw, 4rem);
+    --font-size-5xl: clamp(3rem, 2.5rem + 5vw, 5rem);
+    
+    /* Line heights */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.75;
+
+    /* Colors */
+    --color-primary: #19598d;
+    --color-primary-light: #69c0e4;
+    --color-secondary: #29c1f2;
+    --color-text: #004A82;
+    --color-background: #ffffff;
+}
+
+/* Base styles */
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-normal);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    line-height: var(--line-height-tight);
+}
+
+/* Common Components */
+.title {
+    font-size: var(--font-size-2xl);
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: var(--font-size-xl);
+    color: var(--color-text);
+}
+
+.describe {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+    font-weight: 500;
+}
+
+.textBold {
+    font-weight: 600;
+}
+
+/* Cards */
+.cardBordered {
+    border: 2px solid var(--color-primary-light);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--color-background);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alert-card {
+    background-color: #e6f7ff;
+    color: var(--color-primary);
+    padding: 20px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: var(--line-height-normal);
+}
+
+/* Buttons */
+.custom-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: var(--font-size-base);
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* Tables */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: var(--font-size-base);
+}
+
+.custom-table th {
+    background-color: var(--color-primary-light);
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.custom-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    :root {
+        --font-size-base: clamp(0.9375rem, 0.875rem + 0.375vw, 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --font-size-base: clamp(0.875rem, 0.8125rem + 0.3125vw, 0.9375rem);
+    }
+
+    .title {
+        font-size: var(--font-size-xl);
+    }
+
+    .custom-table {
+        font-size: var(--font-size-sm);
+    }
+
+    .cardBordered {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --font-size-base: clamp(0.8125rem, 0.75rem + 0.25vw, 0.875rem);
+    }
+}
+
+/* Utility classes for font sizes */
+.text-xs { font-size: var(--font-size-xs); }
+.text-sm { font-size: var(--font-size-sm); }
+.text-base { font-size: var(--font-size-base); }
+.text-lg { font-size: var(--font-size-lg); }
+.text-xl { font-size: var(--font-size-xl); }
+.text-2xl { font-size: var(--font-size-2xl); }
+.text-3xl { font-size: var(--font-size-3xl); }
+.text-4xl { font-size: var(--font-size-4xl); }
+.text-5xl { font-size: var(--font-size-5xl); }
+
+/* Common text styles */
+.quadro {
+    font-size: var(--font-size-xl);
+}
+
+.alert-card span:first-child,
+.alert-card span:last-child {
+    font-size: var(--font-size-xl);
+}
+
+.cartilha-title {
+    font-size: var(--font-size-xl);
+}
+
+.cartilha-subtitle {
+    font-size: var(--font-size-base);
+}
+
+.custom-table {
+    font-size: var(--font-size-base);
+}
+
+.sumario-title {
+    font-size: var(--font-size-5xl);
+}
+
+.sumario-header-text .textBold {
+    font-size: var(--font-size-2xl);
+}
+
+.titleTextBold {
+    font-size: var(--font-size-xl);
+}
+
+.cardSubBordered {
+    font-size: var(--font-size-xl);
+}
+
+/* Responsive adjustments for specific components */
+@media (max-width: 768px) {
+    .custom-table {
+        font-size: var(--font-size-sm);
+    }
+    
+    .sumario-title {
+        font-size: var(--font-size-4xl);
+    }
+    
+    .cardSubBordered {
+        font-size: var(--font-size-lg);
+    }
+    
+    .capitulo-titulo {
+        font-size: var(--font-size-base);
+    }
+} 

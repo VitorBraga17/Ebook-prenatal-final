@@ -1,3 +1,5 @@
+@import url('../global.css');
+
 body {
     background-image: url('../../assets/images/bgg.jpg');
     background-size: cover;
@@ -246,5 +248,74 @@ body {
 
     .ms5 {
         margin-left: 0; /* Remove o espaçamento */
+    }
+}
+
+.sumary-container {
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 2rem;
+}
+
+.sumary-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.sumary-title {
+    color: #19598d;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.sumary-header-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sumary-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.sumary-item {
+    background-color: #ffffff;
+    border: 2px solid #69c0e4;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.sumary-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sumary-item-title {
+    color: #19598d;
+    margin-bottom: 1rem;
+}
+
+.sumary-item-description {
+    color: #666666;
+}
+
+@media (max-width: 768px) {
+    .sumary-container {
+        padding: 1rem;
+    }
+    
+    .sumary-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .sumary-item {
+        padding: 1rem;
     }
 }
