@@ -1,0 +1,158 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    background-image: url('../../assets/images/bgg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    overflow-x: hidden;
+    min-height: 90vh;
+    font-family: "Outfit";
+    font-size: 1rem;
+}
+
+.title {
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+    color: #19598d;
+    text-align: left;
+    font-family: "Myriado", sans-serif;
+    font-weight: bolder;
+}
+
+.subtitle {
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    color: #19598d;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.describe {
+    font-size: clamp(1.1rem, 1.8vw, 1.6rem);
+    font-weight: 500;
+}
+
+.table-font {
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    color: #19598d;
+}
+
+.table-fontCenter {
+    font-weight: 100;
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    color: #19598d;
+    text-align: center;
+}
+
+.custom-button {
+    font-size: clamp(1.4rem, 2.2vw, 2rem);
+}
+
+.sumario-text {
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+}
+
+.list-group-item {
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+}
+
+.capitulo-numeroTitle {
+    background-color: #69c0e4;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px 0 0 20px;
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    font-family: "AlumniItalic";
+    text-align: center;
+}
+
+.capitulo-tituloTitle {
+    color: #19598d;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    white-space: nowrap;
+    font-family: "OutfitMedium";
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+    
+    .title {
+        font-size: clamp(1.2rem, 4vw, 1.4rem);
+        line-height: 1.3;
+    }
+
+    .subtitle {
+        font-size: clamp(1rem, 3.5vw, 1.2rem);
+    }
+
+    .describe {
+        font-size: clamp(0.95rem, 3vw, 1.1rem);
+    }
+
+    .table-font {
+        font-size: clamp(0.85rem, 2.8vw, 1rem);
+    }
+
+    .table-fontCenter {
+        font-size: clamp(0.85rem, 2.8vw, 1rem);
+    }
+
+    .custom-button {
+        font-size: clamp(1.2rem, 3.5vw, 1.6rem);
+    }
+
+    .sumario-text {
+        font-size: clamp(1.1rem, 3vw, 1.4rem);
+    }
+
+    .list-group-item {
+        font-size: clamp(1.1rem, 3vw, 1.4rem);
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: clamp(1.1rem, 4.5vw, 1.3rem);
+    }
+
+    .subtitle {
+        font-size: clamp(0.95rem, 4vw, 1.1rem);
+    }
+
+    .describe {
+        font-size: clamp(0.9rem, 3.5vw, 1rem);
+    }
+
+    .table-font {
+        font-size: clamp(0.8rem, 3.2vw, 0.95rem);
+    }
+
+    .table-fontCenter {
+        font-size: clamp(0.8rem, 3.2vw, 0.95rem);
+    }
+
+    .custom-button {
+        font-size: clamp(1.1rem, 4vw, 1.4rem);
+        min-width: 150px;
+        height: 60px;
+    }
+
+    .sumario-text {
+        font-size: clamp(1rem, 3.5vw, 1.2rem);
+    }
+
+    .list-group-item {
+        font-size: clamp(1rem, 3.5vw, 1.2rem);
+    }
+} 
