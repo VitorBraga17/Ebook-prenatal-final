@@ -174,6 +174,7 @@ body {
     color: #19598d;
     padding: 0;
     margin-left: 5vw;
+    border: none;
 }
 
 .list-group-item:before {
@@ -847,7 +848,7 @@ a {
 
 @media (max-width: 576px) {
     .title {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .header>.ml15vw>.subtitle{
@@ -858,12 +859,44 @@ a {
         font-size: 1.2rem;
     }
 
+    .list-group-item {
+        font-size: 1rem;
+    }
+
+    .titleCard {
+        font-size: 1.2rem;
+    }
+
+    .custom-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #29c1f2;
+        color: white;
+        border: 2px solid white;
+        border-radius: 30px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        padding: 5px 5px;
+        font-size: 1.2rem;
+        min-width: 150px;
+        height: 50px;
+    }
+
     .describe {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .collapse-custom {
         padding: 20px;
+    }
+
+    .cartilha-title{
+        font-size: 1rem!important;
     }
 }
 
