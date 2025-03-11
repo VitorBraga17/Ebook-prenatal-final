@@ -931,6 +931,23 @@ a {
     .alert-card span {
         font-size: 1rem!important;
     }
+    
+    .capitulotituloTitle1{
+        font-size: 1.2rem;
+        line-height: 2.5vh;
+    }
+
+    .capitulo-card {
+        padding: 10px 10px 0px 0px;
+    }
+
+    .capitulo-numero {
+        font-size: 1.2rem;
+    }
+
+    .pagination-text{
+        font-size: 1rem;
+    }
 }
 
 .line-connector {

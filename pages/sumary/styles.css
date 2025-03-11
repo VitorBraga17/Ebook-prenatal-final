@@ -248,3 +248,10 @@ body {
         margin-left: 0; /* Remove o espaçamento */
     }
 }
+
+@media (max-width: 576px) {
+    .capitulo-titulo{
+        font-size: 1rem;
+        flex-shrink: unset;
+    }
+}
