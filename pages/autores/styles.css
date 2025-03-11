@@ -204,3 +204,21 @@ li {
     font-weight: bold; /* Makes text bold */
     background-color: yellow; /* Optional background color */
 }
+
+@media (max-width: 576px) {
+    .titleGray {
+        font-size: 2rem;
+    }
+
+    .subtitle{
+        font-size: 1.2rem;
+    }
+
+    .subtitleGray{
+        font-size: 1.2rem;
+    }
+
+    .description{
+        font-size: 1rem;
+    }
+}
