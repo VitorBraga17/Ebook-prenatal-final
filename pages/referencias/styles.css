@@ -277,20 +277,7 @@ body {
     justify-content: space-around;
 }
 
-@media (max-width: 768px) {
-    .decision-button {
-        font-size: 1.2rem;
-        width: 120px;
-        padding: 8px 16px;
-    }
 
-    .decision-description {
-        font-size: 1rem;
-        padding: 8px 12px;
-        max-width: 250px;
-    }
-
-}
 
 .alert-card {
     background-color: #e6f7ff; /* Azul claro */
@@ -400,44 +387,7 @@ body {
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-    .header::before {
-        background-color: #19598d;
-        width: 200px;
-        height: 150px;
-        right: 0;
-        top: 0;
-        border-radius: 0 0 0 100%;
-    }
 
-    .header {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-    }
-
-    .ml15vw {
-        max-width: 70%;
-    }
-
-    .title {
-        font-size: 1.5rem;
-        text-align: center;
-        color: white;
-    }
-
-    .sumario-container {
-        border-radius: 30px 0px 30px 30px;
-        padding: 15px;
-        font-size: 1.2rem;
-        position: absolute;
-        top: 40px;
-        right: 25px;
-        color: white; 
-    }
-
-    
-}
 
 .collapse-content {
     background-color: #d8f1f6;
@@ -520,16 +470,7 @@ body {
     background-color: transparent;
 }
 
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .ml15vw {
-        margin-left: 0
-    }
-}
 
 .flexRow {
     display: flex;
@@ -950,32 +891,7 @@ body {
     font-size: 1.6rem;
 }
 
-@media (max-width: 576px) {
-    .title {
-        font-size: 1.5rem;
-    }
 
-    .header>.ml15vw>.subtitle{
-        font-size: 1.5rem;
-    }
-    
-    .subtitle {
-        font-size: 1.2rem;
-    }
-
-    .custom-button {
-        font-size: 1.5rem;
-        padding: 10px;
-    }
-
-    .describe {
-        font-size: 1.5rem;
-    }
-
-    .collapse-custom {
-        padding: 20px;
-    }
-}
 
 .table-striped {
     width: 100%;
@@ -1206,51 +1122,7 @@ body {
     line-height: 1.4;
 }
 
-@media (max-width: 768px) {
-    .leftBtnCard,
-    .rightBtnCard {
-        display: none;
-    }
 
-    .mbSmall{
-        margin-bottom: 20px;
-    }
-
-    .sumario-text {
-        display: none; /* Esconde o texto "Sumário" */
-    }
-
-    .arrow {
-        display: inline-block; /* Garante que a seta continue visível */
-        font-size: 1.5rem; /* Ajuste o tamanho, se necessário */
-    }
-
-    .sumario-container {
-        justify-content: flex-end; /* Alinha a seta à direita, se necessário */
-        padding: 5px 10px;
-    }
-
-    .collapse-content {
-        padding: 10px; /* Reduz espaço interno do dropdown */
-    }
-
-    .pagination-container {
-        padding: 5px 10px; /* Reduz bordas do container de paginação */
-    }
-
-    .imgSize {
-        width: 95vw;
-    }
-
-    .table-container {
-        padding: 5px;
-    }
-
-    .cartilha-text-container {
-        padding: 10px;
-    }
-    
-}
 
 .imgSize {
     height: auto;
@@ -1306,18 +1178,6 @@ body {
     text-align: center;
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    .custom-card {
-        max-width: 90%; /* Garante que os cards ocupem mais espaço em telas pequenas */
-        height: auto; /* Remove a altura fixa para telas menores */
-    }
-    .img-same-size {
-        max-width: 90%; /* Ajusta o tamanho das imagens em telas menores */
-        height: auto; /* Remove a altura fixa para evitar distorções */
-    }
-}
-
 .line-connector {
     width: 3px;
     height: 0; /* Altura padrão (invisível) */
@@ -1356,16 +1216,6 @@ body {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .cartilha-title {
-        font-size: 1rem;
-    }
-    .custom-button {
-        font-size: 1.2rem;
-    }
-}
-
 .bgBlueCard{
     background-color: #003d73;
     color: white;
@@ -1400,4 +1250,149 @@ a {
     color: #2faae8;
     word-wrap: break-word;
     overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .decision-button {
+        font-size: 1.2rem;
+        width: 120px;
+        padding: 8px 16px;
+    }
+
+    .decision-description {
+        font-size: 1rem;
+        padding: 8px 12px;
+        max-width: 250px;
+    }
+
+    .header::before {
+        background-color: #19598d;
+        width: 200px;
+        height: 150px;
+        right: 0;
+        top: 0;
+        border-radius: 0 0 0 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .ml15vw {
+        max-width: 70%;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        text-align: center;
+        color: white;
+    }
+
+    .sumario-container {
+        border-radius: 30px 0px 30px 30px;
+        padding: 15px;
+        font-size: 1.2rem;
+        position: absolute;
+        top: 40px;
+        right: 25px;
+        color: white; 
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ml15vw {
+        margin-left: 0
+    }
+
+    .cartilha-title {
+        font-size: 1rem;
+    }
+    .custom-button {
+        font-size: 1.2rem;
+    }
+
+    .custom-card {
+        max-width: 90%; /* Garante que os cards ocupem mais espaço em telas pequenas */
+        height: auto; /* Remove a altura fixa para telas menores */
+    }
+    .img-same-size {
+        max-width: 90%; /* Ajusta o tamanho das imagens em telas menores */
+        height: auto; /* Remove a altura fixa para evitar distorções */
+    }
+
+    .leftBtnCard,
+    .rightBtnCard {
+        display: none;
+    }
+
+    .mbSmall{
+        margin-bottom: 20px;
+    }
+
+    .sumario-text {
+        display: none; /* Esconde o texto "Sumário" */
+    }
+
+    .arrow {
+        display: inline-block; /* Garante que a seta continue visível */
+        font-size: 1.5rem; /* Ajuste o tamanho, se necessário */
+    }
+
+    .sumario-container {
+        justify-content: flex-end; /* Alinha a seta à direita, se necessário */
+        padding: 5px 10px;
+    }
+
+    .collapse-content {
+        padding: 10px; /* Reduz espaço interno do dropdown */
+    }
+
+    .pagination-container {
+        padding: 5px 10px; /* Reduz bordas do container de paginação */
+    }
+
+    .imgSize {
+        width: 95vw;
+    }
+
+    .table-container {
+        padding: 5px;
+    }
+
+    .cartilha-text-container {
+        padding: 10px;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .header>.ml15vw>.subtitle{
+        font-size: 1.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .custom-button {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .describe {
+        font-size: 1.5rem;
+    }
+
+    .collapse-custom {
+        padding: 20px;
+    }
 }

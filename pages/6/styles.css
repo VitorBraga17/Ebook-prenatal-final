@@ -1339,6 +1339,10 @@ a {
         text-align: center;
     }
 
+    .list-group-item span{
+        font-size: 1rem;
+    }
+
     .custom-button {
         display: flex;
         justify-content: center;
@@ -1380,7 +1384,7 @@ a {
     }
 
     .table-font{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .custom-tableCard {

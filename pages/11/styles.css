@@ -1551,7 +1551,7 @@ a {
     }
 
     .table-font{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .custom-tableCard {
@@ -1592,7 +1592,7 @@ a {
     }
 
     .cartilha-title{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .indicationText{
@@ -1622,5 +1622,21 @@ a {
 
     .list-group-itemSubItem{
         font-size: 1rem;
+    }
+
+    .list-groupSubItem{
+        margin-bottom: 0;
+    }
+
+    .capitulotituloTitle1{
+        padding: 0px 10px
+    }
+
+    .list-group-itemWithoutT h3{
+        font-size: 1rem;
+    }
+
+    .titleSubcap{
+        font-size: 1.2rem;
     }
 }

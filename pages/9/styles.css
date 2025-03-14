@@ -786,6 +786,7 @@ body {
     min-width: 200px;
     height: 70px;
     font-size: 1.2rem; /* Tamanho do texto reduzido */
+    font-weight: bold;
     text-align: center;
     text-decoration: none; /* Remove sublinhado */
     transition: all 0.3s ease; /* Animações suaves para hover */
@@ -1380,6 +1381,12 @@ a {
         color: white;
         white-space: normal;
     }
+
+    .custom-button {
+        font-size: 1rem;
+        width: 150px;
+        height: 50px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1397,6 +1404,7 @@ a {
 
     .list-group-item {
         font-size: 1rem;
+        margin-right: 2vh;
     }
 
     .list-group-itemMl0{
@@ -1436,7 +1444,7 @@ a {
         text-overflow: ellipsis;
         white-space: normal;
         padding: 5px 5px;
-        font-size: 1.2rem!important;
+        font-size: 1rem;
         min-width: 150px;
         height: 50px;
     }
