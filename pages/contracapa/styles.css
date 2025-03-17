@@ -228,4 +228,21 @@ li {
     .rightBtnCard {
         display: none;
     }
+
+    .pagination-container {
+        position: fixed;
+        bottom: 5px;
+        left: 9vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #69c0e4;
+        padding: 10px 20px;
+        border-radius: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: fit-content;
+        margin: auto;
+        z-index: 1000;
+        transform: translateX(0%);
+    }
 }
