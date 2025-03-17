@@ -1273,4 +1273,8 @@ a {
     .bgHeaderTable th{
         font-size: 1rem;
     }
+
+    .table-fontBold{
+        font-size: 0.8rem;
+    }
 }

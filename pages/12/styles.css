@@ -54,7 +54,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     padding: 20px;
-    height: 100vh;
+    height: 92vh;
 }
 
 .alignCenterOfScreen {
@@ -93,6 +93,45 @@ body {
     filter: brightness(0) invert(1);
 }
 
+.pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #69c0e4;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin: auto;
+}
+
+.pagination-btn {
+    background-color: #ffffff;
+    color: #19598d;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.pagination-text {
+     
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
 @media (max-width: 1200px) {
     .sumario-title {
         font-size: 12rem;
@@ -126,5 +165,14 @@ body {
     }
     .titleTextBold {
         font-size: 1rem;
+    }
+
+    .leftBtnCard,
+    .rightBtnCard {
+        display: none;
+    }
+    
+    .titleTextBold span {
+        display: block; /* Faz o texto quebrar a linha */
     }
 }
