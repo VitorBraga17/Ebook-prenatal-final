@@ -245,4 +245,8 @@ li {
         z-index: 1000;
         transform: translateX(0%);
     }
+
+    body {
+        background-image: url('../../assets/images/fichasm.jpeg');
+    }
 }
