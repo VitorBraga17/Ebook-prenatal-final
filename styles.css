@@ -111,7 +111,7 @@ body {
         position: relative;
         display: inline-block;
         z-index: 1;
-        top: -7vh;
+        top: -10vh;
     }
 
     .btn-icon {
