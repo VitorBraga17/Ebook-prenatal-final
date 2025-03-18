@@ -248,6 +248,7 @@ li {
 
     body {
         background-image: url('../../assets/images/fichasm.jpeg');
+        background-position: top;
     }
 
     .pagination-text {
