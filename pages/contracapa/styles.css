@@ -232,7 +232,7 @@ li {
     .pagination-container {
         position: fixed;
         bottom: 5px;
-        left: 13vw;
+        left: 8vw;
         display: flex;
         align-items: center;
         justify-content: center;
