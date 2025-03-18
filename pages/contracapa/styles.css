@@ -232,7 +232,7 @@ li {
     .pagination-container {
         position: fixed;
         bottom: 5px;
-        left: 9vw;
+        left: 13vw;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -249,4 +249,9 @@ li {
     body {
         background-image: url('../../assets/images/fichasm.jpeg');
     }
+
+    .pagination-text {
+        font-size: 1rem;
+    }
+    
 }
