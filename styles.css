@@ -29,7 +29,7 @@ body {
     position: relative;
     display: inline-block;
     z-index: 1;
-    top: -10vh;
+    top: -8vh;
 }
 
 .btn-start {
