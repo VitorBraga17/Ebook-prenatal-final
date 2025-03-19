@@ -185,6 +185,11 @@ header .header-images img {
     margin: 0 10px;
 }
 
+.leftBtnCard,
+.rightBtnCard {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .leftBtnCard,
     .rightBtnCard {

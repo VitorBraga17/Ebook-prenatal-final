@@ -57,7 +57,7 @@ body {
 
 .btn-icon {
     position: absolute;
-    left: -50px;
+    left: -29px;
     top: 50%;
     transform: translateY(-50%);
     background-color: #2e78a0;
@@ -78,7 +78,7 @@ body {
 .btn-icon:hover {
     background-color: #1e5780;
     color: white;
-    left: -35px;
+    left: -29px;
 }
 
 .alignFooter {
