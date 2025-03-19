@@ -33,6 +33,10 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.hfull{
+    min-height: 90vh;
+}
+
 .capitulo-card {
     display: flex;
     align-items: center;

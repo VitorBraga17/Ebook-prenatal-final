@@ -1250,6 +1250,10 @@ a {
     display: none;
 }
 
+.mt10{
+    margin-top: 8vh;
+}
+
 @media (max-width: 768px) {
     .sumario-item {
         display: flex;
