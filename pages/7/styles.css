@@ -1285,6 +1285,11 @@ a {
     text-align: center;
 }
 
+.leftBtnCard,
+.rightBtnCard {
+    display: none;
+}
+
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     .custom-card {

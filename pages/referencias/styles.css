@@ -1252,6 +1252,11 @@ a {
     overflow-wrap: break-word;
 }
 
+.leftBtnCard,
+.rightBtnCard {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .decision-button {
         font-size: 1.2rem;

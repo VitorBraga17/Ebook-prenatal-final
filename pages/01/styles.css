@@ -917,6 +917,11 @@ a {
     }
 }
 
+.leftBtnCard,
+.rightBtnCard {
+    display: none;
+}
+
 .line-connector {
     width: 3px; /* Largura */
     height: 0; /* Altura padrão (invisível) */

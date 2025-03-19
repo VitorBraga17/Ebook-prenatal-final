@@ -132,6 +132,11 @@ body {
     margin: 0 10px;
 }
 
+.leftBtnCard,
+.rightBtnCard {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     .sumario-title {
         font-size: 12rem;

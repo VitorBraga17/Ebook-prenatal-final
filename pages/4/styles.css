@@ -1132,6 +1132,11 @@ a {
     line-height: 1.4;
 }
 
+.leftBtnCard,
+.rightBtnCard {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .leftBtnCard,
     .rightBtnCard {

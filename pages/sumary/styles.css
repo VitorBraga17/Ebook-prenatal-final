@@ -275,6 +275,11 @@ body {
     margin: 0 10px;
 }
 
+.leftBtnCard,
+.rightBtnCard {
+    display: none;
+}
+
 @media (max-width: 1024px) {
     .flexRow {
         display: initial; /* Pode ser 'block' ou outro valor padrão */

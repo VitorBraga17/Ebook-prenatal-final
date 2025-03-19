@@ -1245,6 +1245,11 @@ a {
     background: transparent;
 }
 
+.leftBtnCard,
+.rightBtnCard {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .sumario-item {
         display: flex;

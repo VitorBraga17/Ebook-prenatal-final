@@ -222,6 +222,10 @@ li {
     text-align: center;
 }
 
+.leftBtnCard,
+.rightBtnCard {
+    display: none;
+}
 
 @media (max-width: 576px) {
     .leftBtnCard,

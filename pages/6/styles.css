@@ -1291,6 +1291,11 @@ a {
     margin-left: 15%;
 }
 
+.leftBtnCard,
+.rightBtnCard {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .sumario-item {
         display: flex;

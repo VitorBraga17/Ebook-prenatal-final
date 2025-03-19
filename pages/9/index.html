@@ -135,7 +135,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-sm-12 mt-4 alignCenter flexColumn">                
                         <div class="button-container alignCenter">
-                            <a class="custom-button" data-bs-toggle="collapse" href="#collapseContent1"  role="button" aria-expanded="false" aria-controls="collapseContent1">
+                            <a class="custom-button1" data-bs-toggle="collapse" href="#collapseContent1"  role="button" aria-expanded="false" aria-controls="collapseContent1">
                               Sim  
                             </a>
                         </div>
@@ -150,7 +150,7 @@
                 
                     <div class="col-lg-6 col-sm-12 mt-4 alignCenter flexColumn">                
                         <div class="button-container alignCenter">
-                            <a class="custom-button" data-bs-toggle="collapse" href="#collapseContent2"  role="button" aria-expanded="false" aria-controls="collapseContent2">
+                            <a class="custom-button1" data-bs-toggle="collapse" href="#collapseContent2"  role="button" aria-expanded="false" aria-controls="collapseContent2">
                                 Não
                             </a>
                         </div>
@@ -581,9 +581,28 @@
 
         document.addEventListener('DOMContentLoaded', function () {
             const collapseButtons = document.querySelectorAll('.custom-button[data-bs-toggle="collapse"]');
+            const collapseButtons1 = document.querySelectorAll('.custom-button1[data-bs-toggle="collapse"]');
             const lineConnectors = document.querySelectorAll('.line-connector');
 
             collapseButtons.forEach((button, index) => {
+                const collapseId = button.getAttribute('href');
+                const collapseElement = document.querySelector(collapseId);
+
+                collapseElement.addEventListener('show.bs.collapse', function () {
+                    // Remove active class from all line connectors
+                    lineConnectors.forEach(connector => connector.classList.remove('active'));
+
+                    // Add active class to the current connector
+                    lineConnectors[index].classList.add('active');
+                });
+
+                collapseElement.addEventListener('hide.bs.collapse', function () {
+                    // Remove active class from the current connector
+                    lineConnectors[index].classList.remove('active');
+                });
+            });
+
+            collapseButtons1.forEach((button, index) => {
                 const collapseId = button.getAttribute('href');
                 const collapseElement = document.querySelector(collapseId);
 
