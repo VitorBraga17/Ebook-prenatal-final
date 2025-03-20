@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
     margin: 0;
     overflow-x: hidden;
-    min-height: 90vh;
+    min-height: 100vh;
     font-family: "Outfit";
     src: url("../../fonts/outfit/OutfitRegular.ttf") format("truetype");
     font-family: "Outfit";
