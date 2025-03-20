@@ -278,5 +278,5 @@ li {
 .mt10{
     /* margin-top: 30vh; */
     position: absolute;
-    bottom: 0;
+    bottom: -3vh;
 }
