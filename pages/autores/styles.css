@@ -276,5 +276,7 @@ li {
 }
 
 .mt10{
-    margin-top: 30vh;
+    /* margin-top: 30vh; */
+    position: absolute;
+    bottom: 0;
 }
