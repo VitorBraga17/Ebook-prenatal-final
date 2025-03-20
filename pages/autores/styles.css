@@ -237,7 +237,6 @@ li {
 }
 
 .pagination-text {
-     
     font-size: 1.2rem;
     font-weight: bold;
     color: #ffffff;
@@ -277,5 +276,5 @@ li {
 }
 
 .mt10{
-    margin-top: 10vh;
+    margin-top: 30vh;
 }
