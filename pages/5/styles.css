@@ -1400,3 +1400,13 @@ a {
         padding: 10px 10px 10px 0px;
     }
 }
+
+@media (max-width: 375px) {
+    .capitulotituloTitle1 {
+        font-size: 1rem;
+    }
+
+    .capitulo-numeroTitle{
+        font-size: 1.2rem;
+    }
+}

@@ -1602,3 +1602,14 @@ a {
         font-size: 1rem;
     }
 }
+
+
+@media (max-width: 375px) {
+    .capitulotituloTitle1 {
+        font-size: 1rem;
+    }
+
+    .capitulo-numeroTitle{
+        font-size: 1.2rem;
+    }
+}
